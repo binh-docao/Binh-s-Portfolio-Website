@@ -1,4 +1,5 @@
-import React from "react";
+// import React from "react";
+import React, { useState } from 'react';
 import Modal from "react-modal";
 import Testimonial from "./Testimonial";
 import Intro from "./Intro";
@@ -6,10 +7,26 @@ import KnowledgeInterest from "./KnowledgeInterest";
 import PersonalInfo from "./PersonalInfo";
 import Resume from "./Resume";
 import Skills from "./Skills";
+import PasswordProtection from '../PasswordProtection';
 
 Modal.setAppElement("#__next");
 
 const AboutMain = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isPasswordCorrect, setIsPasswordCorrect] = useState(false);
+
+  const handleDownloadResume = () => {
+    if (isPasswordCorrect) {
+      window.open('/img/cv.pdf', '_blank');
+    } else {
+      setIsModalOpen(true);
+    }
+  };
+
+  const handlePasswordCorrect = () => {
+    setIsPasswordCorrect(true);
+    setIsModalOpen(false);
+  };
   return (
     <>
       <div className="container">
@@ -31,19 +48,21 @@ const AboutMain = () => {
           {/* End personal info */}
 
           <div className="tokyo_tm_button" data-position="left">
-            <a href="/img/cv.pdf" download>
+            {/* Updated button style */}
+            <a onClick = {handleDownloadResume}>
               <span>Download Resume</span>
             </a>
+            {/* End updated button style */}
+          </div>
           </div>
         </div>
-      </div>
       {/* End .container */}
 
       <div className="tokyo_tm_progressbox">
         <div className="container">
           <div className="in">
             <Skills />
-          </div>
+          </div>r
           {/* End in */}
         </div>
         {/* End .container */}
@@ -81,6 +100,16 @@ const AboutMain = () => {
       End tokyo_tm_testimonials */}
 
       {/* /ABOUT */}
+      <Modal
+        isOpen={isModalOpen}
+        onRequestClose={() => setIsModalOpen(false)}
+        contentLabel="Password Modal"
+        className="mymodal"
+        overlayClassName="myoverlay"
+        closeTimeoutMS={500}
+      >
+        <PasswordProtection onPasswordCorrect={handlePasswordCorrect} />
+      </Modal>
     </>
   );
 };
