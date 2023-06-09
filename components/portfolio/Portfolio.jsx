@@ -68,8 +68,6 @@ const Portfolio = () => {
                       >
                         {({ ref, open }) => (
                           <Image
-                            width={300}
-                            height={300}
                             srl_gallery_image="true"
                             src="/img/portfolio/5.jpg"
                             alt="Charlie Do-Cao"
@@ -109,8 +107,6 @@ const Portfolio = () => {
                       >
                         {({ ref, open }) => (
                           <Image
-                            width={300}
-                            height={300}
                             srl_gallery_image="true"
                             src="/img/portfolio/2.jpg"
                             alt="Cord Baxter"
@@ -152,8 +148,6 @@ const Portfolio = () => {
                       >
                         {({ ref, open }) => (
                           <Image
-                            width={300}
-                            height={300}
                             srl_gallery_image="true"
                             src="/img/portfolio/3.jpg"
                             alt="Kyle"
@@ -193,8 +187,6 @@ const Portfolio = () => {
                       >
                         {({ ref, open }) => (
                           <Image
-                            width={300}
-                            height={300}
                             srl_gallery_image="true"
                             src="/img/portfolio/7.jpg"
                             alt="Childhood"

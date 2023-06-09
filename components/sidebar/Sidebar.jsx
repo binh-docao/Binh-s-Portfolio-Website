@@ -63,7 +63,7 @@ const Sidebar = () => {
       <div className={click ? "leftpart active" : "leftpart"}>
         <div className="leftpart_inner">
           <div className="logo">
-            <Link className="navbar-brand" href="/">
+            <Link className="navbar-brand" href="/home">
               <Image
                 width={135}
                 height={20}
@@ -74,40 +74,52 @@ const Sidebar = () => {
           </div>
           {/* END LOGO */}
 
-          <div className="menu">
-          <ul>
-  {sidebarData.map((item) => (
-    <li key={item.id} onClick={handleClick}>
-      {item.isLocked ? (
-        <a
-          href="#"
-          onClick={(e) => {
-            e.preventDefault();
-            handleProtectedLinkClick(item.routePath);
-          }}
-          className={`${
-            isActiveLink(item.routePath, router.asPath) ? "active " : ""
-          }`}
-        >
-          <div>
-            <Image width={15} height={15} className="svg" src={item.icon} alt="homerun" />
-            <span className="menu_content">{item.menuName}</span>
-          </div>
-        </a>
-      ) : (
-        <Link
-          className={`${
-            isActiveLink(item.routePath, router.asPath) ? "active " : ""
-          }`}
-          href={item.routePath}
-        >
-          <Image width={15} height={15} className="svg" src={item.icon} alt="homerun" />
-          <span className="menu_content">{item.menuName}</span>
-        </Link>
-      )}
-    </li>
-  ))}
-</ul>
+      <div className="menu">
+        <ul>
+          {sidebarData.map((item) => (
+            <li key={item.id} onClick={handleClick}>
+              {item.isLocked ? (
+                <a
+                  href="#"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleProtectedLinkClick(item.routePath);
+                  }}
+                  className={`${
+                    isActiveLink(item.routePath, router.asPath) ? "active " : ""
+                  }`}
+                >
+                  <div>
+                    <Image
+                      width={15}
+                      height={15}
+                      className="svg"
+                      src={item.icon}
+                      alt="homerun"
+                    />
+                    <span className="menu_content">{item.menuName}</span>
+                  </div>
+                </a>
+              ) : (
+                <Link
+                  className={`${
+                    isActiveLink(item.routePath, router.asPath) ? "active " : ""
+                  }`}
+                  href={item.routePath === "/" ? "/home" : `${item.routePath}/`}
+                >
+                  <Image
+                    width={15}
+                    height={15}
+                    className="svg"
+                    src={item.icon}
+                    alt="homerun"
+                  />
+                  <span className="menu_content">{item.menuName}</span>
+                </Link>
+              )}
+            </li>
+          ))}
+        </ul>
       </div>
       {/* END MENU */}
 

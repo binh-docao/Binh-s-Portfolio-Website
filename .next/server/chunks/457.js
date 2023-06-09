@@ -157,7 +157,7 @@ const Sidebar = ()=>{
                             className: "logo",
                             children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
                                 className: "navbar-brand",
-                                href: "/",
+                                href: "/home",
                                 children: /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
                                     width: 135,
                                     height: 20,
@@ -195,7 +195,7 @@ const Sidebar = ()=>{
                                             })
                                         }) : /*#__PURE__*/ (0,jsx_runtime_.jsxs)((link_default()), {
                                             className: `${isActiveLink(item.routePath, router.asPath) ? "active " : ""}`,
-                                            href: item.routePath,
+                                            href: item.routePath === "/" ? "/home" : `${item.routePath}/`,
                                             children: [
                                                 /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
                                                     width: 15,
