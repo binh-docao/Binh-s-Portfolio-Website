@@ -52,7 +52,7 @@ const Preview = () => {
 
   return (
     <>
-      <Seo pageTitle="Preview" />
+      <Seo pageTitle="Home" />
       {/* End page title for seo */}
       <div className="tokyo_tm_all_wrap">
         <div className="tokyo_tm_intro">
