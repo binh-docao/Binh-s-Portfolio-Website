@@ -91,7 +91,7 @@ const Portfolio = () => {
                             role="button"
                             ref={ref}
                             onClick={open}
-                            loading = "lazy"
+                    
                       
                           />
                         )}
@@ -133,7 +133,7 @@ const Portfolio = () => {
                             role="button"
                             ref={ref}
                             onClick={open}
-                            loading="eager"
+                            
                           />
                         )}
                       </Item>
@@ -254,6 +254,7 @@ const Portfolio = () => {
                             role="button"
                             ref={ref}
                             onClick={open}
+                            loading = "lazy"
                           />
                         )}
                       </Item>
@@ -294,6 +295,7 @@ const Portfolio = () => {
                             role="button"
                             ref={ref}
                             onClick={open}
+                            loading = "lazy"
                           />
                         )}
                       </Item>
@@ -334,6 +336,7 @@ const Portfolio = () => {
                             role="button"
                             ref={ref}
                             onClick={open}
+                            loading = "lazy"
                           />
                         )}
                       </Item>
@@ -374,6 +377,7 @@ const Portfolio = () => {
                             role="button"
                             ref={ref}
                             onClick={open}
+                            loading = "lazy"
                           />
                         )}
                       </Item>
@@ -395,13 +399,6 @@ const Portfolio = () => {
                 {/* END SHOT */}
 
 
-
-
-
-
-
-
-                )
               </ul>
             </TabPanel>
             {/* END ALL PORTFOLIO */}
