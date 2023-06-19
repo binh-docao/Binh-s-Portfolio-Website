@@ -28,6 +28,19 @@ const Portfolio = () => {
   const [isOpenModalOne, setIsOpenModalOne] = useState(false);
   const [isOpenModalTwo, setIsOpenModalTwo] = useState(false);
 
+
+  // Image loading states
+  const [imageLoading, setImageLoading] = useState([]);
+
+  // Set the loading state for an image
+  const handleImageLoad = (index) => {
+    setImageLoading((prevState) => {
+      const newState = [...prevState];
+      newState[index] = false;
+      return newState;
+    });
+  };
+
   // for modal details method
   function toggleModalOne() {
     setIsOpenModalOne(!isOpenModalOne);
@@ -57,7 +70,6 @@ const Portfolio = () => {
                 data-aos="fade-right"
                 data-aos-duration="1200"
               >
-         
                 {/* START OF IMAGE 5 - Amelia */}
                 <li>
                   <div className="inner">
@@ -67,6 +79,7 @@ const Portfolio = () => {
                         thumbnail="/img/portfolio/amelia.jpg"
                         width={600}
                         height={900}
+                        
                       >
                         {({ ref, open }) => (
                           <Image
@@ -78,6 +91,8 @@ const Portfolio = () => {
                             role="button"
                             ref={ref}
                             onClick={open}
+                            loading = "lazy"
+                      
                           />
                         )}
                       </Item>
@@ -118,6 +133,7 @@ const Portfolio = () => {
                             role="button"
                             ref={ref}
                             onClick={open}
+                            loading="eager"
                           />
                         )}
                       </Item>
@@ -385,7 +401,7 @@ const Portfolio = () => {
 
 
 
-
+                )
               </ul>
             </TabPanel>
             {/* END ALL PORTFOLIO */}
