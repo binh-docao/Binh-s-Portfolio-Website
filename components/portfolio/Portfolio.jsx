@@ -29,16 +29,12 @@ const Portfolio = () => {
   const [isOpenModalTwo, setIsOpenModalTwo] = useState(false);
 
 
-  // Image loading states
-  const [imageLoading, setImageLoading] = useState([]);
+  // State to track if image is loaded
+  const [isImageLoaded, setIsImageLoaded] = useState({});
 
-  // Set the loading state for an image
-  const handleImageLoad = (index) => {
-    setImageLoading((prevState) => {
-      const newState = [...prevState];
-      newState[index] = false;
-      return newState;
-    });
+  // Callback when an image finishes loading
+  const handleImageLoaded = (index) => {
+    setIsImageLoaded((prevState) => ({ ...prevState, [index]: true }));
   };
 
   // for modal details method
@@ -82,6 +78,7 @@ const Portfolio = () => {
                         
                       >
                         {({ ref, open }) => (
+
                           <Image
                             srl_gallery_image="true"
                             src="/img/portfolio/amelia.jpg"
@@ -91,10 +88,8 @@ const Portfolio = () => {
                             role="button"
                             ref={ref}
                             onClick={open}
-                    
-                      
-                          />
-                        )}
+                        />
+                      )}
                       </Item>
                       <ReactTooltip
                         id="Amelia"
@@ -254,7 +249,7 @@ const Portfolio = () => {
                             role="button"
                             ref={ref}
                             onClick={open}
-                            loading = "lazy"
+                           
                           />
                         )}
                       </Item>
@@ -295,7 +290,7 @@ const Portfolio = () => {
                             role="button"
                             ref={ref}
                             onClick={open}
-                            loading = "lazy"
+                           
                           />
                         )}
                       </Item>
@@ -336,7 +331,7 @@ const Portfolio = () => {
                             role="button"
                             ref={ref}
                             onClick={open}
-                            loading = "lazy"
+                            
                           />
                         )}
                       </Item>
@@ -377,7 +372,7 @@ const Portfolio = () => {
                             role="button"
                             ref={ref}
                             onClick={open}
-                            loading = "lazy"
+                            
                           />
                         )}
                       </Item>

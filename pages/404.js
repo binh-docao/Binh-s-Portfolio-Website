@@ -24,14 +24,7 @@ const NotFound = () => {
             {/* END LOGO */}
             <div className="copyright">
               <p>
-                &copy; 2021 Tokyo <br /> Created by
-                <a
-                  href="https://themeforest.net/user/ib-themes"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Ib-Themes
-                </a>
+                &copy; 2023<br />
               </p>
             </div>
             {/* END COPYRIGHT */}
@@ -61,16 +54,6 @@ const NotFound = () => {
 
         <footer className="footer-wrapper">
           <div className="copyright">
-            <p>
-              &copy; 2021 Tokyo Created by
-              <a
-                href="https://themeforest.net/user/ib-themes"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Ib-Themes
-              </a>
-            </p>
           </div>
           {/* END COPYRIGHT */}
         </footer>
