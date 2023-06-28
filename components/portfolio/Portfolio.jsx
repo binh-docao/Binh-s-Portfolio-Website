@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect} from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import { Gallery, Item } from "react-photoswipe-gallery";
 import "photoswipe/dist/photoswipe.css";
@@ -8,6 +8,21 @@ import dynamic from "next/dynamic";
 import Image from "next/image";
 import ModalOne from "./modal/ModalOne";
 import ModalTwo from "./modal/ModalTwo";
+
+const EmbedScript = ({ scriptUrl }) => {
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = scriptUrl;
+    script.async = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    }
+  }, [scriptUrl]);
+
+  return null;
+};
+
 
 Modal.setAppElement("#__next");
 
@@ -52,7 +67,6 @@ const Portfolio = () => {
           {/* START FILTER TABLIST */}
           <TabList>
             <Tab>All</Tab>
-            {/* <Tab>Videos</Tab> */}
             {/* <Tab>Portrait</Tab>
             <Tab>Landscape</Tab> */}
           </TabList>
@@ -396,6 +410,15 @@ const Portfolio = () => {
 
               </ul>
             </TabPanel>
+
+
+            <EmbedScript scriptUrl="https://pictimecloudaf-m.azureedge.net/pictures/scripts/compiled/artgalleryembed.js" />
+            <div
+              dangerouslySetInnerHTML={{
+                __html: `<iframe frameborder='0' id='pictimeIntegration' src='https://binh.pic-time.com/client?headless=true' style='width:100%;height:100%'></iframe>`
+              }}
+            />
+            
             {/* END ALL PORTFOLIO */}
 
             {/* START VIDEOS */}
