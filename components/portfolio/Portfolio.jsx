@@ -87,8 +87,8 @@ const Portfolio = () => {
                       <Item
                         original="/img/portfolio/amelia.jpg"
                         thumbnail="/img/portfolio/amelia.jpg"
-                        width={600}
-                        height={900}
+                        width={900}
+                        height={600}
                         
                       >
                         {({ ref, open }) => (
