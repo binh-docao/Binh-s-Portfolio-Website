@@ -1,15 +1,5 @@
 {
-  "/_error": "pages/_error.js",
   "/_app": "pages/_app.js",
-  "/_document": "pages/_document.js",
-  "/api/hello": "pages/api/hello.js",
-  "/about": "pages/about.html",
-  "/contact": "pages/contact.html",
-  "/404": "pages/404.html",
-  "/home": "pages/home.html",
-  "/pictures": "pages/pictures.html",
-  "/": "pages/index.html",
-  "/service": "pages/service.html",
-  "/portfolio": "pages/portfolio.html",
-  "/preview": "pages/preview.html"
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js"
 }
