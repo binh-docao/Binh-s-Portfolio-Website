@@ -121,7 +121,47 @@ const Portfolio = () => {
                   </div>
                 </li>
                 {/* END SHOT */}
-                
+                {/* START OF IMAGE 2 - binh lagoon */}
+                <li>
+                  <div className="inner">
+                    <div className="entry tokyo_tm_portfolio_animation_wrap">
+                      <Item
+                        original="/img/portfolio/lagoon.jpg"
+                        thumbnail="/img/portfolio/lagoon.jpg"
+                        width={800}
+                        height={1200}
+                      >
+                        {({ ref, open }) => (
+                          <Image
+                            srl_gallery_image="true"
+                            src="/img/portfolio/lagoon.jpg"
+                            alt="BinhLagoon"
+                            data-tip
+                            data-for="BinhLagoon"
+                            role="button"
+                            ref={ref}
+                            onClick={open}
+                            
+                          />
+                        )}
+                      </Item>
+                      <ReactTooltip
+                        id="BinhLagoon"
+                        place="bottom"
+                        type="light"
+                        effect="float"
+                        className="tooltip-wrapper"
+                      >
+                        <div>
+                          <h5>Binh at the Lagoon</h5>
+                          <span></span>
+                        </div>
+                      </ReactTooltip>
+                    </div>
+                  </div>
+                </li>
+                {/* END SHOT */}
+
                 {/* START OF IMAGE 2 - CORD */}
                 <li>
                   <div className="inner">
