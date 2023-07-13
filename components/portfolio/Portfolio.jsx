@@ -129,7 +129,7 @@ const Portfolio = () => {
                         original="/img/portfolio/lagoon.jpg"
                         thumbnail="/img/portfolio/lagoon.jpg"
                         width={800}
-                        height={1200}
+                        height={1440}
                       >
                         {({ ref, open }) => (
                           <Image
