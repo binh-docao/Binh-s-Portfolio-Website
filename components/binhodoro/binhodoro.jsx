@@ -4,7 +4,7 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Map from "../Map";
 
-const binhadoro = () => {
+const binhodoro = () => {
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -50,7 +50,7 @@ const binhadoro = () => {
           <div className="tokyo_tm_title">
             <div className="title_flex">
               <div className="left">
-                <span>Binhadoro</span>
+                <span>Binhodoro</span>
                 <h3>Be productive Davis.</h3>
               </div>
             </div>
@@ -69,4 +69,4 @@ const binhadoro = () => {
   );
 };
 
-export default binhadoro;
+export default binhodoro;

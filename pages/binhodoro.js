@@ -1,11 +1,11 @@
 import Seo from "../components/Seo";
-import Binhadoro from "../components/binhadoro/binhadoro";
+import Binhodoro from "../components/binhodoro/binhodoro";
 import Sidebar from "../components/sidebar/Sidebar";
 
 const index = () => {
   return (
     <>
-      <Seo pageTitle="binhadoro" />
+      <Seo pageTitle="binhodoro" />
       {/* End page title for seo */}
 
       <Sidebar />
@@ -16,7 +16,7 @@ const index = () => {
         <div className="rightpart_in">
           <div className="tokyo_tm_section">
             <div data-aos="fade-right" data-aos-duration="1200">
-              <Binhadoro />
+              <Binhodoro />
             </div>
           </div>
         </div>
