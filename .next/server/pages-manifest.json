@@ -1,15 +1,16 @@
 {
-  "/_app": "pages/_app.js",
-  "/_document": "pages/_document.js",
-  "/404": "pages/404.html",
+  "/_error": "pages/_error.js",
   "/about": "pages/about.html",
+  "/_app": "pages/_app.js",
+  "/binhadoro": "pages/binhadoro.html",
   "/api/hello": "pages/api/hello.js",
   "/contact": "pages/contact.html",
+  "/pictures": "pages/pictures.html",
+  "/404": "pages/404.html",
   "/home": "pages/home.html",
   "/": "pages/index.html",
-  "/_error": "pages/_error.js",
-  "/portfolio": "pages/portfolio.html",
-  "/preview": "pages/preview.html",
+  "/_document": "pages/_document.js",
   "/service": "pages/service.html",
-  "/pictures": "pages/pictures.html"
+  "/preview": "pages/preview.html",
+  "/portfolio": "pages/portfolio.html"
 }
