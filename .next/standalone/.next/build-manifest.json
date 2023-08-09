@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/dRprVuGFFN1b9UwN1qrv_/_buildManifest.js",
-    "static/dRprVuGFFN1b9UwN1qrv_/_ssgManifest.js"
+    "static/lOCXr3Ha-29atltNYM7se/_buildManifest.js",
+    "static/lOCXr3Ha-29atltNYM7se/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
@@ -59,7 +59,7 @@
       "static/chunks/33-aeea1fc441c7b424.js",
       "static/chunks/789-bf49efab4d16f01e.js",
       "static/css/6bad5d7a96fe43e6.css",
-      "static/chunks/pages/binhodoro-1b574fa0e01aaacf.js"
+      "static/chunks/pages/binhodoro-296888fcf12529f9.js"
     ],
     "/contact": [
       "static/chunks/webpack-37852aa1d1695a0d.js",
