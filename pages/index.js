@@ -1,7 +1,5 @@
 import React from "react";
-import Wrapper from "../layout/wrapper";
 import Preview from "./preview";
-import Home from "../components/home/Home";
 import Seo from "../components/Seo";
 import Sidebar from "../components/sidebar/Sidebar";
 
@@ -9,7 +7,7 @@ import Sidebar from "../components/sidebar/Sidebar";
 const MainRoot = () => {
   return (
     <>
-      <Seo pageTitle="Home" />
+      <Seo pageTitle="Home"/>
       {/* En Seo Page Title */}
 
       <Sidebar />
