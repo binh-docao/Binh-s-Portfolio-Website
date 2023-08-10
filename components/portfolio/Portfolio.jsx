@@ -9,28 +9,11 @@ import Image from "next/image";
 import ModalOne from "./modal/ModalOne";
 import ModalTwo from "./modal/ModalTwo";
 
-const EmbedScript = ({ scriptUrl }) => {
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.src = scriptUrl;
-    script.async = true;
-    document.body.appendChild(script);
-    return () => {
-      document.body.removeChild(script);
-    }
-  }, [scriptUrl]);
-
-  return null;
-};
-
-
 Modal.setAppElement("#__next");
 
 const ReactTooltip = dynamic(() => import("react-tooltip"), {
   ssr: false,
 });
-
-// Modal.setAppElement("#__next");
 
 const Portfolio = () => {
   // for popup video for youtube
@@ -450,14 +433,6 @@ const Portfolio = () => {
 
               </ul>
             </TabPanel>
-
-
-            <EmbedScript scriptUrl="https://pictimecloudaf-m.azureedge.net/pictures/scripts/compiled/artgalleryembed.js" />
-            <div
-              dangerouslySetInnerHTML={{
-                __html: `<iframe frameborder='0' id='pictimeIntegration' src='https://binh.pic-time.com/client?headless=true' style='width:100%;height:100%'></iframe>`
-              }}
-            />
             
             {/* END ALL PORTFOLIO */}
 
