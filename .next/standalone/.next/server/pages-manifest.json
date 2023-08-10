@@ -1,13 +1,13 @@
 {
-  "/_error": "pages/_error.js",
-  "/404": "pages/404.html",
   "/_app": "pages/_app.js",
-  "/about": "pages/about.html",
+  "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/binhodoro": "pages/binhodoro.html",
+  "/404": "pages/404.html",
   "/api/hello": "pages/api/hello.js",
+  "/binhodoro": "pages/binhodoro.html",
   "/contact": "pages/contact.html",
   "/": "pages/index.html",
+  "/about": "pages/about.html",
   "/home": "pages/home.html",
   "/pictures": "pages/pictures.html",
   "/portfolio": "pages/portfolio.html"
