@@ -37,6 +37,7 @@
     "react-typed": "^1.2.0",
     "sass": "^1.57.1",
     "sharp": "^0.32.4",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "yarn": "^1.22.19"
   }
 }
