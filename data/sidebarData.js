@@ -24,7 +24,7 @@ module.exports = [
     id: 4,
     icon: "/img/svg/briefcase.svg",
     menuName: "Portfolio",
-    routePath: "/portfolio",
+    routePath: "/construction",
     isLocked: false,
   },
   {
