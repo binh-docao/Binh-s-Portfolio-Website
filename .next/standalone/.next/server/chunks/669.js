@@ -139,8 +139,8 @@ const Sidebar = ()=>{
                                 className: "navbar-brand",
                                 href: "/",
                                 children: /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
-                                    width: 140,
-                                    height: 20,
+                                    width: 80,
+                                    height: 28,
                                     src: "/img/logo/dark.png",
                                     alt: "brand"
                                 })
@@ -173,8 +173,8 @@ const Sidebar = ()=>{
                                 className: "navbar-brand",
                                 href: "/",
                                 children: /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
-                                    width: 135,
-                                    height: 20,
+                                    width: 80,
+                                    height: 28,
                                     src: "/img/logo/dark.png",
                                     alt: "brand"
                                 })

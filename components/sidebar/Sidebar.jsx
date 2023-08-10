@@ -32,8 +32,8 @@ const Sidebar = () => {
           <div className="logo">
             <Link className="navbar-brand" href="/">
               <Image
-                width={140}
-                height={20}
+                width={80}
+                height={28}
                 src="/img/logo/dark.png"
                 alt="brand"
               />
@@ -65,8 +65,8 @@ const Sidebar = () => {
           <div className="logo">
             <Link className="navbar-brand" href="/">
               <Image
-                width={135}
-                height={20}
+                width={80}
+                height={28}
                 src="/img/logo/dark.png"
                 alt="brand"
               />

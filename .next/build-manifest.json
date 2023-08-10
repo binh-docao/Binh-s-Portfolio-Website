@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/bbBLWZvA6tN3fbixc_unq/_buildManifest.js",
-    "static/bbBLWZvA6tN3fbixc_unq/_ssgManifest.js"
+    "static/FxNrTYVIV3-NFdIJhtMaL/_buildManifest.js",
+    "static/FxNrTYVIV3-NFdIJhtMaL/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
@@ -16,7 +16,7 @@
       "static/chunks/main-010ff0b6bbe5ac8f.js",
       "static/chunks/247-4e427509082916ae.js",
       "static/chunks/661-23905f2f7d5cfed2.js",
-      "static/chunks/pages/index-472fd646cc3814aa.js"
+      "static/chunks/pages/index-8e4ebd7763c34283.js"
     ],
     "/404": [
       "static/chunks/webpack-37852aa1d1695a0d.js",
@@ -46,7 +46,7 @@
       "static/chunks/11-2af6797c8d182007.js",
       "static/chunks/253-5c20010c236e9076.js",
       "static/chunks/66-ac8b2d0707285b12.js",
-      "static/chunks/pages/about-f6312c4c058fee5f.js"
+      "static/chunks/pages/about-65406af0ce1ae416.js"
     ],
     "/binhodoro": [
       "static/chunks/webpack-37852aa1d1695a0d.js",
@@ -57,7 +57,7 @@
       "static/chunks/11-2af6797c8d182007.js",
       "static/chunks/789-981ed461f7fdc3e0.js",
       "static/css/6bad5d7a96fe43e6.css",
-      "static/chunks/pages/binhodoro-6a3380916906b59e.js"
+      "static/chunks/pages/binhodoro-ae617ed2d0faec4e.js"
     ],
     "/contact": [
       "static/chunks/webpack-37852aa1d1695a0d.js",
@@ -68,7 +68,7 @@
       "static/chunks/11-2af6797c8d182007.js",
       "static/chunks/789-981ed461f7fdc3e0.js",
       "static/css/6bad5d7a96fe43e6.css",
-      "static/chunks/pages/contact-9b850d2835c7c1be.js"
+      "static/chunks/pages/contact-28a6fb34c1eef838.js"
     ],
     "/home": [
       "static/chunks/webpack-37852aa1d1695a0d.js",
@@ -76,7 +76,7 @@
       "static/chunks/main-010ff0b6bbe5ac8f.js",
       "static/chunks/247-4e427509082916ae.js",
       "static/chunks/661-23905f2f7d5cfed2.js",
-      "static/chunks/pages/home-e941c831d6366990.js"
+      "static/chunks/pages/home-60d3684feca0007b.js"
     ],
     "/pictures": [
       "static/chunks/webpack-37852aa1d1695a0d.js",
@@ -93,7 +93,7 @@
       "static/chunks/253-5c20010c236e9076.js",
       "static/chunks/832-d8eee8d3e166d1b6.js",
       "static/css/4d5862c37bded003.css",
-      "static/chunks/pages/portfolio-685dcd9423e09a40.js"
+      "static/chunks/pages/portfolio-5c9b4f30000df57d.js"
     ]
   },
   "ampFirstPages": []
