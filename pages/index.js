@@ -16,6 +16,7 @@ const index = () => {
             <div data-aos="fade-right" data-aos-duration="1200">
               <Home />
               {/*  */}
+              {/*  */}
             </div>
           </div>
         </div>
