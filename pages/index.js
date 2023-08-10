@@ -15,6 +15,7 @@ const index = () => {
           <div className="tokyo_tm_section">
             <div data-aos="fade-right" data-aos-duration="1200">
               <Home />
+              {/*  */}
             </div>
           </div>
         </div>
