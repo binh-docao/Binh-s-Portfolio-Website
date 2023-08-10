@@ -63,7 +63,7 @@ const Sidebar = () => {
       <div className={click ? "leftpart active" : "leftpart"}>
         <div className="leftpart_inner">
           <div className="logo">
-            <Link className="navbar-brand" href="/home">
+            <Link className="navbar-brand" href="/">
               <Image
                 width={135}
                 height={20}
@@ -105,7 +105,7 @@ const Sidebar = () => {
                   className={`${
                     isActiveLink(item.routePath, router.asPath) ? "active " : ""
                   }`}
-                  href={item.routePath === "/" ? "/home" : `${item.routePath}/`}
+                  href={item.routePath === "/" ? "/" : `${item.routePath}/`}
                 >
                   <Image
                     width={15}

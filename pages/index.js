@@ -1,31 +1,26 @@
+// src/pages/index.js
 import React from "react";
-import Preview from "./preview";
 import Seo from "../components/Seo";
 import Sidebar from "../components/sidebar/Sidebar";
+import Home from "../components/home/Home"; // Update the path
 
-
-const MainRoot = () => {
+const index = () => {
   return (
     <>
-      <Seo pageTitle="Home"/>
-      {/* En Seo Page Title */}
-
+      <Seo pageTitle="Home" />
       <Sidebar />
-      {/* END LEFT MENU CONTENT */}
 
-      {/* START RIGHT PART CONTENT */}
       <div className="rightpart">
         <div className="rightpart_in">
           <div className="tokyo_tm_section">
             <div data-aos="fade-right" data-aos-duration="1200">
-              <Preview/>
+              <Home />
             </div>
           </div>
         </div>
       </div>
-      {/* END RIGHT PART CONTENT */}
     </>
   );
 };
 
-export default MainRoot;
+export default index;

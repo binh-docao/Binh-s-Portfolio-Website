@@ -5,7 +5,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../styles/scss/style.scss";
 import "aos/dist/aos.css";
-import { useRouter } from "next/router";
 import { ThemeProvider } from "next-themes";
 import ThemeSwitch from "../components/switch/ThemeSwitch";
 
@@ -16,19 +15,14 @@ export default function App({ Component, pageProps }) {
     });
   }, []);
 
-  const router = useRouter();
-
   return (
     <div className="tokyo_tm_all_wrap">
-      <ThemeProvider attribute="class">
-        {router.asPath !== "/" ? <ThemeSwitch /> : ""}
-        {/* End themeSwicher */}
-        <Component {...pageProps} />
-        {/* Main next component pageprops */}
+      <ThemeProvider attribute="class" defaultTheme="light">
+        <ThemeSwitch /> {/* Render ThemeSwitch on every page */}
+        <Component {...pageProps} /> {/* Main next component pageprops */}
       </ThemeProvider>
 
-      <ToastContainer />
-      {/* End toast container for email send notification */}
+      <ToastContainer /> {/* End toast container for email send notification */}
     </div>
   );
 }

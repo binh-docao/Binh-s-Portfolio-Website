@@ -18,7 +18,7 @@ exports.modules = {
 const Seo = ({ pageTitle  })=>{
     return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_head__WEBPACK_IMPORTED_MODULE_1___default()), {
         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("title", {
-            children: pageTitle && `${pageTitle} || Binh Do-Cao`
+            children: pageTitle && `${pageTitle} | Binh Do-Cao`
         })
     });
 };

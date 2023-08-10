@@ -88,14 +88,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_scss_style_scss__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_styles_scss_style_scss__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var aos_dist_aos_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(1759);
 /* harmony import */ var aos_dist_aos_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(aos_dist_aos_css__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(1853);
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var next_themes__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(1162);
-/* harmony import */ var next_themes__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(next_themes__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var _components_switch_ThemeSwitch__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(620);
+/* harmony import */ var next_themes__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(1162);
+/* harmony import */ var next_themes__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(next_themes__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _components_switch_ThemeSwitch__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(620);
 var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([react_toastify__WEBPACK_IMPORTED_MODULE_2__]);
 react_toastify__WEBPACK_IMPORTED_MODULE_2__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
-
 
 
 
@@ -112,20 +109,23 @@ function App({ Component , pageProps  }) {
             duration: 1200
         });
     }, []);
-    const router = (0,next_router__WEBPACK_IMPORTED_MODULE_8__.useRouter)();
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         className: "tokyo_tm_all_wrap",
         children: [
-            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(next_themes__WEBPACK_IMPORTED_MODULE_9__.ThemeProvider, {
+            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(next_themes__WEBPACK_IMPORTED_MODULE_8__.ThemeProvider, {
                 attribute: "class",
+                defaultTheme: "light",
                 children: [
-                    router.asPath !== "/" ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_switch_ThemeSwitch__WEBPACK_IMPORTED_MODULE_10__/* ["default"] */ .Z, {}) : "",
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_switch_ThemeSwitch__WEBPACK_IMPORTED_MODULE_9__/* ["default"] */ .Z, {}),
+                    " ",
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(Component, {
                         ...pageProps
-                    })
+                    }),
+                    " "
                 ]
             }),
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_toastify__WEBPACK_IMPORTED_MODULE_2__.ToastContainer, {})
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_toastify__WEBPACK_IMPORTED_MODULE_2__.ToastContainer, {}),
+            " "
         ]
     });
 }
@@ -176,14 +176,6 @@ module.exports = require("aos");
 
 "use strict";
 module.exports = require("next-themes");
-
-/***/ }),
-
-/***/ 1853:
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("next/router");
 
 /***/ }),
 

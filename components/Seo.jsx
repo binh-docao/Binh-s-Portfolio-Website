@@ -5,7 +5,7 @@ const Seo = ({ pageTitle }) => {
     <Head>
       <title>
         {pageTitle &&
-          `${pageTitle} || Binh Do-Cao`}
+          `${pageTitle} | Binh Do-Cao`}
       </title>
     </Head>
   );
