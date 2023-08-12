@@ -1,15 +1,16 @@
 {
-  "/_error": "pages/_error.js",
-  "/about": "pages/about.html",
+  "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",
   "/404": "pages/404.html",
-  "/construction": "pages/construction.html",
-  "/_app": "pages/_app.js",
-  "/binhodoro": "pages/binhodoro.html",
+  "/about": "pages/about.html",
   "/api/hello": "pages/api/hello.js",
+  "/binhodoro": "pages/binhodoro.html",
   "/contact": "pages/contact.html",
-  "/home": "pages/home.html",
+  "/construction": "pages/construction.html",
   "/": "pages/index.html",
+  "/zta-glow": "pages/zta-glow.html",
+  "/home": "pages/home.html",
+  "/pictures": "pages/pictures.html",
   "/portfolio": "pages/portfolio.html",
-  "/pictures": "pages/pictures.html"
+  "/_error": "pages/_error.js"
 }
