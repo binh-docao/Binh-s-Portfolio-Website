@@ -1,11 +1,11 @@
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import Seo from "../components/Seo";
 import { useRouter } from "next/router";
 
 const ZTA_GLOW = () => {
-  <Seo pageTitle="ZTA Glow Pictures" />
   const router = useRouter();
-  const redirectLink = "https://drive.google.com/drive/folders/1JdGumeuFHwPI9Hba8PKUWy_y1cMuj_Ki?usp=drive_link";
+  const redirectLink =
+    "https://drive.google.com/drive/folders/1JdGumeuFHwPI9Hba8PKUWy_y1cMuj_Ki?usp=drive_link";
   useEffect(() => {
     router.push(redirectLink);
   }, [router, redirectLink]);
@@ -13,4 +13,15 @@ const ZTA_GLOW = () => {
   return null; // Render nothing in the component since it will immediately redirect
 };
 
-export default ZTA_GLOW;
+const SeoWithCustomTitle = () => (
+  <Seo pageTitle="binh zta" /> // Set the desired page title here
+);
+
+const ZTA_GLOW_Page = () => (
+  <>
+    <SeoWithCustomTitle />
+    <ZTA_GLOW />
+  </>
+);
+
+export default ZTA_GLOW_Page;
