@@ -14,7 +14,7 @@ const ZTA_GLOW = () => {
 };
 
 const SeoWithCustomTitle = () => (
-  <Seo pageTitle="binh zta" /> // Set the desired page title here
+  <Seo pageTitle="ZTA WW - Glow Pictures" /> // Set the desired page title here
 );
 
 const ZTA_GLOW_Page = () => (
