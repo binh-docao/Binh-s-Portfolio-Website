@@ -1,7 +1,7 @@
 import express from 'express';
 import mongoose from 'mongoose';
 import cors from 'cors';
-// import apiRoutes from './routes/api';
+import apiRoutes from './backend/routes/api';
 import dotenv from 'dotenv';
 
 dotenv.config();
@@ -16,6 +16,7 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 app.use(express.json());
+app.use('/api', apiRoutes);
 
 // Use environment variable for MongoDB connection string
 mongoose.connect('mongodb+srv://houseboy:binh@cluster0.edutdyo.mongodb.net', {

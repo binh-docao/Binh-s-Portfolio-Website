@@ -4,6 +4,21 @@ exports.id = 890;
 exports.ids = [890];
 exports.modules = {
 
+/***/ 59114:
+/***/ ((module) => {
+
+function webpackEmptyContext(req) {
+	var e = new Error("Cannot find module '" + req + "'");
+	e.code = 'MODULE_NOT_FOUND';
+	throw e;
+}
+webpackEmptyContext.keys = () => ([]);
+webpackEmptyContext.resolve = webpackEmptyContext;
+webpackEmptyContext.id = 59114;
+module.exports = webpackEmptyContext;
+
+/***/ }),
+
 /***/ 14138:
 /***/ ((module) => {
 
@@ -35,6 +50,22 @@ module.exports = require("events");
 
 /***/ }),
 
+/***/ 59819:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("querystring");
+
+/***/ }),
+
+/***/ 46330:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("string_decoder");
+
+/***/ }),
+
 /***/ 84269:
 /***/ ((module) => {
 
@@ -56,6 +87,14 @@ module.exports = require("util");
 
 "use strict";
 module.exports = require("assert");
+
+/***/ }),
+
+/***/ 50852:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("async_hooks");
 
 /***/ }),
 
@@ -201,6 +240,37 @@ module.exports = HouseGirl;
 
 /***/ }),
 
+/***/ 68297:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+// in routes/api.js
+
+const express = __webpack_require__(33680);
+const router = express.Router();
+const HouseGirl = __webpack_require__(68644);
+router.post("/HouseGirl", async (req, res)=>{
+    try {
+        const newHouseGirl = new HouseGirl(req.body);
+        await newHouseGirl.save();
+        res.status(201).send(newHouseGirl);
+    } catch (error) {
+        res.status(400).send(error);
+    }
+});
+router.get("/HouseGirlNames", async (req, res)=>{
+    try {
+        const houseGirls = await HouseGirl.find({}, "name"); // Select only the 'name' field from the HouseGirl model
+        res.status(200).send(houseGirls);
+    } catch (error) {
+        res.status(500).send(error);
+    }
+});
+module.exports = router;
+
+
+/***/ }),
+
 /***/ 93514:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -226,6 +296,9 @@ var external_mongoose_default = /*#__PURE__*/__webpack_require__.n(external_mong
 ;// CONCATENATED MODULE: external "cors"
 const external_cors_namespaceObject = require("cors");
 var external_cors_default = /*#__PURE__*/__webpack_require__.n(external_cors_namespaceObject);
+// EXTERNAL MODULE: ./backend/routes/api.js
+var api = __webpack_require__(68297);
+var api_default = /*#__PURE__*/__webpack_require__.n(api);
 ;// CONCATENATED MODULE: external "dotenv"
 const external_dotenv_namespaceObject = require("dotenv");
 var external_dotenv_default = /*#__PURE__*/__webpack_require__.n(external_dotenv_namespaceObject);
@@ -233,7 +306,7 @@ var external_dotenv_default = /*#__PURE__*/__webpack_require__.n(external_dotenv
 
 
 
-// import apiRoutes from './routes/api';
+
 
 external_dotenv_default().config();
 const app = external_express_default()();
@@ -244,6 +317,7 @@ const corsOptions = {
 };
 app.use(external_cors_default()(corsOptions));
 app.use(external_express_default().json());
+app.use("/api", (api_default()));
 // Use environment variable for MongoDB connection string
 external_mongoose_default().connect("mongodb+srv://houseboy:binh@cluster0.edutdyo.mongodb.net", {
     useNewUrlParser: true,
@@ -277,7 +351,7 @@ async function handler(req, res) {
 var __webpack_require__ = require("../../webpack-api-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [570], () => (__webpack_exec__(93514)));
+var __webpack_exports__ = __webpack_require__.X(0, [853], () => (__webpack_exec__(93514)));
 module.exports = __webpack_exports__;
 
 })();
