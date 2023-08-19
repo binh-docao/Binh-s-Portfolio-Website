@@ -17,6 +17,7 @@ export default async function handler(req, res) {
       });
   
       const data = await response.json();
+      onsole.log("Raw Data from MongoDB:", data);
   
       if (data && data.documents && Array.isArray(data.documents)) {
         // Instead of just extracting names, return the entire object which contains _id and name
