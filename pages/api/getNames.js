@@ -6,7 +6,8 @@ export default async function handler(req, res) {
         headers: {
           'Content-Type': 'application/json',
           'Access-Control-Request-Headers': '*',
-          'api-key': process.env.MONGODB_API_KEY,
+        //   'api-key': process.env.MONGODB_API_KEY,
+          'api-key': 'o4XLEktfJlsm5CGJ1MnGn2eIb1voMA2ZNcto1Mb3TQI81pQabJAlLrZKnvoBvol8'
         },
         body: JSON.stringify({
           collection: "housegirls",
@@ -27,7 +28,7 @@ export default async function handler(req, res) {
       }
   
     } catch (error) {
-      console.error('Error fetching data:', error);
+      console.error('Error fetching data:', error.message);
       res.status(500).json({ error: 'Failed fetching data from MongoDB Atlas' });
     }
   }
