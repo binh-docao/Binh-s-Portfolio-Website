@@ -2214,3 +2214,26 @@ body.modal {
     cursor: pointer;
   }
 }
+
+.zta-button {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  background-color: #ff1493;
+  padding: 11px 40px 11px 40px;
+  transition: all 0.3s ease;
+}
+.zta-button {
+  font-size: 15px;
+  line-height: 15px;
+  padding: 19px 20px;
+  border: none;
+  cursor: pointer;
+  &:focus {
+    outline: none;
+  }
+}
+.tokyo_tm_button a:hover,
+.zta-button:hover {
+  letter-spacing: 2px;
+}

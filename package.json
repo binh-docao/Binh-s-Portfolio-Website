@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
+    "@faker-js/faker": "^8.0.2",
     "@next/font": "13.1.1",
     "@vercel/analytics": "^1.0.2",
     "aos": "^2.3.4",
@@ -41,6 +42,7 @@
     "sass": "^1.57.1",
     "sharp": "^0.32.4",
     "slick-carousel": "^1.8.1",
+    "vercel": "^31.4.0",
     "yarn": "^1.22.19"
   }
 }

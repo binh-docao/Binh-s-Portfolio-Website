@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Typed from "react-typed";
-import Social from "../Social";
+import Link from "next/link";
 import { useTheme } from "next-themes";
 
 const ZTA_Home = () => {
@@ -11,12 +11,61 @@ const ZTA_Home = () => {
 
   useEffect(() => {
     // Fetch list of house girls from the API
-    // fetch('http://localhost:4000/api/HouseGirlNames')
-    fetch('https://b1nh.com/api/HouseGirlNames')
-      .then(response => response.json())
-      .then(data => setHouseGirls(data))
-      .catch(error => console.error('Error fetching house girls:', error));
+    const fetchData = async () => {
+      try {
+        const response = await fetch('/api/getNames', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+        },
+          body: JSON.stringify({
+            collection: "housegirls",
+            database: "test",
+            dataSource: "Cluster0",
+            projection: { "_id": 1, "name": 1 } // I added "name" since you're using it later in the code.
+          })
+        });
+  
+        const data = await response.json();
+        console.log(data);
+        // Assuming the result contains an array. If not, adjust accordingly.
+        const sortedHouseGirls = data.sort((a, b) => a.name.localeCompare(b.name));
+        setHouseGirls(sortedHouseGirls);
+  
+      } catch (error) {
+        console.error('Error fetching house girls:', error);
+      }
+    };
+  
+    fetchData();
+    setMounted(true);
+  }, []);
 
+  const [dietaryRestrictions, setDietaryRestrictions] = useState([]);
+
+  const fetchDietaryRestrictions = async (name) => {
+    try {
+      // Update this line to use the new API route
+      const response = await fetch(`/api/getRestrictions?name=${encodeURIComponent(name)}`);
+      const data = await response.json();
+      setDietaryRestrictions(data);
+    } catch (error) {
+      console.error('Error fetching dietary restrictions:', error);
+    }
+  };
+  
+
+  useEffect(() => {
+    if (selectedHouseGirl) {
+      fetchDietaryRestrictions(selectedHouseGirl.name);
+    }
+  }, [selectedHouseGirl]);
+
+  useEffect(() => {
+    const storedHouseGirl = JSON.parse(localStorage.getItem("selectedHouseGirl"));
+    if (storedHouseGirl) {
+      setSelectedHouseGirl(storedHouseGirl);
+    }
     setMounted(true);
   }, []);
 
@@ -24,6 +73,12 @@ const ZTA_Home = () => {
     const id = event.target.value;
     const girl = houseGirls.find(h => h._id === id);
     setSelectedHouseGirl(girl);
+    localStorage.setItem("selectedHouseGirl", JSON.stringify(girl));
+  };
+
+  const handleLogout = () => {
+    setSelectedHouseGirl(null);
+    localStorage.removeItem("selectedHouseGirl");
   };
 
   const requestLatePlate = () => {
@@ -36,7 +91,7 @@ const ZTA_Home = () => {
   }
 
   const avatarImageUrl = selectedHouseGirl 
-    ? `/img/hg/${selectedHouseGirl.name.replace(/\s+/g, '').toLowerCase()}.jpg`
+    ? `/img/hg/${selectedHouseGirl.name.replace(/\s+/g, '').toLowerCase()}.jpeg`
     : null; // set to a default image or keep it null if you don't want to show any image before selection
 
   return (
@@ -69,16 +124,25 @@ const ZTA_Home = () => {
                 <h3 className="name" style={{ color: 'deeppink' }}>{selectedHouseGirl.name}</h3>
                 <h4 className="typer">
                   <Typed
-                    strings={selectedHouseGirl.roles || ["House Girl","ZTA","insert adjectives"]}
+                    strings={selectedHouseGirl.roles || ["ZTA","House Girl","insert adjectives"]}
                     loop
-                    typeSpeed={80}
+                    typeSpeed={85}
                   />
                 </h4>
                 <p className="job">
-                  {selectedHouseGirl.description || 'Description here...'}
-                </p>
-                <Social />
-                <button onClick={requestLatePlate}>Request Late Plate</button>
+                {dietaryRestrictions.length > 0
+                  ? `Dietary Restrictions: ${dietaryRestrictions.join(', ')}`
+                  : ''}
+              </p>
+                
+              <div className="z-button-container">
+              <a onClick={requestLatePlate} className="zta-button" style={{ marginRight: "10px" }} color="pink">
+                Request Late Plate
+              </a>
+              <a onClick={handleLogout} className="zta-button" color="pink">
+                Logout
+              </a>
+            </div>
               </div>
             </>
           )}
@@ -101,6 +165,11 @@ const ZTA_Home = () => {
           padding: 8px 16px; // Added some padding for better appearance.
           font-size: 1rem;
         }
+        .z-button-container {
+          display: flex;
+          gap: 10px; /* Adjust the space between buttons as needed */
+        }
+      
       `}</style>
     </>
   );
