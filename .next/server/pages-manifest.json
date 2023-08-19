@@ -3,6 +3,6 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/zta-home": "pages/zta-home.js",
-  "/api/getRestrictions": "pages/api/getRestrictions.js",
-  "/api/getNames": "pages/api/getNames.js"
+  "/api/getNames": "pages/api/getNames.js",
+  "/api/getRestrictions": "pages/api/getRestrictions.js"
 }

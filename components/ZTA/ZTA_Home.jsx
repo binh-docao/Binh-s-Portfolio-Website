@@ -90,8 +90,9 @@ const ZTA_Home = () => {
     return null;
   }
 
+  
   const avatarImageUrl = selectedHouseGirl 
-    ? `/img/hg/${selectedHouseGirl.name.replace(/\s+/g, '').toLowerCase()}.jpeg`
+    ? `/img/hg/${selectedHouseGirl.name.replace(/\s+/g, '')}.jpeg`
     : null; // set to a default image or keep it null if you don't want to show any image before selection
 
   return (
