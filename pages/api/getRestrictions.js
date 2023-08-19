@@ -10,7 +10,8 @@ export default async function handler(req, res) {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': `Bearer ${process.env.MONGODB_API_KEY}`  // Use your API key here
+          'Access-Control-Request-Headers': '*',
+          'api-key': process.env.MONGODB_API_KEY,
         },
         body: JSON.stringify({
           collection: "housegirls",
@@ -22,10 +23,16 @@ export default async function handler(req, res) {
       });
   
       const data = await response.json();
-      
-      if (data.length === 0) {
+      console.log('Request received', req.query);
+
+
+      if (!data.document) {
         return res.status(404).json({ error: 'Housegirl not found' });
-      }
+    }
+    res.status(200).json(data.document.dietaryRestrictions);
+    
+      console.log('MongoDB response', data);
+
   
       res.status(200).json(data[0].dietaryRestrictions);  // Assuming the dietaryRestrictions is an array or object.
     } catch (error) {
