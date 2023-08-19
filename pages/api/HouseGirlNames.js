@@ -1,3 +1,6 @@
+const express = require('express');
+const HouseGirl = require('../models/HouseGirl');
+
 export default async function handler(req, res) {
     try {
         const houseGirls = await HouseGirl.find({}, 'name');  // Select only the 'name' field from the HouseGirl model
