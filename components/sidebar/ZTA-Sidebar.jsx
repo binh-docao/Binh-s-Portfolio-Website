@@ -31,7 +31,7 @@ const Sidebar = () => {
         <div className="header-inner">
           <div className="details">
           <Link className="details" href="/zta"style={{ textDecoration: 'none' }}>
-            <h3 className="name" style={{ color: 'deeppink'}}>{"ZASTLE"}</h3>
+            <h3 className="name" style={{ color: 'deeppink'}}>{"Z T A"}</h3>
         </Link>
           </div>
           {/* End logo */}
@@ -60,7 +60,7 @@ const Sidebar = () => {
           <div className="logo">
           <div className="details">
           <Link className="details" href="/zta"style={{ textDecoration: 'none' }}>
-            <h3 className="name" style={{ color: 'deeppink'}}>{"ZASTLE"}</h3>
+            <h3 className="name" style={{ color: 'deeppink'}}>{"Z T A"}</h3>
         </Link>
           </div>
           </div>

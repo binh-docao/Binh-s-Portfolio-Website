@@ -86,6 +86,52 @@ const ZTA_Home = () => {
     // Here, you can send a request to your API to handle the late plate request
   };
 
+  const adjectives = [
+    "Amazing",
+    "Brilliant",
+    "Charming",
+    "Dynamic",
+    "Exquisite",
+    "Fantastic",
+    "Gracious",
+    "Harmonious",
+    "Inspirational",
+    "Joyful",
+    "Knowledgeable",
+    "Luminous",
+    "Magnificent",
+    "Noteworthy",
+    "Outstanding",
+    "Radiant",
+    "Splendid",
+    "Tenacious",
+    "Unique",
+    "Vivacious",
+    "Gorgeous",
+    "Worthy",
+    "Exuberant",
+    "Zealous",
+    "Adaptable",
+    "Energetic",
+    "Nurturing",
+    "Optimistic",
+    "Pioneering",
+    "Quixotic",
+    "Resilient",
+    "Stellar",
+    "Talented",
+    "Uplifting",
+    "Visionary",
+    "Wholesome",
+    "Xenial",
+    "Youthful",
+  ];
+  const getRandomAdjectives = (count) => {
+    const shuffled = adjectives.sort(() => 0.5 - Math.random());
+    return shuffled.slice(0, count);
+  };
+  const selectedAdjectives = getRandomAdjectives(10);
+
   if (!mounted) {
     return null;
   }
@@ -124,11 +170,12 @@ const ZTA_Home = () => {
               <div className="details">
                 <h3 className="name" style={{ color: 'deeppink' }}>{selectedHouseGirl.name}</h3>
                 <h4 className="typer">
-                  <Typed
-                    strings={selectedHouseGirl.roles || ["ZTA","House Girl","insert adjectives"]}
-                    loop
-                    typeSpeed={85}
-                  />
+                  
+                <Typed
+                strings={selectedHouseGirl.roles || ["ZTA","House Girl", ...selectedAdjectives]}
+                loop
+                typeSpeed={85}
+                />
                 </h4>
                 <p className="job" >
                 {dietaryRestrictions[0] != ''
