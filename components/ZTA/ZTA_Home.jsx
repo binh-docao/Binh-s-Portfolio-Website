@@ -130,8 +130,8 @@ const ZTA_Home = () => {
                     typeSpeed={85}
                   />
                 </h4>
-                <p className="job">
-                {dietaryRestrictions.length > 0
+                <p className="job" >
+                {dietaryRestrictions[0] != ''
                   ? `Dietary Restrictions: ${dietaryRestrictions.join(', ')}`
                   : ''}
               </p>

@@ -1,11 +1,11 @@
 import Home from "../components/ZTA/ZTA_Home";
 import Seo from "../components/Seo";
-import Sidebar from "../components/sidebar/Sidebar";
+import Sidebar from "../components/sidebar/ZTA-Sidebar";
 
 const index = () => {
   return (
     <>
-      <Seo pageTitle="Home" />
+      <Seo pageTitle="Zastle House Girls" />
       {/* En Seo Page Title */}
 
       <Sidebar />
