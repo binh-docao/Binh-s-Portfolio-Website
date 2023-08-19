@@ -2219,9 +2219,9 @@ body.modal {
   text-decoration: none;
   color: #fff;
   display: inline-block;
-  background-color: #FF7AC2;
+  background-color: #ff1491ca;
   padding: 11px 40px 11px 40px;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-in-out ;
 }
 .zta-button {
   font-size: 15px;
@@ -2235,7 +2235,7 @@ body.modal {
 }
 .tokyo_tm_button a:hover,
 .zta-button:hover {
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
 }
 
 .customDropdown {
@@ -2266,4 +2266,15 @@ body.modal {
       color: #ffffff !important; /* Using !important to ensure override */
       padding: 30px 30px !important;
   }
+}
+
+.z-button-container {
+  display: flex;
+  justify-content: center; /* Aligns items horizontally to the center */
+  align-items: center;     /* Aligns items vertically to the center */
+  // width: 100%;             /* Takes full width of the parent container */
+  // height: 100vh;           /* Takes full viewport height */
+  // flex-direction: column;  /* Stack the buttons vertically */
+  // position: absolute;      /* Makes the container take absolute positioning */
+
 }

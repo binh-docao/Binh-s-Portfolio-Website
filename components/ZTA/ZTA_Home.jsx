@@ -182,7 +182,6 @@ const ZTA_Home = () => {
                   ? `Dietary Restrictions: ${dietaryRestrictions.join(', ')}`
                   : ''}
               </p>
-                
               <div className="z-button-container">
               <a onClick={requestLatePlate} className="zta-button" style={{ marginRight: "10px" }} color="pink">
                 Request Late Plate
@@ -192,6 +191,7 @@ const ZTA_Home = () => {
               </a>
             </div>
               </div>
+              
             </>
           )}
         </div>
