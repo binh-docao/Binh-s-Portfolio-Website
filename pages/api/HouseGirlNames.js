@@ -1,5 +1,5 @@
 const express = require('express');
-const HouseGirl = require('../models/HouseGirl');
+const HouseGirl = require('../../backend/models/HouseGirl');
 
 export default async function handler(req, res) {
     try {
