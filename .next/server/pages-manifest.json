@@ -2,5 +2,6 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/zta-home": "pages/zta-home.js"
+  "/zta-home": "pages/zta-home.js",
+  "/api/getNames": "pages/api/getNames.js"
 }

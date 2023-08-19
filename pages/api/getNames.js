@@ -6,8 +6,7 @@ export default async function handler(req, res) {
         headers: {
           'Content-Type': 'application/json',
           'Access-Control-Request-Headers': '*',
-        //   'api-key': process.env.MONGODB_API_KEY,
-          'api-key': 'o4XLEktfJlsm5CGJ1MnGn2eIb1voMA2ZNcto1Mb3TQI81pQabJAlLrZKnvoBvol8'
+          'api-key': process.env.MONGODB_API_KEY,
         },
         body: JSON.stringify({
           collection: "housegirls",
@@ -18,7 +17,7 @@ export default async function handler(req, res) {
       });
   
       const data = await response.json();
-      onsole.log("Raw Data from MongoDB:", data);
+      console.log("Raw Data from MongoDB:", data);
   
       if (data && data.documents && Array.isArray(data.documents)) {
         // Instead of just extracting names, return the entire object which contains _id and name
