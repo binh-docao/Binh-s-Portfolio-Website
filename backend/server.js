@@ -6,7 +6,12 @@ const port = 4000;
 const apiRoutes = require('./routes/api');  
 
 mongoose.model
-app.use(cors()); 
+
+const corsOptions = {
+  origin: 'https://b1nh.com',
+  optionsSuccessStatus: 200
+}
+app.use(cors(corsOptions));
 app.use(express.json()); 
 app.use('/api', apiRoutes);  
 
