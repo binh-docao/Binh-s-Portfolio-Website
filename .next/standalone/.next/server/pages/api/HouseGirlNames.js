@@ -35,14 +35,6 @@ module.exports = require("events");
 
 /***/ }),
 
-/***/ 66860:
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("express");
-
-/***/ }),
-
 /***/ 84269:
 /***/ ((module) => {
 
@@ -209,17 +201,64 @@ module.exports = HouseGirl;
 
 /***/ }),
 
-/***/ 80067:
+/***/ 93514:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+// ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ handler)
-/* harmony export */ });
-const express = __webpack_require__(66860);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  "default": () => (/* binding */ handler)
+});
+
+// NAMESPACE OBJECT: ./server.js
+var server_namespaceObject = {};
+__webpack_require__.r(server_namespaceObject);
+
+;// CONCATENATED MODULE: external "express"
+const external_express_namespaceObject = require("express");
+var external_express_default = /*#__PURE__*/__webpack_require__.n(external_express_namespaceObject);
+;// CONCATENATED MODULE: external "mongoose"
+const external_mongoose_namespaceObject = require("mongoose");
+var external_mongoose_default = /*#__PURE__*/__webpack_require__.n(external_mongoose_namespaceObject);
+;// CONCATENATED MODULE: external "cors"
+const external_cors_namespaceObject = require("cors");
+var external_cors_default = /*#__PURE__*/__webpack_require__.n(external_cors_namespaceObject);
+;// CONCATENATED MODULE: external "dotenv"
+const external_dotenv_namespaceObject = require("dotenv");
+var external_dotenv_default = /*#__PURE__*/__webpack_require__.n(external_dotenv_namespaceObject);
+;// CONCATENATED MODULE: ./server.js
+
+
+
+// import apiRoutes from './routes/api';
+
+external_dotenv_default().config();
+const app = external_express_default()();
+const port = process.env.PORT || 4000;
+const corsOptions = {
+    origin: "https://b1nh.com",
+    optionsSuccessStatus: 200
+};
+app.use(external_cors_default()(corsOptions));
+app.use(external_express_default().json());
+// Use environment variable for MongoDB connection string
+external_mongoose_default().connect("mongodb+srv://houseboy:binh@cluster0.edutdyo.mongodb.net", {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+}).then(()=>console.log("Connected to MongoDB Atlas...")).catch((err)=>console.error("Could not connect to MongoDB Atlas...", err));
+// Start the server
+app.listen(port, ()=>{
+    console.log(`Server is running at http://localhost:${port}`);
+});
+
+;// CONCATENATED MODULE: ./pages/api/HouseGirlNames.js
+
 const HouseGirl = __webpack_require__(68644);
 async function handler(req, res) {
+    await (0,server_namespaceObject["default"])();
     try {
         const houseGirls = await HouseGirl.find({}, "name"); // Select only the 'name' field from the HouseGirl model
         res.status(200).send(houseGirls);
@@ -238,7 +277,7 @@ async function handler(req, res) {
 var __webpack_require__ = require("../../webpack-api-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [570], () => (__webpack_exec__(80067)));
+var __webpack_exports__ = __webpack_require__.X(0, [570], () => (__webpack_exec__(93514)));
 module.exports = __webpack_exports__;
 
 })();

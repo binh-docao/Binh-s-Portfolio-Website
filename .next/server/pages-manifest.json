@@ -1,19 +1,19 @@
 {
   "/_app": "pages/_app.js",
-  "/_document": "pages/_document.js",
   "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
   "/404": "pages/404.html",
   "/api/HouseGirlNames": "pages/api/HouseGirlNames.js",
   "/about": "pages/about.html",
-  "/binhodoro": "pages/binhodoro.html",
   "/api/hello": "pages/api/hello.js",
   "/construction": "pages/construction.html",
   "/contact": "pages/contact.html",
   "/home": "pages/home.html",
-  "/": "pages/index.html",
-  "/nico": "pages/nico.html",
   "/pictures": "pages/pictures.html",
+  "/": "pages/index.html",
   "/portfolio": "pages/portfolio.html",
+  "/nico": "pages/nico.html",
+  "/zta-home": "pages/zta-home.html",
   "/zta-glow": "pages/zta-glow.html",
-  "/zta-home": "pages/zta-home.html"
+  "/binhodoro": "pages/binhodoro.html"
 }
