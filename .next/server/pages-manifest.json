@@ -2,6 +2,6 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/api/getRestrictions": "pages/api/getRestrictions.js",
-  "/zta": "pages/zta.js"
+  "/zta": "pages/zta.js",
+  "/api/getNames": "pages/api/getNames.js"
 }

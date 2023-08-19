@@ -2251,10 +2251,17 @@ body.modal {
   font-weight: 625;
   border:none;
   font-family: "Mulish";
-  width: 26%;  /* Adjust as needed */
-  height: 5%;  /* Adjust as needed */
+  border-radius: 5px;         /* Rounds the corners */
+  padding: 15px 15px;         /* Adjust as needed, vertical padding x horizontal padding */    /* Minimum width to ensure it fits smaller text */
+  width:max-content;
 }
 
 .customDropdown:focus {
   outline: none; /* Removes the default browser outline when focused */
+}
+
+@media (max-width: 768px) { /* This targets screens smaller than 768px wide */
+  .customDropdown {
+      color: #ffffff !important; /* Using !important to ensure override */
+  }
 }
