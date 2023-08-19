@@ -2245,15 +2245,16 @@ body.modal {
   // border: none;               /* Removes default border */
              /* Adds some spacing inside the dropdown */
   // border-radius: 5px;         /* Rounds the corners */
-  background-color:#ff14918b;
+  background-color:#ff1491;
   text-align: center;
-  font-size: 18px;
+  font-size: 17px !important;
   font-weight: 625;
   border:none;
   font-family: "Mulish";
   border-radius: 5px;         /* Rounds the corners */
-  padding: 15px 15px;         /* Adjust as needed, vertical padding x horizontal padding */    /* Minimum width to ensure it fits smaller text */
+  padding: 20px 20px !important;   /* Adjust as needed, vertical padding x horizontal padding */    /* Minimum width to ensure it fits smaller text */
   width:max-content;
+  color:white;
 }
 
 .customDropdown:focus {

@@ -3,5 +3,7 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/zta": "pages/zta.js",
-  "/api/getNames": "pages/api/getNames.js"
+  "/api/getNames": "pages/api/getNames.js",
+  "/": "pages/index.js",
+  "/api/getRestrictions": "pages/api/getRestrictions.js"
 }
