@@ -145,9 +145,9 @@ const ZTA_Home = () => {
     <>
       {/* Dropdown to select House Girl */}
       {!selectedHouseGirl && ( // Render the dropdown only if no house girl is selected
-            <div className="centered-container">
-                <select onChange={handleHouseGirlSelect}>
-                <option>Select a House Girl</option>
+            <div className="centered-container" style = {{color:'deeppink'}}>
+                <select className="customDropdown" onChange={handleHouseGirlSelect}>
+                <option classname>Select a House Girl</option>
                 {houseGirls.map(girl => <option key={girl._id} value={girl._id}>{girl.name}</option>)}
                 </select>
             </div>

@@ -2237,3 +2237,24 @@ body.modal {
 .zta-button:hover {
   letter-spacing: 2px;
 }
+
+.customDropdown {
+  // font-family: 'YourFontName'; /* Replace 'YourFontName' with the name of the font you're using elsewhere on the website */
+  // background-color: #FF1493;  /* Deep pink color */
+  // color: #ffffff;             /* Assuming you want white text, change if needed */
+  // border: none;               /* Removes default border */
+             /* Adds some spacing inside the dropdown */
+  // border-radius: 5px;         /* Rounds the corners */
+  background-color:#ff14918b;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 625;
+  border:none;
+  font-family: "Mulish";
+  width: 26%;  /* Adjust as needed */
+  height: 5%;  /* Adjust as needed */
+}
+
+.customDropdown:focus {
+  outline: none; /* Removes the default browser outline when focused */
+}
