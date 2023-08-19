@@ -24,6 +24,7 @@ export default async function handler(req, res) {
         res.status(200).json(data.documents);
       } else {
         res.status(500).json({ error: 'Unexpected response format from MongoDB Atlas' });
+        res.status(500).json(data);
       }
   
     } catch (error) {
