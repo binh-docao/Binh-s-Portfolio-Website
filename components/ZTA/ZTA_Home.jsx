@@ -12,7 +12,7 @@ const ZTA_Home = () => {
   useEffect(() => {
     // Fetch list of house girls from the API
     // fetch('http://localhost:4000/api/HouseGirlNames')
-    fetch('http://b1nh.com/api/HouseGirlNames')
+    fetch('https://b1nh.com/api/HouseGirlNames')
       .then(response => response.json())
       .then(data => setHouseGirls(data))
       .catch(error => console.error('Error fetching house girls:', error));
