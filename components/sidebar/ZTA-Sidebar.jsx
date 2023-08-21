@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import sidebarData from "../../data/sidebarData";
+import sidebarData from "../../data/ZTAsidebarData";
 import CopyRight from "../CopyRight";
 import { isActiveLink } from "../../utilis/linkActiveChecker";
 import { useRouter } from "next/router";
@@ -15,15 +15,6 @@ const Sidebar = () => {
 
   const handleClick = () => setClick(!click);
 
-  const handleProtectedLinkClick = (routePath) => {
-    setPasswordModalOpen(true);
-    setLockedRoute(routePath);
-  };
-
-  const onPasswordCorrect = () => {
-    setPasswordModalOpen(false);
-    router.push(lockedRoute);
-  };
 
   return (
     <>
@@ -114,10 +105,6 @@ const Sidebar = () => {
         </ul>
       </div>
       {/* END MENU */}
-
-      {isPasswordModalOpen && (
-        <PasswordProtection onPasswordCorrect={onPasswordCorrect} />
-      )}
 
           <CopyRight />
           {/* END COPYRIGHT */}

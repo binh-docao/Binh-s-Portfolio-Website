@@ -2,12 +2,16 @@ import React, { useEffect, useState } from "react";
 import Typed from "react-typed";
 import Link from "next/link";
 import { useTheme } from "next-themes";
+import LatePlateModal from "./LatePlateModal";
 
 const ZTA_Home = () => {
   const [mounted, setMounted] = useState(false);
   const [houseGirls, setHouseGirls] = useState([]);
   const [selectedHouseGirl, setSelectedHouseGirl] = useState(null);
-  const { resolvedTheme } = useTheme();
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+
+
 
   useEffect(() => {
     // Fetch list of house girls from the API
@@ -82,8 +86,8 @@ const ZTA_Home = () => {
   };
 
   const requestLatePlate = () => {
-    console.log("Requesting late plate for", selectedHouseGirl.name);
-    // Here, you can send a request to your API to handle the late plate request
+    setIsModalOpen(true);
+
   };
 
   const adjectives = [
@@ -183,9 +187,14 @@ const ZTA_Home = () => {
                   : ''}
               </p>
               <div className="z-button-container">
-              <a onClick={requestLatePlate} className="zta-button" style={{ marginRight: "10px" }} color="pink">
-                Request Late Plate
+              <a 
+                  onClick={requestLatePlate}
+                  className="zta-button" 
+                  style={{ marginRight: "10px" }} 
+                  color="pink">
+                      Request Late Plate
               </a>
+              <LatePlateModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} selectedId={selectedHouseGirl?._id} name = {selectedHouseGirl?.name}/>
               <a onClick={handleLogout} className="zta-button" color="pink">
                 Logout
               </a>

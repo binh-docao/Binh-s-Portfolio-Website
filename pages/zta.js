@@ -5,7 +5,7 @@ import Sidebar from "../components/sidebar/ZTA-Sidebar";
 const index = () => {
   return (
     <>
-      <Seo pageTitle="Zastle House Girls" />
+      <Seo pageTitle="ZTA" />
       {/* En Seo Page Title */}
 
       <Sidebar />

@@ -3,6 +3,7 @@ import Contact from "../components/contact/Contact";
 import Sidebar from "../components/sidebar/Sidebar";
 
 const index = () => {
+
   return (
     <>
       <Seo pageTitle="Contact" />
