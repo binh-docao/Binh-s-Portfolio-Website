@@ -17,7 +17,7 @@ const ModalOne = () => {
                   <div
                     className="main"
                     style={{
-                      backgroundImage: "url(/img/portfolio/ng/ng-2.jpg)",
+                      backgroundImage: "url(/img/portfolio/ng/NG-2.jpg)",
                     }}
                   ></div>
                 </div>
@@ -30,7 +30,7 @@ const ModalOne = () => {
                   <div
                     className="main"
                     style={{
-                      backgroundImage: "url(/img/portfolio/ng/ng-1.jpg)",
+                      backgroundImage: "url(/img/portfolio/ng/NG-1.jpg)",
                     }}
                   ></div>
                 </div>
@@ -43,7 +43,7 @@ const ModalOne = () => {
                   <div
                     className="main"
                     style={{
-                      backgroundImage: "url(/img/portfolio/ng/ng-3.jpg)",
+                      backgroundImage: "url(/img/portfolio/ng/NG-3.jpg)",
                     }}
                   ></div>
                 </div>
@@ -56,7 +56,7 @@ const ModalOne = () => {
                   <div
                     className="main"
                     style={{
-                      backgroundImage: "url(/img/portfolio/ng/ng-4.jpg)",
+                      backgroundImage: "url(/img/portfolio/ng/NG-4.jpg)",
                     }}
                   ></div>
                 </div>

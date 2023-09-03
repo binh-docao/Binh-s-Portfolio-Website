@@ -1,6 +1,6 @@
 import Social from "../../Social";
 
-const JM_Modal = () => {
+const ModalJM = () => {
   return (
     <div className="box_inner">
       
@@ -47,4 +47,4 @@ const JM_Modal = () => {
   );
 };
 
-export default JM_Modal;
+export default ModalJM;

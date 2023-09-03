@@ -8,7 +8,7 @@ import dynamic from "next/dynamic";
 import Image from "next/image";
 import ModalOne from "./modal/ModalOne";
 import ModalTwo from "./modal/HL";
-import JM_Modal from "./modal/JM";
+import ModalJM from "./modal/JM";
 
 // Portfolio.jsx
 Modal.setAppElement("#__next");
@@ -38,9 +38,9 @@ const Portfolio = () => {
     setIsOpenModalTwo(!isOpenModalTwo);
   }
 
-  const [isOpenModal_JM, setIsOpenModal_JM] = useState(false);
-  function toggleModal_JM() {
-    setIsOpenModal_JM(!isOpenModalTwo);
+  const [isOpenModalJM, setIsOpenModalJM] = useState(false);
+  function toggleModalJM() {
+    setIsOpenModalJM(!isOpenModalJM);
   }
 
   return (
@@ -99,7 +99,7 @@ const Portfolio = () => {
                       <Image
                         width={400}
                         height={600}
-                        src="/img/portfolio/ng/ng-2.jpg"
+                        src="/img/portfolio/ng/NG-2.jpg"
                         alt="NathanRing"
                         data-tip
                         data-for="NG"
@@ -133,7 +133,7 @@ const Portfolio = () => {
                         alt="Jed"
                         data-tip
                         data-for="detail"
-                        onClick={toggleModal_JM}
+                        onClick={toggleModalJM}
                       />
 
                       <ReactTooltip
@@ -239,20 +239,20 @@ const Portfolio = () => {
 
       {/* START MODAL FOR PORTFOLIO DETAILS */}
       <Modal
-        isOpen={isOpenModal_JM}
-        onRequestClose={toggleModal_JM}
+        isOpen={isOpenModalJM}
+        onRequestClose={toggleModalJM}
         contentLabel="My dialog"
         className="mymodal"
         overlayClassName="myoverlay"
         closeTimeoutMS={500}
       >
         <div className="tokyo_tm_modalbox_news portfolio_tm_modalbox">
-          <button className="close-modal" onClick={toggleModal_JM}>
+          <button className="close-modal" onClick={toggleModalJM}>
             <img src="/img/svg/cancel.svg" alt="close icon" />
           </button>
           {/* END CLOSE ICON */}
 
-          <JM_Modal />
+          <ModalJM />
           {/* END BOX INNER */}
         </div>
         {/* END MODALBOX NEWS */}
