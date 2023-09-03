@@ -10,6 +10,8 @@ import ModalOne from "./modal/ModalOne";
 import ModalTwo from "./modal/HL";
 import ModalJM from "./modal/JM";
 import ModalWS from "./modal/WS";
+import ModalHG from "./modal/HG";
+
 
 // Portfolio.jsx
 Modal.setAppElement("#__next");
@@ -47,6 +49,11 @@ const Portfolio = () => {
   const [isOpenModalWS, setIsOpenModalWS] = useState(false);
   function toggleModalWS() {
     setIsOpenModalWS(!isOpenModalWS);
+  }
+
+  const [isOpenModalHG, setIsOpenModalHG] = useState(false);
+  function toggleModalHG() {
+    setIsOpenModalHG(!isOpenModalHG);
   }
 
   return (
@@ -188,6 +195,36 @@ const Portfolio = () => {
                   </div>
                 </li>
                 {/* END DETAILS */}
+
+                <li>
+                  <div className="inner">
+                    <div className="entry tokyo_tm_portfolio_animation_wrap">
+                      <Image
+                        width={400}
+                        height={600}
+                        src="/img/portfolio/HG/1.jpg"
+                        alt="HG"
+                        data-tip
+                        data-for="HG"
+                        onClick={toggleModalHG}
+                      />
+
+                      <ReactTooltip
+                        id="HG"
+                        place="bottom"
+                        type="light"
+                        effect="float"
+                        className="tooltip-wrapper"
+                      >
+                        <div>
+                          <h5 style={{ background: 'rgba(159,197,160,0.9)' }}>Hope Griffin</h5>
+                          <span >Fish Camp</span>
+                        </div>
+                      </ReactTooltip>
+                    </div>
+                  </div>
+                </li>
+                {/* END DETAILS */}
               </ul>
             </TabPanel>
             {/* END ALL PORTFOLIO */}
@@ -286,6 +323,27 @@ const Portfolio = () => {
       </Modal>
       {/* END MODAL FOR PORTFOLIO DETAILS */}
 
+      {/* START MODAL FOR PORTFOLIO DETAILS */}
+      <Modal
+        isOpen={isOpenModalHG}
+        onRequestClose={toggleModalHG}
+        contentLabel="My dialog"
+        className="mymodal"
+        overlayClassName="myoverlay"
+        closeTimeoutMS={500}
+      >
+        <div className="tokyo_tm_modalbox_news portfolio_tm_modalbox">
+          <button className="close-modal" onClick={toggleModalHG}>
+            <img src="/img/svg/cancel.svg" alt="close icon" />
+          </button>
+          {/* END CLOSE ICON */}
+
+          <ModalHG />
+          {/* END BOX INNER */}
+        </div>
+        {/* END MODALBOX NEWS */}
+      </Modal>
+      {/* END MODAL FOR PORTFOLIO DETAILS */}
 
       {/* START MODAL FOR PORTFOLIO DETAILS */}
       <Modal
