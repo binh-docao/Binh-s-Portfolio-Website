@@ -1198,8 +1198,8 @@ ul.react-tabs__tab-list {
 }
 .tokyo_tm_modalbox_news .box_inner,
 .tokyo_tm_modalbox_about .box-inner {
-  height: 90vh;
-  width: 130vh;
+  height: 95vh;
+  width: 110vh;
   overflow-y: auto;
   @media only screen and (min-width: 992px) and (max-width: 1024px) {
     width: 850px;
@@ -1213,7 +1213,7 @@ ul.react-tabs__tab-list {
   }
   @media only screen and (min-width: 350px) and (max-width: 575px) {
     width: 350px;
-    height: 500px;
+    height: 600px;
   }
   @media only screen and (min-width: 0px) and (max-width: 349px) {
     width: 300px;
@@ -1966,11 +1966,11 @@ body.modal {
   height: auto;
   clear: both;
   display: flex;
-  // margin-bottom: 50px;
-  
+  margin-bottom: 50px;
   @media screen and (max-width: 767px) {
     flex-wrap: wrap;
   }
+  
 }
 .portfolio_tm_modalbox .main_details .textbox {
   width: 70%;
@@ -2031,58 +2031,57 @@ body.modal {
 
 .portfolio_tm_modalbox {
   .additional_images {
-    width: 100%;
     clear: both;
-    // float: left;
   }
   .additional_images ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
-    li {
-      float: left;
-      width: calc(50% - 10px); // 10px is the right margin for each li
-      margin-right: 10px;  // Add some right margin to separate images
+  }
+  .additional_images ul li {
+    float: left;
+    width: 100%;
+    margin: 5px 5px;  
 
-      &:last-child {
-        margin-right: 0; // Remove right margin for the last image
-      }
-      
-      @media screen and (max-width: 767px) {
-        width: 100%;
-        margin-right: 0;
+    @media screen and (max-width: 767px) {
+      width: 100%;  /* One image per row on mobile */
+      margin: 5px 0px;  /* 5px vertical margin, no horizontal margin on mobile */
+    }
+
+    .list_inner {
+      position: relative;
+    }
+
+    .my_image {
+      position: relative;
+      height:100%;
+      padding-bottom: 100%;  /* For aspect ratio */
+      background: transparent;
+      // overflow: hidden;
+
+      img {
+        position: absolute;
+        opacity: 1;
+        height: 100%;
+        object-fit: center;
+        object-position: center;
       }
 
-      .list_inner {
-        width: 100%;
-        clear: both;
-        float: left;
-        position: relative;
-      }
-      .my_image {
-        position: relative;
-        height: 80vh;
-        @media screen and (max-width: 767px) {
-          height: 60vh;
-        }
-        img {
-          opacity: 0;
-          min-width: 100%;
-        }
-        .main {
-          position: absolute;
-          top: 25px;
-          bottom: 0px;
-          left: 0px;
-          right: 0px;
-          background-repeat: no-repeat;
-          background-size: contain;
-          background-position: center;
-        }
+      .main {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
       }
     }
   }
 }
+
+
 
 .modal-video-close-btn {
   cursor: pointer !important;
