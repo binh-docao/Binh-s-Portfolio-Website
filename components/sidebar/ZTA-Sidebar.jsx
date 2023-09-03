@@ -23,7 +23,7 @@ const Sidebar = () => {
           <div className="details">
           <Link className="details" href="/zta"style={{ textDecoration: 'none'}}>
             <h3 className="name" style={{ color: 'deeppink',fontWeight: 'bold'} }>{"Z T A"}</h3>
-        </Link>
+          </Link>
           </div>
           {/* End logo */}
 

@@ -29,7 +29,7 @@ const Sidebar = () => {
     <>
       <div className="header">
         <div className="header-inner">
-          <div className="logo">
+          {/* <div className="logo">
             <Link className="navbar-brand" href="/">
               <Image
                 width={80}
@@ -38,7 +38,10 @@ const Sidebar = () => {
                 alt="brand"
               />
             </Link>
-          </div>
+          </div> */}
+          <Link className="details" href="/"style={{ textDecoration: 'none'}}>
+            <h3 className="name" style={{ color: '',fontWeight: 'bold'} }>{"B I N H"}</h3>
+          </Link>
           {/* End logo */}
 
           <div className="my_trigger" onClick={handleClick}>
@@ -62,16 +65,9 @@ const Sidebar = () => {
       {/* START LEFT MENU CONTENT */}
       <div className={click ? "leftpart active" : "leftpart"}>
         <div className="leftpart_inner">
-          <div className="logo">
-            <Link className="navbar-brand" href="/">
-              <Image
-                width={80}
-                height={28}
-                src="/img/logo/dark.png"
-                alt="brand"
-              />
-            </Link>
-          </div>
+          <Link className="details" href="/"style={{ textDecoration: 'none'}}>
+            <h3 className="name" style={{fontWeight: 'bold'} }>{"B I N H"}</h3>
+          </Link>
           {/* END LOGO */}
 
       <div className="menu">
