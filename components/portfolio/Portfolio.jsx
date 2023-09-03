@@ -207,7 +207,7 @@ const Portfolio = () => {
                       <Image
                         width={400}
                         height={600}
-                        src="/img/portfolio/HG/1.jpg"
+                        src="/img/portfolio/HG/1.JPG"
                         alt="HG"
                         data-tip
                         data-for="HG"

@@ -18,7 +18,7 @@ const ModalHG = () => {
                   <div
                     className="main"
                     style={{
-                      backgroundImage: "url(/img/portfolio/HG/1.jpg)",
+                      backgroundImage: "url(/img/portfolio/HG/1.JPG)",
                     }}
                   ></div>
                 </div>
@@ -31,21 +31,7 @@ const ModalHG = () => {
                   <div
                     className="main"
                     style={{
-                      backgroundImage: "url(/img/portfolio/HG/2.jpg)",
-                    }}
-                  ></div>
-                </div>
-              </div>
-            </li>
-            {/* END SHOT */}
-
-            <li>
-              <div className="list_inner">
-                <div className="my_image">
-                  <div
-                    className="main"
-                    style={{
-                      backgroundImage: "url(/img/portfolio/HG/3.jpg)",
+                      backgroundImage: "url(/img/portfolio/HG/2.JPG)",
                     }}
                   ></div>
                 </div>
@@ -59,7 +45,21 @@ const ModalHG = () => {
                   <div
                     className="main"
                     style={{
-                      backgroundImage: "url(/img/portfolio/HG/4.jpg)",
+                      backgroundImage: "url(/img/portfolio/HG/3.JPG)",
+                    }}
+                  ></div>
+                </div>
+              </div>
+            </li>
+            {/* END SHOT */}
+
+            <li>
+              <div className="list_inner">
+                <div className="my_image">
+                  <div
+                    className="main"
+                    style={{
+                      backgroundImage: "url(/img/portfolio/HG/4.JPG)",
                     }}
                   ></div>
                 </div>
