@@ -2044,8 +2044,8 @@ body.modal {
     margin: 5px 5px;  
 
     @media screen and (max-width: 767px) {
-      width: 100%;  /* One image per row on mobile */
-      margin: 5px 0px;  /* 5px vertical margin, no horizontal margin on mobile */
+      width: 150%;  /* One image per row on mobile */
+      margin: 5px -75px;  /* 5px vertical margin, no horizontal margin on mobile */
     }
 
     .list_inner {
