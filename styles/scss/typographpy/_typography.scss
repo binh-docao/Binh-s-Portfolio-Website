@@ -260,7 +260,7 @@ input[type="button"] {
   left: 50%;
   transform: translate(-50%, -50%);
   border: 1px solid #ccc;
-  background: #fff;
+  background: rgba($color: #fff, $alpha: 0.80);
   overflow: initial;
   border-radius: 4px;
   outline: none;
