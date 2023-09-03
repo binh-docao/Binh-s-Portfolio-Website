@@ -8,7 +8,7 @@ import dynamic from "next/dynamic";
 import Image from "next/image";
 import ModalOne from "./modal/ModalOne";
 import ModalTwo from "./modal/HL";
-
+import JM_Modal from "./modal/JM";
 
 // Portfolio.jsx
 Modal.setAppElement("#__next");
@@ -36,6 +36,11 @@ const Portfolio = () => {
   }
   function toggleModalTwo() {
     setIsOpenModalTwo(!isOpenModalTwo);
+  }
+
+  const [isOpenModal_JM, setIsOpenModal_JM] = useState(false);
+  function toggleModal_JM() {
+    setIsOpenModal_JM(!isOpenModalTwo);
   }
 
   return (
@@ -109,7 +114,7 @@ const Portfolio = () => {
                         className="tooltip-wrapper"
                       >
                         <div>
-                          <h5 style={{ background: 'rgba(122,138,123,0.9)' }}>Nathan Guindon</h5>
+                          <h5 style={{ background: 'rgba(105,163,223,0.9)' }}>Nathan Guindon</h5>
                           <span >Ring Order</span>
                         </div>
                       </ReactTooltip>
@@ -124,23 +129,23 @@ const Portfolio = () => {
                       <Image
                         width={400}
                         height={600}
-                        src="/img/portfolio/2.jpg"
-                        alt="Portraits"
+                        src="/img/portfolio/jm/1.jpg"
+                        alt="Jed"
                         data-tip
                         data-for="detail"
-                        onClick={toggleModalOne}
+                        onClick={toggleModal_JM}
                       />
 
                       <ReactTooltip
-                        id="detail"
+                        id="Jed"
                         place="bottom"
                         type="light"
                         effect="float"
                         className="tooltip-wrapper"
                       >
                         <div>
-                          <h5>Selena Gomez</h5>
-                          <span>Details</span>
+                          <h5 style={{ background: 'rgba(105,163,223,0.9)' }}>Jed Moore</h5>
+                          <span >Fish Camp</span>
                         </div>
                       </ReactTooltip>
                     </div>
@@ -231,6 +236,30 @@ const Portfolio = () => {
       </Modal>
       {/* END MODAL FOR PORTFOLIO DETAILS */}
 
+
+      {/* START MODAL FOR PORTFOLIO DETAILS */}
+      <Modal
+        isOpen={isOpenModal_JM}
+        onRequestClose={toggleModal_JM}
+        contentLabel="My dialog"
+        className="mymodal"
+        overlayClassName="myoverlay"
+        closeTimeoutMS={500}
+      >
+        <div className="tokyo_tm_modalbox_news portfolio_tm_modalbox">
+          <button className="close-modal" onClick={toggleModal_JM}>
+            <img src="/img/svg/cancel.svg" alt="close icon" />
+          </button>
+          {/* END CLOSE ICON */}
+
+          <JM_Modal />
+          {/* END BOX INNER */}
+        </div>
+        {/* END MODALBOX NEWS */}
+      </Modal>
+      {/* END MODAL FOR PORTFOLIO DETAILS */}
+
+
       {/* START MODAL FOR PORTFOLIO DETAILS */}
       <Modal
         isOpen={isOpenModalTwo}
@@ -251,6 +280,10 @@ const Portfolio = () => {
         {/* END MODALBOX NEWS */}
       </Modal>
       {/* END MODAL FOR PORTFOLIO DETAILS */}
+
+
+
+      
     </>
   );
 };
