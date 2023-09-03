@@ -55,7 +55,7 @@ const Portfolio = () => {
         <Tabs>
           {/* START FILTER TABLIST */}
           <TabList>
-            <Tab>Friends</Tab>
+            {/* <Tab>Friends</Tab> */}
             {/* <Tab>Landscape</Tab> */}
           </TabList>
           {/* END FILTER TABLIST */}

@@ -806,7 +806,7 @@ h6 {
   height: auto;
   clear: both;
   float: left;
-  margin-bottom: 62px;
+  margin-bottom: 30px;
 }
 .tokyo_tm_title h3 {
   font-weight: 800;
@@ -2045,11 +2045,11 @@ body.modal {
   .additional_images ul li {
     float: left;
     width: 100%;
-    margin: 5px 5px;  
+    margin: 5px;  
 
     @media screen and (max-width: 767px) {
       width: 150%;  /* One image per row on mobile */
-      margin: 5px -80px;  /* 5px vertical margin, no horizontal margin on mobile */
+      margin: 5px -25%;  /* 5px vertical margin, no horizontal margin on mobile */
     }
 
     .list_inner {

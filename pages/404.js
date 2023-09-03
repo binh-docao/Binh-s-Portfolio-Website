@@ -12,14 +12,9 @@ const NotFound = () => {
         <div className="leftpart">
           <div className="leftpart_inner">
             <div className="logo">
-              <Link className="navbar-brand" href="/">
-                <Image
-                  width={126}
-                  height={22}
-                  src="/img/logo/dark.png"
-                  alt="brand"
-                />
-              </Link>
+            <Link className="details" href="/"style={{ textDecoration: 'none'}}>
+            <h3 className="name" style={{ color: '',fontWeight: 'bold'} }>{"B I N H"}</h3>
+          </Link>
             </div>
             {/* END LOGO */}
             <div className="copyright">

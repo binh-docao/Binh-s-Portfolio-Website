@@ -57,7 +57,7 @@ const Contact = () => {
           </div>
           {/* END TITLE */}
 
-          <Map />
+          {/* <Map /> */}
           {/* MENU WRAP */}
 
           <div className="fields">
