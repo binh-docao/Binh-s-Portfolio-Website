@@ -9,7 +9,7 @@ import Image from "next/image";
 import ModalOne from "./modal/ModalOne";
 import { useRouter } from "next/router";
 
-import ModalTwo from "./modal/ModalTwo";
+import ModalTwo from "./modal/HL";
 
 Modal.setAppElement("#__next");
 

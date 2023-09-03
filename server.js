@@ -44,3 +44,5 @@ export const connectDb = async () => {
   cached.conn = await cached.promise;
   return cached.conn;
 }
+
+export default server;
