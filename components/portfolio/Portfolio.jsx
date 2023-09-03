@@ -9,6 +9,7 @@ import Image from "next/image";
 import ModalOne from "./modal/ModalOne";
 import ModalTwo from "./modal/HL";
 import ModalJM from "./modal/JM";
+import ModalWS from "./modal/WS";
 
 // Portfolio.jsx
 Modal.setAppElement("#__next");
@@ -43,14 +44,19 @@ const Portfolio = () => {
     setIsOpenModalJM(!isOpenModalJM);
   }
 
+  const [isOpenModalWS, setIsOpenModalWS] = useState(false);
+  function toggleModalWS() {
+    setIsOpenModalWS(!isOpenModalWS);
+  }
+
   return (
     <>
       <Gallery>
         <Tabs>
           {/* START FILTER TABLIST */}
           <TabList>
-            <Tab>Portraits</Tab>
-            <Tab>Landscape</Tab>
+            <Tab>Friends</Tab>
+            {/* <Tab>Landscape</Tab> */}
           </TabList>
           {/* END FILTER TABLIST */}
 
@@ -159,23 +165,23 @@ const Portfolio = () => {
                       <Image
                         width={400}
                         height={600}
-                        src="/img/portfolio/3.jpg"
-                        alt="Details"
+                        src="/img/portfolio/WS/WS-2.jpg"
+                        alt="WS"
                         data-tip
-                        data-for="detail2"
-                        onClick={toggleModalTwo}
+                        data-for="WS"
+                        onClick={toggleModalWS}
                       />
 
                       <ReactTooltip
-                        id="detail2"
+                        id="WS"
                         place="bottom"
                         type="light"
                         effect="float"
                         className="tooltip-wrapper"
                       >
                         <div>
-                          <h5>Ave Simone</h5>
-                          <span>Details</span>
+                          <h5 style={{ background: 'rgba(144,172,144,0.9)' }}>Whit Smith</h5>
+                          <span >Graduation</span>
                         </div>
                       </ReactTooltip>
                     </div>
@@ -236,6 +242,27 @@ const Portfolio = () => {
       </Modal>
       {/* END MODAL FOR PORTFOLIO DETAILS */}
 
+      {/* START MODAL FOR PORTFOLIO DETAILS */}
+      <Modal
+        isOpen={isOpenModalWS}
+        onRequestClose={toggleModalWS}
+        contentLabel="My dialog"
+        className="mymodal"
+        overlayClassName="myoverlay"
+        closeTimeoutMS={500}
+      >
+        <div className="tokyo_tm_modalbox_news portfolio_tm_modalbox">
+          <button className="close-modal" onClick={toggleModalWS}>
+            <img src="/img/svg/cancel.svg" alt="close icon" />
+          </button>
+          {/* END CLOSE ICON */}
+
+          <ModalWS />
+          {/* END BOX INNER */}
+        </div>
+        {/* END MODALBOX NEWS */}
+      </Modal>
+      {/* END MODAL FOR PORTFOLIO DETAILS */}
 
       {/* START MODAL FOR PORTFOLIO DETAILS */}
       <Modal
