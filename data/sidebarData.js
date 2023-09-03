@@ -22,7 +22,7 @@ module.exports = [
   },
   {
     id: 4,
-    icon: "/img/svg/briefcase.svg",
+    icon: "/img/svg/camera.svg",
     menuName: "Portfolio",
     routePath: "/construction",
     isLocked: false,

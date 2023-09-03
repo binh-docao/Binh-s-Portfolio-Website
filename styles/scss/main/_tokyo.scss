@@ -1198,8 +1198,8 @@ ul.react-tabs__tab-list {
 }
 .tokyo_tm_modalbox_news .box_inner,
 .tokyo_tm_modalbox_about .box-inner {
-  height: 75vh;
-  width: 968px;
+  height: 90vh;
+  width: 130vh;
   overflow-y: auto;
   @media only screen and (min-width: 992px) and (max-width: 1024px) {
     width: 850px;
@@ -1263,9 +1263,14 @@ ul.react-tabs__tab-list {
 }
 .tokyo_tm_modalbox_news .description_wrap .image {
   position: relative;
-  height: 450px;
+  width:90%;
+  height: 90vh;
   z-index: -1;
+  margin-top: 40px;
   margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 .tokyo_tm_modalbox_news .description_wrap .image img {
   height: 100%;
@@ -1925,7 +1930,6 @@ body.modal {
     margin: 0;
     font-size: 18px;
     padding: 10px 15px;
-    background: #fff;
     letter-spacing: 0.2px;
     font-family: "Montserrat";
     font-weight: 600;
@@ -1934,10 +1938,10 @@ body.modal {
     font-size: 16px;
     display: inline-block;
     font-style: italic;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.65);
     padding: 0 15px 5px;
     position: relative;
-    top: -5px;
+    // top: -5px;
   }
 }
 
@@ -1945,11 +1949,13 @@ body.modal {
 .portfolio_tm_modalbox .portfolio_main_title {
   width: 100%;
   float: left;
-  margin-bottom: 28px;
+  margin-bottom: 10px;
+  margin-top:-30px;
+  text-align: center;
 }
 .portfolio_tm_modalbox .portfolio_main_title h3 {
   font-weight: 700;
-  font-size: 22px;
+  font-size: 30px;
   margin-bottom: 5px;
 }
 .portfolio_tm_modalbox .portfolio_main_title span {
@@ -1960,7 +1966,8 @@ body.modal {
   height: auto;
   clear: both;
   display: flex;
-  margin-bottom: 50px;
+  // margin-bottom: 50px;
+  
   @media screen and (max-width: 767px) {
     flex-wrap: wrap;
   }
@@ -2025,46 +2032,38 @@ body.modal {
 .portfolio_tm_modalbox {
   .additional_images {
     width: 100%;
-    height: auto;
     clear: both;
-    float: left;
+    // float: left;
   }
   .additional_images ul {
-    margin: 0px 0px 0px -30px;
+    margin: 0;
+    padding: 0;
     list-style-type: none;
     li {
-      margin: 30px 0px 0 0px;
       float: left;
-      width: 50%;
-      padding-left: 30px;
+      width: calc(50% - 10px); // 10px is the right margin for each li
+      margin-right: 10px;  // Add some right margin to separate images
+
+      &:last-child {
+        margin-right: 0; // Remove right margin for the last image
+      }
+      
       @media screen and (max-width: 767px) {
         width: 100%;
+        margin-right: 0;
       }
 
-      &:nth-child(3n-2) {
-        width: 100%;
-        img {
-          width: 100%;
-        }
-        .my_image {
-          height: 408px;
-          @media screen and (max-width: 767px) {
-            height: 165px;
-          }
-        }
-      }
       .list_inner {
         width: 100%;
-        height: auto;
         clear: both;
         float: left;
         position: relative;
       }
       .my_image {
         position: relative;
-        height: 320px;
+        height: 80vh;
         @media screen and (max-width: 767px) {
-          height: 165px;
+          height: 70vh;
         }
         img {
           opacity: 0;
@@ -2072,12 +2071,12 @@ body.modal {
         }
         .main {
           position: absolute;
-          top: 0px;
+          top: 25px;
           bottom: 0px;
           left: 0px;
           right: 0px;
           background-repeat: no-repeat;
-          background-size: cover;
+          background-size: contain;
           background-position: center;
         }
       }

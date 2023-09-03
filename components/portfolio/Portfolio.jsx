@@ -64,7 +64,7 @@ const Portfolio = () => {
                       <Image
                         width={400}
                         height={600}
-                        src="/img/portfolio/HL/1.jpg"
+                        src="/img/portfolio/HL/3.jpg"
                         alt="Hannah Lebow"
                         data-tip
                         data-for="HL1"
@@ -79,8 +79,8 @@ const Portfolio = () => {
                         className="tooltip-wrapper"
                       >
                         <div>
-                          <h5>Hannah Lebow</h5>
-                          <span>Details</span>
+                          <h5 style={{ background: 'rgba(133,162,195,0.9)' }}>Hannah Lebow</h5>
+                          <span >Portraits</span>
                         </div>
                       </ReactTooltip>
                     </div>
