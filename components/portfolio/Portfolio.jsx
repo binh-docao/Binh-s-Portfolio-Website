@@ -132,7 +132,7 @@ const Portfolio = () => {
                         src="/img/portfolio/jm/1.jpg"
                         alt="Jed"
                         data-tip
-                        data-for="detail"
+                        data-for="Jed"
                         onClick={toggleModalJM}
                       />
 
