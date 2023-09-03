@@ -91,43 +91,32 @@ const Portfolio = () => {
                 <li>
                   <div className="inner">
                     <div className="entry tokyo_tm_portfolio_animation_wrap">
-                      <Item
-                        original="/img/portfolio/8-hd.jpg"
-                        thumbnail="/img/portfolio/8-hd.jpg"
+                      <Image
                         width={400}
                         height={600}
-                      >
-                        {({ ref, open }) => (
-                          <Image
-                            width={400}
-                            height={600}
-                            srl_gallery_image="true"
-                            src="/img/portfolio/1.jpg"
-                            alt="Childhood"
-                            data-tip
-                            data-for="shot2"
-                            role="button"
-                            ref={ref}
-                            onClick={open}
-                          />
-                        )}
-                      </Item>
+                        src="/img/portfolio/ng/ng-2.jpg"
+                        alt="NathanRing"
+                        data-tip
+                        data-for="NG"
+                        onClick={toggleModalOne}
+                      />
+
                       <ReactTooltip
-                        id="shot2"
+                        id="NG"
                         place="bottom"
                         type="light"
                         effect="float"
                         className="tooltip-wrapper"
                       >
                         <div>
-                          <h5>Gloria jenkins</h5>
-                          <span>Shot</span>
+                          <h5 style={{ background: 'rgba(122,138,123,0.9)' }}>Nathan Guindon</h5>
+                          <span >Ring Order</span>
                         </div>
                       </ReactTooltip>
                     </div>
                   </div>
                 </li>
-                {/* END SHOT */}
+                {/* END DETAILS */}
 
                 <li>
                   <div className="inner">
