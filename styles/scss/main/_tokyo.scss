@@ -80,7 +80,7 @@ img.svg {
   margin-left: auto;
   margin-right: auto;
   height: auto;
-  padding: 0px 40px;
+  padding: 0px 20px;
   position: relative;
   clear: both;
 }
@@ -850,7 +850,7 @@ h6 {
   }
 }
 .tokyo_tm_portfolio .portfolio_filter .react-tabs__tab-list li:last-child {
-  margin-right: 0px;
+  margin-right: 4px;
 }
 
 .tokyo_tm_portfolio .portfolio_filter .react-tabs__tab-list li:hover,
@@ -869,25 +869,26 @@ h6 {
   height: auto;
   clear: both;
   float: left;
-  padding: 100px 0px 50px 0px;
+  padding: 100px 0px 30px 0px;
   position: relative;
 }
 .tokyo_tm_portfolio .portfolio_list {
-  margin: 0px 0px 0px -50px;
+  margin: 0px 0px 0px -30px;
   list-style-type: none;
 }
 .tokyo_tm_portfolio .portfolio_list li {
-  margin: 0px 0px 50px 0px;
+  margin: 0px 0px 30px 0px;
   float: left;
-  width: 50%;
-  padding-left: 50px;
+  width: 33.33333%;  // Adjust width and subtract margin/padding
+  padding-left: 30px; // Add some padding to make room for 3 images per row
   @media (max-width: 576px) {
     margin: 0px 0px 30px 0px;
+    width: 100%; // One image per row on small screens
   }
 }
 .tokyo_tm_portfolio .portfolio_list li .inner {
   width: 100%;
-  height: 100%;
+  height: auto;
   clear: both;
   float: left;
   overflow: hidden;
@@ -905,8 +906,8 @@ h6 {
 }
 .tokyo_tm_portfolio .portfolio_list li .inner img {
   width: 100%;
-  height: 415px;
-  object-fit: cover;
+  height: 100%;
+  object-fit: contain;
   cursor: pointer;
   transition: 0.5s;
 }
@@ -2034,26 +2035,26 @@ body.modal {
     li {
       margin: 30px 0px 0 0px;
       float: left;
-      width: 100%;
+      width: 50%;
       padding-left: 30px;
       @media screen and (max-width: 767px) {
         width: 100%;
       }
 
-      // &:nth-child(3n-2) {
-      //   width: 100%;
-      //   img {
-      //     width: 100%;
-      //   }
-      //   .my_image {
-      //     height: 600px;
-      //     @media screen and (max-width: 767px) {
-      //       height: 165px;
-      //     }
-      //   }
-      // }
+      &:nth-child(3n-2) {
+        width: 100%;
+        img {
+          width: 100%;
+        }
+        .my_image {
+          height: 408px;
+          @media screen and (max-width: 767px) {
+            height: 165px;
+          }
+        }
+      }
       .list_inner {
-        width: 100%; //Overall size of the box
+        width: 100%;
         height: auto;
         clear: both;
         float: left;
@@ -2061,16 +2062,13 @@ body.modal {
       }
       .my_image {
         position: relative;
-        width:100%;
-        height: 600px;
+        height: 320px;
         @media screen and (max-width: 767px) {
           height: 165px;
-          width:100%;
         }
         img {
           opacity: 0;
           min-width: 100%;
-          height:100%;
         }
         .main {
           position: absolute;
@@ -2079,10 +2077,9 @@ body.modal {
           left: 0px;
           right: 0px;
           background-repeat: no-repeat;
-          background-size: contain;
+          background-size: cover;
           background-position: center;
         }
-
       }
     }
   }

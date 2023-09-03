@@ -9,6 +9,8 @@ import Image from "next/image";
 import ModalOne from "./modal/ModalOne";
 import ModalTwo from "./modal/HL";
 
+
+// Portfolio.jsx
 Modal.setAppElement("#__next");
 
 const ReactTooltip = dynamic(() => import("react-tooltip"), {
@@ -100,7 +102,7 @@ const Portfolio = () => {
                             width={400}
                             height={600}
                             srl_gallery_image="true"
-                            src="/img/portfolio/8-hd.jpg"
+                            src="/img/portfolio/1.jpg"
                             alt="Childhood"
                             data-tip
                             data-for="shot2"
@@ -133,7 +135,7 @@ const Portfolio = () => {
                       <Image
                         width={400}
                         height={600}
-                        src="/img/portfolio/6.jpg"
+                        src="/img/portfolio/2.jpg"
                         alt="Portraits"
                         data-tip
                         data-for="detail"
@@ -163,7 +165,7 @@ const Portfolio = () => {
                       <Image
                         width={400}
                         height={600}
-                        src="/img/portfolio/7.jpg"
+                        src="/img/portfolio/3.jpg"
                         alt="Details"
                         data-tip
                         data-for="detail2"
