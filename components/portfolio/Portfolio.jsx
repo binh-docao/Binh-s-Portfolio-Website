@@ -11,7 +11,7 @@ import ModalTwo from "./modal/HL";
 import ModalJM from "./modal/JM";
 import ModalWS from "./modal/WS";
 import ModalHG from "./modal/HG";
-
+import ModalME from "./modal/ME";
 
 // Portfolio.jsx
 Modal.setAppElement("#__next");
@@ -54,6 +54,11 @@ const Portfolio = () => {
   const [isOpenModalHG, setIsOpenModalHG] = useState(false);
   function toggleModalHG() {
     setIsOpenModalHG(!isOpenModalHG);
+  }
+
+  const [isOpenModalME, setIsOpenModalME] = useState(false);
+  function toggleModalME() {
+    setIsOpenModalME(!isOpenModalME);
   }
 
   return (
@@ -225,6 +230,79 @@ const Portfolio = () => {
                   </div>
                 </li>
                 {/* END DETAILS */}
+
+
+                <li>
+                  <div className="inner">
+                    <div className="entry tokyo_tm_portfolio_animation_wrap">
+                      <Image
+                        width={400}
+                        height={600}
+                        src="/img/portfolio/ME/ME-2.jpg"
+                        alt="ME"
+                        data-tip
+                        data-for="ME"
+                        onClick={toggleModalME}
+                      />
+
+                      <ReactTooltip
+                        id="ME"
+                        place="bottom"
+                        type="light"
+                        effect="float"
+                        className="tooltip-wrapper"
+                      >
+                        <div>
+                          <h5 style={{ background: 'rgba(120,144,60,0.9)' }}>Mallory & Elle</h5>
+                          <span >Sunset</span>
+                        </div>
+                      </ReactTooltip>
+                    </div>
+                  </div>
+                </li>
+                {/* END DETAILS */}
+
+                <li>
+                  <div className="inner">
+                    <div className="entry tokyo_tm_portfolio_animation_wrap">
+                      <Item
+                        original="/img/portfolio/dan.jpg"
+                        thumbnail="/img/portfolio/dan.jpg"
+                        width={400}
+                        height={600}
+                      >
+                        {({ ref, open }) => (
+                          <Image
+                            width={400}
+                            height={600}
+                            srl_gallery_image="true"
+                            src="/img/portfolio/dan.jpg"
+                            alt="Daniel"
+                            data-tip
+                            data-for="Daniel"
+                            role="button"
+                            ref={ref}
+                            onClick={open}
+                          />
+                        )}
+                      </Item>
+                      <ReactTooltip
+                        id="Daniel"
+                        place="bottom"
+                        type="light"
+                        effect="float"
+                        className="tooltip-wrapper"
+                      >
+                        <div>
+                          <h5 style={{ background: 'rgba(113,122,109,0.9)' }}>Daniel Cahak</h5>
+                          <span >Motorcycle</span>
+                        </div>
+                      </ReactTooltip>
+                    </div>
+                  </div>
+                </li>
+                {/* END SHOT */}
+
               </ul>
             </TabPanel>
             {/* END ALL PORTFOLIO */}
@@ -344,6 +422,29 @@ const Portfolio = () => {
         {/* END MODALBOX NEWS */}
       </Modal>
       {/* END MODAL FOR PORTFOLIO DETAILS */}
+
+      {/* START MODAL FOR PORTFOLIO DETAILS */}
+      <Modal
+        isOpen={isOpenModalME}
+        onRequestClose={toggleModalME}
+        contentLabel="My dialog"
+        className="mymodal"
+        overlayClassName="myoverlay"
+        closeTimeoutMS={500}
+      >
+        <div className="tokyo_tm_modalbox_news portfolio_tm_modalbox">
+          <button className="close-modal" onClick={toggleModalME}>
+            <img src="/img/svg/cancel.svg" alt="close icon" />
+          </button>
+          {/* END CLOSE ICON */}
+
+          <ModalME />
+          {/* END BOX INNER */}
+        </div>
+        {/* END MODALBOX NEWS */}
+      </Modal>
+      {/* END MODAL FOR PORTFOLIO DETAILS */}
+
 
       {/* START MODAL FOR PORTFOLIO DETAILS */}
       <Modal
