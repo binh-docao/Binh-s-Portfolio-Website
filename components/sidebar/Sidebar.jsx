@@ -40,7 +40,7 @@ const Sidebar = () => {
             </Link>
           </div> */}
           <Link className="details" href="/"style={{ textDecoration: 'none'}}>
-            <h3 className="name" style={{ color: '',fontWeight: 'bold'} }>{"B I N h"}</h3>
+            <h3 className="name" style={{ color: '',fontWeight: 'bold'} }>{"B I N H"}</h3>
           </Link>
           {/* End logo */}
 
