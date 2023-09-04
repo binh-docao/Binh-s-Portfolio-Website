@@ -12,6 +12,7 @@ import ModalJM from "./modal/JM";
 import ModalWS from "./modal/WS";
 import ModalHG from "./modal/HG";
 import ModalME from "./modal/ME";
+import ModalDC from "./modal/DC";
 
 // Portfolio.jsx
 Modal.setAppElement("#__next");
@@ -61,6 +62,11 @@ const Portfolio = () => {
     setIsOpenModalME(!isOpenModalME);
   }
 
+  const [isOpenModalDC, setIsOpenModalDC] = useState(false);
+  function toggleModalDC() {
+    setIsOpenModalDC(!isOpenModalDC);
+  }
+
   return (
     <>
       <Gallery>
@@ -102,7 +108,7 @@ const Portfolio = () => {
                         className="tooltip-wrapper"
                       >
                         <div>
-                          <h5 style={{ background: 'rgba(133,162,195,0.9)' }}>Hannah Lebow</h5>
+                          <h5 style={{ background: 'rgba(170,77,109,0.9)' }}>Hannah Lebow</h5>
                           <span >Portraits</span>
                         </div>
                       </ReactTooltip>
@@ -192,7 +198,7 @@ const Portfolio = () => {
                         className="tooltip-wrapper"
                       >
                         <div>
-                          <h5 style={{ background: 'rgba(144,172,144,0.9)' }}>Whit Smith</h5>
+                          <h5 style={{ background: 'rgba(150,49,110,0.9)' }}>Whit Smith</h5>
                           <span >Graduation</span>
                         </div>
                       </ReactTooltip>
@@ -222,7 +228,7 @@ const Portfolio = () => {
                         className="tooltip-wrapper"
                       >
                         <div>
-                          <h5 style={{ background: 'rgba(159,197,160,0.9)' }}>Hope Griffin</h5>
+                          <h5 style={{ background: 'rgba(117,161,201,0.9)' }}>Hope Griffin</h5>
                           <span >Fish Camp</span>
                         </div>
                       </ReactTooltip>
@@ -253,7 +259,7 @@ const Portfolio = () => {
                         className="tooltip-wrapper"
                       >
                         <div>
-                          <h5 style={{ background: 'rgba(120,144,60,0.9)' }}>Mallory & Elle</h5>
+                          <h5 style={{ background: 'rgba(3,170,153,0.9)' }}>Mallory & Elle</h5>
                           <span >Sunset</span>
                         </div>
                       </ReactTooltip>
@@ -294,7 +300,7 @@ const Portfolio = () => {
                         className="tooltip-wrapper"
                       >
                         <div>
-                          <h5 style={{ background: 'rgba(113,122,109,0.9)' }}>Daniel Cahak</h5>
+                          <h5 style={{ background: 'rgba(69,92,94,0.9)' }}>Daniel Cahak</h5>
                           <span >Motorcycle</span>
                         </div>
                       </ReactTooltip>
@@ -302,6 +308,36 @@ const Portfolio = () => {
                   </div>
                 </li>
                 {/* END SHOT */}
+
+                <li>
+                  <div className="inner">
+                    <div className="entry tokyo_tm_portfolio_animation_wrap">
+                      <Image
+                        width={400}
+                        height={600}
+                        src="/img/portfolio/DC/DC-3.jpg"
+                        alt="DC"
+                        data-tip
+                        data-for="DC"
+                        onClick={toggleModalDC}
+                      />
+
+                      <ReactTooltip
+                        id="DC"
+                        place="bottom"
+                        type="light"
+                        effect="float"
+                        className="tooltip-wrapper"
+                      >
+                        <div>
+                          <h5 style={{ background: 'rgba(80,109,194,0.8)' }}>Davis Cleveland</h5>
+                          <span >Sunset</span>
+                        </div>
+                      </ReactTooltip>
+                    </div>
+                  </div>
+                </li>
+                {/* END DETAILS */}
 
               </ul>
             </TabPanel>
@@ -417,6 +453,28 @@ const Portfolio = () => {
           {/* END CLOSE ICON */}
 
           <ModalHG />
+          {/* END BOX INNER */}
+        </div>
+        {/* END MODALBOX NEWS */}
+      </Modal>
+      {/* END MODAL FOR PORTFOLIO DETAILS */}
+
+      {/* START MODAL FOR PORTFOLIO DETAILS */}
+      <Modal
+        isOpen={isOpenModalDC}
+        onRequestClose={toggleModalDC}
+        contentLabel="My dialog"
+        className="mymodal"
+        overlayClassName="myoverlay"
+        closeTimeoutMS={500}
+      >
+        <div className="tokyo_tm_modalbox_news portfolio_tm_modalbox">
+          <button className="close-modal" onClick={toggleModalDC}>
+            <img src="/img/svg/cancel.svg" alt="close icon" />
+          </button>
+          {/* END CLOSE ICON */}
+
+          <ModalDC />
           {/* END BOX INNER */}
         </div>
         {/* END MODALBOX NEWS */}
