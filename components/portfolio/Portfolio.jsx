@@ -13,6 +13,7 @@ import ModalWS from "./modal/WS";
 import ModalHG from "./modal/HG";
 import ModalME from "./modal/ME";
 import ModalDC from "./modal/DC";
+import ModalBID from "./modal/BID";
 
 // Portfolio.jsx
 Modal.setAppElement("#__next");
@@ -65,6 +66,11 @@ const Portfolio = () => {
   const [isOpenModalDC, setIsOpenModalDC] = useState(false);
   function toggleModalDC() {
     setIsOpenModalDC(!isOpenModalDC);
+  }
+
+  const [isOpenModalBID, setIsOpenModalBID] = useState(false);
+  function toggleModalBID() {
+    setIsOpenModalBID(!isOpenModalBID);
   }
 
   return (
@@ -339,6 +345,36 @@ const Portfolio = () => {
                 </li>
                 {/* END DETAILS */}
 
+                <li>
+                  <div className="inner">
+                    <div className="entry tokyo_tm_portfolio_animation_wrap">
+                      <Image
+                        width={400}
+                        height={600}
+                        src="/img/portfolio/BID/1.jpg"
+                        alt="BID"
+                        data-tip
+                        data-for="BID"
+                        onClick={toggleModalBID}
+                      />
+
+                      <ReactTooltip
+                        id="BID"
+                        place="bottom"
+                        type="light"
+                        effect="float"
+                        className="tooltip-wrapper"
+                      >
+                        <div>
+                          <h5 style={{ background: 'rgba(228,118,167,0.8)' }}>Bid Day</h5>
+                          <span >ZTA</span>
+                        </div>
+                      </ReactTooltip>
+                    </div>
+                  </div>
+                </li>
+                {/* END DETAILS */}
+
               </ul>
             </TabPanel>
             {/* END ALL PORTFOLIO */}
@@ -392,6 +428,29 @@ const Portfolio = () => {
         {/* END MODALBOX NEWS */}
       </Modal>
       {/* END MODAL FOR PORTFOLIO DETAILS */}
+
+      {/* START MODAL FOR PORTFOLIO DETAILS */}
+      <Modal
+        isOpen={isOpenModalBID}
+        onRequestClose={toggleModalBID}
+        contentLabel="My dialog"
+        className="mymodal"
+        overlayClassName="myoverlay"
+        closeTimeoutMS={500}
+      >
+        <div className="tokyo_tm_modalbox_news portfolio_tm_modalbox">
+          <button className="close-modal" onClick={toggleModalBID}>
+            <img src="/img/svg/cancel.svg" alt="close icon" />
+          </button>
+          {/* END CLOSE ICON */}
+
+          <ModalBID />
+          {/* END BOX INNER */}
+        </div>
+        {/* END MODALBOX NEWS */}
+      </Modal>
+      {/* END MODAL FOR PORTFOLIO DETAILS */}
+
 
       {/* START MODAL FOR PORTFOLIO DETAILS */}
       <Modal
