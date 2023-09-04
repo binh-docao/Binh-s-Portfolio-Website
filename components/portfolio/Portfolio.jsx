@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import { Gallery, Item } from "react-photoswipe-gallery";
 import "photoswipe/dist/photoswipe.css";
+import Social from "./portfolio-social";
 import ModalVideo from "react-modal-video";
 import Modal from "react-modal";
 import dynamic from "next/dynamic";
@@ -14,6 +15,8 @@ import ModalHG from "./modal/HG";
 import ModalME from "./modal/ME";
 import ModalDC from "./modal/DC";
 import ModalBID from "./modal/BID";
+import ModalNL from "./modal/NL";
+import ModalCK from "./modal/CK";
 
 // Portfolio.jsx
 Modal.setAppElement("#__next");
@@ -73,14 +76,26 @@ const Portfolio = () => {
     setIsOpenModalBID(!isOpenModalBID);
   }
 
+  const [isOpenModalNL, setIsOpenModalNL] = useState(false);
+  function toggleModalNL() {
+    setIsOpenModalNL(!isOpenModalNL);
+  }
+
+  const [isOpenModalCK, setIsOpenModalCK] = useState(false);
+  function toggleModalCK() {
+    setIsOpenModalCK(!isOpenModalCK);
+  }
+
   return (
     <>
       <Gallery>
         <Tabs>
           {/* START FILTER TABLIST */}
           <TabList>
-            {/* <Tab>Friends</Tab> */}
-            {/* <Tab>Landscape</Tab> */}
+            <Tab>Friends</Tab>
+            <Tab>Landscapes</Tab>
+            {/* <Tab>Instagram</Tab> */}
+            {/* <Tab><Social/></Tab> */}
           </TabList>
           {/* END FILTER TABLIST */}
 
@@ -243,30 +258,29 @@ const Portfolio = () => {
                 </li>
                 {/* END DETAILS */}
 
-
                 <li>
                   <div className="inner">
                     <div className="entry tokyo_tm_portfolio_animation_wrap">
                       <Image
                         width={400}
                         height={600}
-                        src="/img/portfolio/ME/ME-2.jpg"
-                        alt="ME"
+                        src="/img/portfolio/CK/CK-12.jpg"
+                        alt="CK"
                         data-tip
-                        data-for="ME"
-                        onClick={toggleModalME}
+                        data-for="CK"
+                        onClick={toggleModalCK}
                       />
 
                       <ReactTooltip
-                        id="ME"
+                        id="CK"
                         place="bottom"
                         type="light"
                         effect="float"
                         className="tooltip-wrapper"
                       >
                         <div>
-                          <h5 style={{ background: 'rgba(3,170,153,0.9)' }}>Mallory & Elle</h5>
-                          <span >Sunset</span>
+                          <h5 style={{ background: 'rgba(112,21,62,0.8)' }}>Kaylee & Claire</h5>
+                          <span >Game Day</span>
                         </div>
                       </ReactTooltip>
                     </div>
@@ -375,9 +389,270 @@ const Portfolio = () => {
                 </li>
                 {/* END DETAILS */}
 
+                <li>
+                  <div className="inner">
+                    <div className="entry tokyo_tm_portfolio_animation_wrap">
+                      <Image
+                        width={400}
+                        height={600}
+                        src="/img/portfolio/NL/NL-1.jpg"
+                        alt="NL"
+                        data-tip
+                        data-for="NL"
+                        onClick={toggleModalNL}
+                      />
+
+                      <ReactTooltip
+                        id="NL"
+                        place="bottom"
+                        type="light"
+                        effect="float"
+                        className="tooltip-wrapper"
+                      >
+                        <div>
+                          <h5 style={{ background: 'rgba(158,131,101,0.8)' }}>Nico Lopez</h5>
+                          <span >City</span>
+                        </div>
+                      </ReactTooltip>
+                    </div>
+                  </div>
+                </li>
+                {/* END DETAILS */}
+
+                <li>
+                  <div className="inner">
+                    <div className="entry tokyo_tm_portfolio_animation_wrap">
+                      <Image
+                        width={400}
+                        height={600}
+                        src="/img/portfolio/ME/ME-3.jpg"
+                        alt="ME"
+                        data-tip
+                        data-for="ME"
+                        onClick={toggleModalME}
+                      />
+
+                      <ReactTooltip
+                        id="ME"
+                        place="bottom"
+                        type="light"
+                        effect="float"
+                        className="tooltip-wrapper"
+                      >
+                        <div>
+                          <h5 style={{ background: 'rgba(3,170,153,0.9)' }}>Mallory & Elle</h5>
+                          <span >Sunset</span>
+                        </div>
+                      </ReactTooltip>
+                    </div>
+                  </div>
+                </li>
+                {/* END DETAILS */}
+
+
               </ul>
             </TabPanel>
             {/* END ALL PORTFOLIO */}
+
+
+          
+
+          {/* LandScape */}
+          <TabPanel>
+          <ul
+                className="portfolio_list"
+                data-aos="fade-right"
+                data-aos-duration="1200"
+              >
+          <li>
+                  <div className="inner">
+                    <div className="entry tokyo_tm_portfolio_animation_wrap">
+                      <Item
+                        original="/img/portfolio/LAND/land-7.jpg"
+                        thumbnail="/img/portfolio/LAND/land-7.jpg"
+                        width={400}
+                        height={600}
+                      >
+                        {({ ref, open }) => (
+                          <Image
+                            width={400}
+                            height={600}
+                            srl_gallery_image="true"
+                            src="/img/portfolio/LAND/land-7.jpg"
+                            alt="land-1"
+                            data-tip
+                            data-for="land-1"
+                            role="button"
+                            ref={ref}
+                            onClick={open}
+                          />
+                        )}
+                      </Item>
+  
+                    </div>
+                  </div>
+                </li>
+                {/* END SHOT */}
+
+                <li>
+                  <div className="inner">
+                    <div className="entry tokyo_tm_portfolio_animation_wrap">
+                      <Item
+                        original="/img/portfolio/LAND/land-2.jpg"
+                        thumbnail="/img/portfolio/LAND/land-2.jpg"
+                        width={400}
+                        height={600}
+                      >
+                        {({ ref, open }) => (
+                          <Image
+                            width={400}
+                            height={600}
+                            srl_gallery_image="true"
+                            src="/img/portfolio/LAND/land-2.jpg"
+                            alt="land-1"
+                            data-tip
+                            data-for="land-1"
+                            role="button"
+                            ref={ref}
+                            onClick={open}
+                          />
+                        )}
+                      </Item>
+  
+                    </div>
+                  </div>
+                </li>
+                {/* END SHOT */}
+
+                <li>
+                  <div className="inner">
+                    <div className="entry tokyo_tm_portfolio_animation_wrap">
+                      <Item
+                        original="/img/portfolio/LAND/land-3.jpg"
+                        thumbnail="/img/portfolio/LAND/land-3.jpg"
+                        width={400}
+                        height={600}
+                      >
+                        {({ ref, open }) => (
+                          <Image
+                            width={400}
+                            height={600}
+                            srl_gallery_image="true"
+                            src="/img/portfolio/LAND/land-3.jpg"
+                            alt="land-1"
+                            data-tip
+                            data-for="land-1"
+                            role="button"
+                            ref={ref}
+                            onClick={open}
+                          />
+                        )}
+                      </Item>
+  
+                    </div>
+                  </div>
+                </li>
+                {/* END SHOT */}
+
+                <li>
+                  <div className="inner">
+                    <div className="entry tokyo_tm_portfolio_animation_wrap">
+                      <Item
+                        original="/img/portfolio/LAND/land-4.jpg"
+                        thumbnail="/img/portfolio/LAND/land-4.jpg"
+                        width={400}
+                        height={600}
+                      >
+                        {({ ref, open }) => (
+                          <Image
+                            width={400}
+                            height={600}
+                            srl_gallery_image="true"
+                            src="/img/portfolio/LAND/land-4.jpg"
+                            alt="land-1"
+                            data-tip
+                            data-for="land-1"
+                            role="button"
+                            ref={ref}
+                            onClick={open}
+                          />
+                        )}
+                      </Item>
+  
+                    </div>
+                  </div>
+                </li>
+                {/* END SHOT */}
+
+                <li>
+                  <div className="inner">
+                    <div className="entry tokyo_tm_portfolio_animation_wrap">
+                      <Item
+                        original="/img/portfolio/LAND/land-5.jpg"
+                        thumbnail="/img/portfolio/LAND/land-5.jpg"
+                        width={400}
+                        height={600}
+                      >
+                        {({ ref, open }) => (
+                          <Image
+                            width={400}
+                            height={600}
+                            srl_gallery_image="true"
+                            src="/img/portfolio/LAND/land-5.jpg"
+                            alt="land-1"
+                            data-tip
+                            data-for="land-1"
+                            role="button"
+                            ref={ref}
+                            onClick={open}
+                          />
+                        )}
+                      </Item>
+                      
+  
+                    </div>
+                  </div>
+                </li>
+                {/* END SHOT */}
+
+                <li>
+                  <div className="inner">
+                    <div className="entry tokyo_tm_portfolio_animation_wrap">
+                      <Item
+                        original="/img/portfolio/LAND/land-6.jpg"
+                        thumbnail="/img/portfolio/LAND/land-6.jpg"
+                        width={400}
+                        height={600}
+                      >
+                        {({ ref, open }) => (
+                          <Image
+                            width={400}
+                            height={600}
+                            srl_gallery_image="true"
+                            src="/img/portfolio/LAND/land-6.jpg"
+                            alt="land-1"
+                            data-tip
+                            data-for="land-1"
+                            role="button"
+                            ref={ref}
+                            onClick={open}
+                          />
+                        )}
+                      </Item>
+  
+                    </div>
+                  </div>
+                </li>
+                {/* END SHOT */}
+
+
+
+
+            </ul>
+          </TabPanel>
+
+
+
 
             {/* START PHOTOGRAHY */}
 
@@ -451,6 +726,47 @@ const Portfolio = () => {
       </Modal>
       {/* END MODAL FOR PORTFOLIO DETAILS */}
 
+      <Modal
+        isOpen={isOpenModalNL}
+        onRequestClose={toggleModalNL}
+        contentLabel="My dialog"
+        className="mymodal"
+        overlayClassName="myoverlay"
+        closeTimeoutMS={500}
+      >
+        <div className="tokyo_tm_modalbox_news portfolio_tm_modalbox">
+          <button className="close-modal" onClick={toggleModalNL}>
+            <img src="/img/svg/cancel.svg" alt="close icon" />
+          </button>
+          {/* END CLOSE ICON */}
+
+          <ModalNL />
+          {/* END BOX INNER */}
+        </div>
+        {/* END MODALBOX NEWS */}
+      </Modal>
+      {/* END MODAL FOR PORTFOLIO DETAILS */}
+
+      <Modal
+        isOpen={isOpenModalCK}
+        onRequestClose={toggleModalCK}
+        contentLabel="My dialog"
+        className="mymodal"
+        overlayClassName="myoverlay"
+        closeTimeoutMS={500}
+      >
+        <div className="tokyo_tm_modalbox_news portfolio_tm_modalbox">
+          <button className="close-modal" onClick={toggleModalCK}>
+            <img src="/img/svg/cancel.svg" alt="close icon" />
+          </button>
+          {/* END CLOSE ICON */}
+
+          <ModalCK />
+          {/* END BOX INNER */}
+        </div>
+        {/* END MODALBOX NEWS */}
+      </Modal>
+      {/* END MODAL FOR PORTFOLIO DETAILS */}
 
       {/* START MODAL FOR PORTFOLIO DETAILS */}
       <Modal

@@ -1,7 +1,7 @@
 import Seo from "../components/Seo";
 import Portfolio from "../components/portfolio/Portfolio";
 import Sidebar from "../components/sidebar/Sidebar";
-
+import Social from "../components/portfolio/portfolio-social";
 const index = () => {
   return (
     <>
@@ -20,9 +20,11 @@ const index = () => {
                 <div className="tokyo_tm_title">
                   <div className="title_flex">
                     <div className="left">
-                      <span>Photography</span>
-                      <h3>Portfolio</h3>
+                      <span>Photography </span>
+                      <h3>Portfolio </h3>
+                      
                     </div>
+                    
                   </div>
                 </div>
                 {/* END TOKYO_TM_TITLE */}
