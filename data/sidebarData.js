@@ -15,7 +15,7 @@ module.exports = [
   },
   {
     id: 3,
-    icon: "/img/svg/setting.svg",
+    icon: "/img/svg/computer.svg",
     menuName: "Programs",
     routePath: "/service",
     isLocked: true,
