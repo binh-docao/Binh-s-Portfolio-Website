@@ -331,7 +331,7 @@ const Portfolio = () => {
                       >
                         <div>
                           <h5 style={{ background: 'rgba(80,109,194,0.8)' }}>Davis Cleveland</h5>
-                          <span >Sunset</span>
+                          <span >Minuti</span>
                         </div>
                       </ReactTooltip>
                     </div>

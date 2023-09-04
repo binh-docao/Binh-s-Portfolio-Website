@@ -52,6 +52,19 @@ const ModalTwo = () => {
               </div>
             </li>
             {/* END SHOT */}
+            <li>
+              <div className="list_inner">
+                <div className="my_image">
+                  <div
+                    className="main"
+                    style={{
+                      backgroundImage: "url(/img/portfolio/HL/4.jpg)",
+                    }}
+                  ></div>
+                </div>
+              </div>
+            </li>
+            {/* END SHOT */}
             
           </ul>
         </div>
