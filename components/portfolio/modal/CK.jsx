@@ -16,7 +16,7 @@ const ModalCK = () => {
                   <div
                     className="main"
                     style={{
-                      backgroundImage: "url(/img/portfolio/CK/CK-12.JPG)",
+                      backgroundImage: "url(/img/portfolio/CK/CK-12.jpg)",
                     }}
                   ></div>
                 </div>
@@ -30,7 +30,7 @@ const ModalCK = () => {
                   <div
                     className="main"
                     style={{
-                      backgroundImage: "url(/img/portfolio/CK/CK-02.JPG)",
+                      backgroundImage: "url(/img/portfolio/CK/CK-02.jpg)",
                     }}
                   ></div>
                 </div>
@@ -44,7 +44,7 @@ const ModalCK = () => {
                   <div
                     className="main"
                     style={{
-                      backgroundImage: "url(/img/portfolio/CK/CK-03.JPG)",
+                      backgroundImage: "url(/img/portfolio/CK/CK-03.jpg)",
                     }}
                   ></div>
                 </div>
@@ -58,7 +58,7 @@ const ModalCK = () => {
                   <div
                     className="main"
                     style={{
-                      backgroundImage: "url(/img/portfolio/CK/CK-04.JPG)",
+                      backgroundImage: "url(/img/portfolio/CK/CK-04.jpg)",
                     }}
                   ></div>
                 </div>
@@ -72,7 +72,7 @@ const ModalCK = () => {
                   <div
                     className="main"
                     style={{
-                      backgroundImage: "url(/img/portfolio/CK/CK-05.JPG)",
+                      backgroundImage: "url(/img/portfolio/CK/CK-05.jpg)",
                     }}
                   ></div>
                 </div>
@@ -86,7 +86,7 @@ const ModalCK = () => {
                   <div
                     className="main"
                     style={{
-                      backgroundImage: "url(/img/portfolio/CK/CK-06.JPG)",
+                      backgroundImage: "url(/img/portfolio/CK/CK-06.jpg)",
                     }}
                   ></div>
                 </div>
@@ -100,7 +100,7 @@ const ModalCK = () => {
                   <div
                     className="main"
                     style={{
-                      backgroundImage: "url(/img/portfolio/CK/CK-07.JPG)",
+                      backgroundImage: "url(/img/portfolio/CK/CK-07.jpg)",
                     }}
                   ></div>
                 </div>
@@ -114,7 +114,7 @@ const ModalCK = () => {
                   <div
                     className="main"
                     style={{
-                      backgroundImage: "url(/img/portfolio/CK/CK-08.JPG)",
+                      backgroundImage: "url(/img/portfolio/CK/CK-08.jpg)",
                     }}
                   ></div>
                 </div>
@@ -128,7 +128,7 @@ const ModalCK = () => {
                   <div
                     className="main"
                     style={{
-                      backgroundImage: "url(/img/portfolio/CK/CK-09.JPG)",
+                      backgroundImage: "url(/img/portfolio/CK/CK-09.jpg)",
                     }}
                   ></div>
                 </div>
@@ -142,7 +142,7 @@ const ModalCK = () => {
                   <div
                     className="main"
                     style={{
-                      backgroundImage: "url(/img/portfolio/CK/CK-10.JPG)",
+                      backgroundImage: "url(/img/portfolio/CK/CK-10.jpg)",
                     }}
                   ></div>
                 </div>
@@ -156,7 +156,7 @@ const ModalCK = () => {
                   <div
                     className="main"
                     style={{
-                      backgroundImage: "url(/img/portfolio/CK/CK-11.JPG)",
+                      backgroundImage: "url(/img/portfolio/CK/CK-11.jpg)",
                     }}
                   ></div>
                 </div>
@@ -170,7 +170,7 @@ const ModalCK = () => {
                   <div
                     className="main"
                     style={{
-                      backgroundImage: "url(/img/portfolio/CK/CK-01.JPG)",
+                      backgroundImage: "url(/img/portfolio/CK/CK-01.jpg)",
                     }}
                   ></div>
                 </div>
@@ -184,7 +184,7 @@ const ModalCK = () => {
                   <div
                     className="main"
                     style={{
-                      backgroundImage: "url(/img/portfolio/CK/CK-13.JPG)",
+                      backgroundImage: "url(/img/portfolio/CK/CK-13.jpg)",
                     }}
                   ></div>
                 </div>
@@ -198,7 +198,7 @@ const ModalCK = () => {
                   <div
                     className="main"
                     style={{
-                      backgroundImage: "url(/img/portfolio/CK/CK-14.JPG)",
+                      backgroundImage: "url(/img/portfolio/CK/CK-14.jpg)",
                     }}
                   ></div>
                 </div>
