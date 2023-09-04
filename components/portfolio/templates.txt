@@ -41,3 +41,70 @@ Template for normal image no popup
                   </div>
                 </li>
                 {/* END SHOT */}
+
+
+
+TEMPLATE TO ADD TO Portfolio.jsx
+**********************************
+
+import Modal from "./modal/";
+
+  const [isOpenModal, setIsOpenModal] = useState(false);
+  function toggleModal() {
+    setIsOpenModal(!isOpenModal);
+  }
+
+
+
+
+                  <li>
+                  <div className="inner">
+                    <div className="entry tokyo_tm_portfolio_animation_wrap">
+                      <Image
+                        width={400}
+                        height={600}
+                        src="/img/portfolio/.jpg"
+                        alt="ME"
+                        data-tip
+                        data-for="ME"
+                        onClick={toggleModalME}
+                      />
+
+                      <ReactTooltip
+                        id="ME"
+                        place="bottom"
+                        type="light"
+                        effect="float"
+                        className="tooltip-wrapper"
+                      >
+                        <div>
+                          <h5 style={{ background: 'rgba(,,,0.9)' }}></h5>
+                          <span ></span>
+                        </div>
+                      </ReactTooltip>
+                    </div>
+                  </div>
+                </li>
+                {/* END DETAILS */}
+
+
+      <Modal
+        isOpen={isOpenModal}
+        onRequestClose={toggleModal}
+        contentLabel="My dialog"
+        className="mymodal"
+        overlayClassName="myoverlay"
+        closeTimeoutMS={500}
+      >
+        <div className="tokyo_tm_modalbox_news portfolio_tm_modalbox">
+          <button className="close-modal" onClick={toggleModalNL}>
+            <img src="/img/svg/cancel.svg" alt="close icon" />
+          </button>
+          {/* END CLOSE ICON */}
+
+          <Modal />
+          {/* END BOX INNER */}
+        </div>
+        {/* END MODALBOX NEWS */}
+      </Modal>
+      {/* END MODAL FOR PORTFOLIO DETAILS */}

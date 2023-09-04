@@ -14,9 +14,11 @@ import ModalWS from "./modal/WS";
 import ModalHG from "./modal/HG";
 import ModalME from "./modal/ME";
 import ModalDC from "./modal/DC";
+import ModalDC2 from "./modal/DC2";
 import ModalBID from "./modal/BID";
 import ModalNL from "./modal/NL";
 import ModalCK from "./modal/CK";
+import ModalKH from "./modal/KH";
 
 // Portfolio.jsx
 Modal.setAppElement("#__next");
@@ -84,6 +86,16 @@ const Portfolio = () => {
   const [isOpenModalCK, setIsOpenModalCK] = useState(false);
   function toggleModalCK() {
     setIsOpenModalCK(!isOpenModalCK);
+  }
+
+  const [isOpenModalDC2, setIsOpenModalDC2] = useState(false);
+  function toggleModalDC2() {
+    setIsOpenModalDC2(!isOpenModalDC2);
+  }
+
+  const [isOpenModalKH, setIsOpenModalKH] = useState(false);
+  function toggleModalKH() {
+    setIsOpenModalKH(!isOpenModalKH);
   }
 
   return (
@@ -291,29 +303,18 @@ const Portfolio = () => {
                 <li>
                   <div className="inner">
                     <div className="entry tokyo_tm_portfolio_animation_wrap">
-                      <Item
-                        original="/img/portfolio/dan.jpg"
-                        thumbnail="/img/portfolio/dan.jpg"
+                      <Image
                         width={400}
                         height={600}
-                      >
-                        {({ ref, open }) => (
-                          <Image
-                            width={400}
-                            height={600}
-                            srl_gallery_image="true"
-                            src="/img/portfolio/dan.jpg"
-                            alt="Daniel"
-                            data-tip
-                            data-for="Daniel"
-                            role="button"
-                            ref={ref}
-                            onClick={open}
-                          />
-                        )}
-                      </Item>
+                        src="/img/portfolio/dan.jpg"
+                        alt="DC2"
+                        data-tip
+                        data-for="DC2"
+                        onClick={toggleModalDC2}
+                      />
+
                       <ReactTooltip
-                        id="Daniel"
+                        id="DC2"
                         place="bottom"
                         type="light"
                         effect="float"
@@ -327,7 +328,7 @@ const Portfolio = () => {
                     </div>
                   </div>
                 </li>
-                {/* END SHOT */}
+                {/* END DETAILS */}
 
                 <li>
                   <div className="inner">
@@ -449,6 +450,35 @@ const Portfolio = () => {
                 </li>
                 {/* END DETAILS */}
 
+                <li>
+                  <div className="inner">
+                    <div className="entry tokyo_tm_portfolio_animation_wrap">
+                      <Image
+                        width={400}
+                        height={600}
+                        src="/img/portfolio/kiki.jpg"
+                        alt="KH"
+                        data-tip
+                        data-for="KH"
+                        onClick={toggleModalKH}
+                      />
+
+                      <ReactTooltip
+                        id="KH"
+                        place="bottom"
+                        type="light"
+                        effect="float"
+                        className="tooltip-wrapper"
+                      >
+                        <div>
+                          <h5 style={{ background: 'rgba(253,1,84,0.9)' }}>Kiki Harrison</h5>
+                          <span>Work Week</span>
+                        </div>
+                      </ReactTooltip>
+                    </div>
+                  </div>
+                </li>
+                {/* END DETAILS */}
 
               </ul>
             </TabPanel>
@@ -704,6 +734,27 @@ const Portfolio = () => {
       </Modal>
       {/* END MODAL FOR PORTFOLIO DETAILS */}
 
+      <Modal
+        isOpen={isOpenModalKH}
+        onRequestClose={toggleModalKH}
+        contentLabel="My dialog"
+        className="mymodal"
+        overlayClassName="myoverlay"
+        closeTimeoutMS={500}
+      >
+        <div className="tokyo_tm_modalbox_news portfolio_tm_modalbox">
+          <button className="close-modal" onClick={toggleModalKH}>
+            <img src="/img/svg/cancel.svg" alt="close icon" />
+          </button>
+          {/* END CLOSE ICON */}
+
+          <ModalKH />
+          {/* END BOX INNER */}
+        </div>
+        {/* END MODALBOX NEWS */}
+      </Modal>
+      {/* END MODAL FOR PORTFOLIO DETAILS */}
+
       {/* START MODAL FOR PORTFOLIO DETAILS */}
       <Modal
         isOpen={isOpenModalBID}
@@ -720,6 +771,28 @@ const Portfolio = () => {
           {/* END CLOSE ICON */}
 
           <ModalBID />
+          {/* END BOX INNER */}
+        </div>
+        {/* END MODALBOX NEWS */}
+      </Modal>
+      {/* END MODAL FOR PORTFOLIO DETAILS */}
+
+      {/* START MODAL FOR PORTFOLIO DETAILS */}
+      <Modal
+        isOpen={isOpenModalDC2}
+        onRequestClose={toggleModalDC2}
+        contentLabel="My dialog"
+        className="mymodal"
+        overlayClassName="myoverlay"
+        closeTimeoutMS={500}
+      >
+        <div className="tokyo_tm_modalbox_news portfolio_tm_modalbox">
+          <button className="close-modal" onClick={toggleModalDC2}>
+            <img src="/img/svg/cancel.svg" alt="close icon" />
+          </button>
+          {/* END CLOSE ICON */}
+
+          <ModalDC2/>
           {/* END BOX INNER */}
         </div>
         {/* END MODALBOX NEWS */}
