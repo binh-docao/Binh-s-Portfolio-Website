@@ -17,8 +17,8 @@ module.exports = [
     id: 3,
     icon: "/img/svg/program.svg",
     menuName: "Programs",
-    routePath: "/service",
-    isLocked: true,
+    routePath: "/protected",
+    isLocked: false,
   },
   {
     id: 4,
