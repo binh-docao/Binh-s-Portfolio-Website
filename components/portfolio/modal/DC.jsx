@@ -53,6 +53,19 @@ const ModalDC = () => {
             </li>
             {/* END SHOT */}
             
+            <li>
+              <div className="list_inner">
+                <div className="my_image">
+                  <div
+                    className="main"
+                    style={{
+                      backgroundImage: "url(/img/portfolio/DC/DC-4.jpg)",
+                    }}
+                  ></div>
+                </div>
+              </div>
+            </li>
+            {/* END SHOT */}
           </ul>
         </div>
       </div>
