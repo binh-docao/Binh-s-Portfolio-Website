@@ -106,7 +106,7 @@ const Portfolio = () => {
           {/* START FILTER TABLIST */}
           <TabList>
             <Tab>Friends</Tab>
-            <Tab>Landscapes</Tab>
+            <Tab>Places</Tab>
             {/* <Tab>Instagram</Tab> */}
             {/* <Tab><Social/></Tab> */}
           </TabList>
@@ -524,6 +524,35 @@ const Portfolio = () => {
                   </div>
                 </li>
                 {/* END SHOT */}
+                <li>
+                  <div className="inner">
+                    <div className="entry tokyo_tm_portfolio_animation_wrap">
+                      <Item
+                        original="/img/portfolio/LAND/land-8.jpg"
+                        thumbnail="/img/portfolio/LAND/land-8.jpg"
+                        width={466}
+                        height={700}
+                      >
+                        {({ ref, open }) => (
+                          <Image
+                            width={466}
+                            height={700}  
+                            srl_gallery_image="true"
+                            src="/img/portfolio/LAND/land-8.jpg"
+                            alt="land-1"
+                            data-tip
+                            data-for="land-1"
+                            role="button"
+                            ref={ref}
+                            onClick={open}
+                          />
+                        )}
+                      </Item>
+  
+                    </div>
+                  </div>
+                </li>
+                {/* END SHOT */}
 
                 <li>
                   <div className="inner">
@@ -614,6 +643,7 @@ const Portfolio = () => {
                   </div>
                 </li>
                 {/* END SHOT */}
+                
 
                 <li>
                   <div className="inner">
@@ -676,8 +706,35 @@ const Portfolio = () => {
                 </li>
                 {/* END SHOT */}
 
-
-
+                <li>
+                  <div className="inner">
+                    <div className="entry tokyo_tm_portfolio_animation_wrap">
+                      <Item
+                        original="/img/portfolio/LAND/land-9.jpg"
+                        thumbnail="/img/portfolio/LAND/land-9.jpg"
+                        width={466}
+                        height={700}
+                      >
+                        {({ ref, open }) => (
+                          <Image
+                            width={466}
+                            height={700}  
+                            srl_gallery_image="true"
+                            src="/img/portfolio/LAND/land-9.jpg"
+                            alt="land-1"
+                            data-tip
+                            data-for="land-1"
+                            role="button"
+                            ref={ref}
+                            onClick={open}
+                          />
+                        )}
+                      </Item>
+  
+                    </div>
+                  </div>
+                </li>
+                {/* END SHOT */}
 
             </ul>
           </TabPanel>
