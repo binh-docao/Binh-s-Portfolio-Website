@@ -150,30 +150,29 @@ const Portfolio = () => {
                   </div>
                 </li>
                 {/* END SHOT */}
-
                 <li>
                   <div className="inner">
                     <div className="entry tokyo_tm_portfolio_animation_wrap">
                       <Image
                         width={400}
                         height={600}
-                        src="/img/portfolio/ng/NG-2.jpg"
-                        alt="NathanRing"
+                        src="/img/portfolio/HG/1.JPG"
+                        alt="HG"
                         data-tip
-                        data-for="NG"
-                        onClick={toggleModalOne}
+                        data-for="HG"
+                        onClick={toggleModalHG}
                       />
 
                       <ReactTooltip
-                        id="NG"
+                        id="HG"
                         place="bottom"
                         type="light"
                         effect="float"
                         className="tooltip-wrapper"
                       >
                         <div>
-                          <h5 style={{ background: 'rgba(105,163,223,0.9)' }}>Nathan Guindon</h5>
-                          <span >Ring Order</span>
+                          <h5 style={{ background: 'rgba(117,161,201,0.9)' }}>Hope Griffin</h5>
+                          <span >Fish Camp</span>
                         </div>
                       </ReactTooltip>
                     </div>
@@ -217,60 +216,29 @@ const Portfolio = () => {
                       <Image
                         width={400}
                         height={600}
-                        src="/img/portfolio/WS/WS-2.jpg"
-                        alt="WS"
+                        src="/img/portfolio/ME/ME-3.jpg"
+                        alt="ME"
                         data-tip
-                        data-for="WS"
-                        onClick={toggleModalWS}
+                        data-for="ME"
+                        onClick={toggleModalME}
                       />
 
                       <ReactTooltip
-                        id="WS"
+                        id="ME"
                         place="bottom"
                         type="light"
                         effect="float"
                         className="tooltip-wrapper"
                       >
                         <div>
-                          <h5 style={{ background: 'rgba(150,49,110,0.9)' }}>Whit Smith</h5>
-                          <span >Graduation</span>
+                          <h5 style={{ background: 'rgba(3,170,153,0.9)' }}>Mallory & Elle</h5>
+                          <span >Sunset</span>
                         </div>
                       </ReactTooltip>
                     </div>
                   </div>
                 </li>
                 {/* END DETAILS */}
-
-                <li>
-                  <div className="inner">
-                    <div className="entry tokyo_tm_portfolio_animation_wrap">
-                      <Image
-                        width={400}
-                        height={600}
-                        src="/img/portfolio/HG/1.JPG"
-                        alt="HG"
-                        data-tip
-                        data-for="HG"
-                        onClick={toggleModalHG}
-                      />
-
-                      <ReactTooltip
-                        id="HG"
-                        place="bottom"
-                        type="light"
-                        effect="float"
-                        className="tooltip-wrapper"
-                      >
-                        <div>
-                          <h5 style={{ background: 'rgba(117,161,201,0.9)' }}>Hope Griffin</h5>
-                          <span >Fish Camp</span>
-                        </div>
-                      </ReactTooltip>
-                    </div>
-                  </div>
-                </li>
-                {/* END DETAILS */}
-
                 <li>
                   <div className="inner">
                     <div className="entry tokyo_tm_portfolio_animation_wrap">
@@ -300,60 +268,29 @@ const Portfolio = () => {
                   </div>
                 </li>
                 {/* END DETAILS */}
-
                 <li>
                   <div className="inner">
                     <div className="entry tokyo_tm_portfolio_animation_wrap">
                       <Image
                         width={400}
                         height={600}
-                        src="/img/portfolio/dan.jpg"
-                        alt="DC2"
+                        src="/img/portfolio/WS/WS-2.jpg"
+                        alt="WS"
                         data-tip
-                        data-for="DC2"
-                        onClick={toggleModalDC2}
+                        data-for="WS"
+                        onClick={toggleModalWS}
                       />
 
                       <ReactTooltip
-                        id="DC2"
+                        id="WS"
                         place="bottom"
                         type="light"
                         effect="float"
                         className="tooltip-wrapper"
                       >
                         <div>
-                          <h5 style={{ background: 'rgba(69,92,94,0.9)' }}>Daniel Cahak</h5>
-                          <span >Motorcycle</span>
-                        </div>
-                      </ReactTooltip>
-                    </div>
-                  </div>
-                </li>
-                {/* END DETAILS */}
-
-                <li>
-                  <div className="inner">
-                    <div className="entry tokyo_tm_portfolio_animation_wrap">
-                      <Image
-                        width={400}
-                        height={600}
-                        src="/img/portfolio/DC/DC-3.jpg"
-                        alt="DC"
-                        data-tip
-                        data-for="DC"
-                        onClick={toggleModalDC}
-                      />
-
-                      <ReactTooltip
-                        id="DC"
-                        place="bottom"
-                        type="light"
-                        effect="float"
-                        className="tooltip-wrapper"
-                      >
-                        <div>
-                          <h5 style={{ background: 'rgba(80,109,194,0.8)' }}>Davis Cleveland</h5>
-                          <span >Minuti</span>
+                          <h5 style={{ background: 'rgba(150,49,110,0.9)' }}>Whit Smith</h5>
+                          <span >Graduation</span>
                         </div>
                       </ReactTooltip>
                     </div>
@@ -397,6 +334,67 @@ const Portfolio = () => {
                       <Image
                         width={400}
                         height={600}
+                        src="/img/portfolio/ng/NG-2.jpg"
+                        alt="NathanRing"
+                        data-tip
+                        data-for="NG"
+                        onClick={toggleModalOne}
+                      />
+
+                      <ReactTooltip
+                        id="NG"
+                        place="bottom"
+                        type="light"
+                        effect="float"
+                        className="tooltip-wrapper"
+                      >
+                        <div>
+                          <h5 style={{ background: 'rgba(105,163,223,0.9)' }}>Nathan Guindon</h5>
+                          <span >Ring Order</span>
+                        </div>
+                      </ReactTooltip>
+                    </div>
+                  </div>
+                </li>
+                {/* END DETAILS */}
+
+                <li>
+                  <div className="inner">
+                    <div className="entry tokyo_tm_portfolio_animation_wrap">
+                      <Image
+                        width={400}
+                        height={600}
+                        src="/img/portfolio/dan.jpg"
+                        alt="DC2"
+                        data-tip
+                        data-for="DC2"
+                        onClick={toggleModalDC2}
+                      />
+
+                      <ReactTooltip
+                        id="DC2"
+                        place="bottom"
+                        type="light"
+                        effect="float"
+                        className="tooltip-wrapper"
+                      >
+                        <div>
+                          <h5 style={{ background: 'rgba(69,92,94,0.9)' }}>Daniel Cahak</h5>
+                          <span >Motorcycle</span>
+                        </div>
+                      </ReactTooltip>
+                    </div>
+                  </div>
+                </li>
+                {/* END DETAILS */}
+                
+
+                <li>
+                  <div className="inner">
+                    <div className="entry tokyo_tm_portfolio_animation_wrap">
+                      <Image
+                        width={400}
+                        height={600}
                         src="/img/portfolio/NL/NL-1.jpg"
                         alt="NL"
                         data-tip
@@ -421,36 +419,36 @@ const Portfolio = () => {
                 </li>
                 {/* END DETAILS */}
 
+
                 <li>
                   <div className="inner">
                     <div className="entry tokyo_tm_portfolio_animation_wrap">
                       <Image
                         width={400}
                         height={600}
-                        src="/img/portfolio/ME/ME-3.jpg"
-                        alt="ME"
+                        src="/img/portfolio/DC/DC-3.jpg"
+                        alt="DC"
                         data-tip
-                        data-for="ME"
-                        onClick={toggleModalME}
+                        data-for="DC"
+                        onClick={toggleModalDC}
                       />
 
                       <ReactTooltip
-                        id="ME"
+                        id="DC"
                         place="bottom"
                         type="light"
                         effect="float"
                         className="tooltip-wrapper"
                       >
                         <div>
-                          <h5 style={{ background: 'rgba(3,170,153,0.9)' }}>Mallory & Elle</h5>
-                          <span >Sunset</span>
+                          <h5 style={{ background: 'rgba(80,109,194,0.8)' }}>Davis Cleveland</h5>
+                          <span >Minuti</span>
                         </div>
                       </ReactTooltip>
                     </div>
                   </div>
                 </li>
                 {/* END DETAILS */}
-
                 <li>
                   <div className="inner">
                     <div className="entry tokyo_tm_portfolio_animation_wrap">
@@ -480,6 +478,7 @@ const Portfolio = () => {
                   </div>
                 </li>
                 {/* END DETAILS */}
+
 
               </ul>
             </TabPanel>
