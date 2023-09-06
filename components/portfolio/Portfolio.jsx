@@ -501,13 +501,13 @@ const Portfolio = () => {
                       <Item
                         original="/img/portfolio/LAND/land-7.jpg"
                         thumbnail="/img/portfolio/LAND/land-7.jpg"
-                        width={400}
-                        height={600}
+                        width={466}
+                        height={700}
                       >
                         {({ ref, open }) => (
                           <Image
-                            width={400}
-                            height={600}
+                            width={466}
+                            height={700}
                             srl_gallery_image="true"
                             src="/img/portfolio/LAND/land-7.jpg"
                             alt="land-1"
@@ -531,13 +531,13 @@ const Portfolio = () => {
                       <Item
                         original="/img/portfolio/LAND/land-2.jpg"
                         thumbnail="/img/portfolio/LAND/land-2.jpg"
-                        width={400}
-                        height={600}
+                        width={466}
+                        height={700}
                       >
                         {({ ref, open }) => (
                           <Image
-                            width={400}
-                            height={600}
+                            width={466}
+                            height={700}
                             srl_gallery_image="true"
                             src="/img/portfolio/LAND/land-2.jpg"
                             alt="land-1"
@@ -561,13 +561,13 @@ const Portfolio = () => {
                       <Item
                         original="/img/portfolio/LAND/land-3.jpg"
                         thumbnail="/img/portfolio/LAND/land-3.jpg"
-                        width={400}
-                        height={600}
+                        width={466}
+                        height={700}
                       >
                         {({ ref, open }) => (
                           <Image
-                            width={400}
-                            height={600}
+                            width={466}
+                            height={700}
                             srl_gallery_image="true"
                             src="/img/portfolio/LAND/land-3.jpg"
                             alt="land-1"
@@ -591,13 +591,13 @@ const Portfolio = () => {
                       <Item
                         original="/img/portfolio/LAND/land-4.jpg"
                         thumbnail="/img/portfolio/LAND/land-4.jpg"
-                        width={400}
-                        height={600}
+                        width={466}
+                        height={700}
                       >
                         {({ ref, open }) => (
                           <Image
-                            width={400}
-                            height={600}
+                            width={466}
+                            height={700}
                             srl_gallery_image="true"
                             src="/img/portfolio/LAND/land-4.jpg"
                             alt="land-1"
@@ -621,13 +621,13 @@ const Portfolio = () => {
                       <Item
                         original="/img/portfolio/LAND/land-5.jpg"
                         thumbnail="/img/portfolio/LAND/land-5.jpg"
-                        width={400}
-                        height={600}
+                        width={466}
+                        height={700}
                       >
                         {({ ref, open }) => (
                           <Image
-                            width={400}
-                            height={600}
+                            width={466}
+                            height={700}
                             srl_gallery_image="true"
                             src="/img/portfolio/LAND/land-5.jpg"
                             alt="land-1"
@@ -652,13 +652,13 @@ const Portfolio = () => {
                       <Item
                         original="/img/portfolio/LAND/land-6.jpg"
                         thumbnail="/img/portfolio/LAND/land-6.jpg"
-                        width={400}
-                        height={600}
+                        width={466}
+                        height={700}
                       >
                         {({ ref, open }) => (
                           <Image
-                            width={400}
-                            height={600}
+                            width={466}
+                            height={700}  
                             srl_gallery_image="true"
                             src="/img/portfolio/LAND/land-6.jpg"
                             alt="land-1"
