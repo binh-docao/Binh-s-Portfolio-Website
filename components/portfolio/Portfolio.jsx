@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React, { useState} from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import { Gallery, Item } from "react-photoswipe-gallery";
 import "photoswipe/dist/photoswipe.css";
-import Social from "./portfolio-social";
 import ModalVideo from "react-modal-video";
 import Modal from "react-modal";
 import dynamic from "next/dynamic";
@@ -98,6 +97,8 @@ const Portfolio = () => {
     setIsOpenModalKH(!isOpenModalKH);
   }
 
+  
+
   return (
     <>
       <Gallery>
@@ -123,6 +124,7 @@ const Portfolio = () => {
                 <li>
                   <div className="inner">
                     <div className="entry tokyo_tm_portfolio_animation_wrap">
+                      
                       <Image
                         width={400}
                         height={600}
@@ -132,7 +134,6 @@ const Portfolio = () => {
                         data-for="HL1"
                         onClick={toggleModalTwo}
                       />
-
                       <ReactTooltip
                         id="HL1"
                         place="bottom"

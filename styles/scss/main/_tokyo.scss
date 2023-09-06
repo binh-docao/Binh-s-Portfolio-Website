@@ -1959,6 +1959,21 @@ body.modal {
   }
 }
 
+.tooltip-wrapper.always-visible {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.always-visible {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.custom-tooltip {
+  position: absolute;
+  /* Add other styling properties to position it where you'd like */
+}
+
 // portfolio new details popup css
 .portfolio_tm_modalbox .portfolio_main_title {
   width: 100%;
