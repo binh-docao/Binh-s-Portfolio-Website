@@ -754,6 +754,9 @@ h6 {
   clear: both;
   float: left;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid rgba(0, 0, 0, 0.1);
   text-align: center;
   padding: 40px 20px;
@@ -921,7 +924,8 @@ ul.react-tabs__tab-list {
   position: absolute;
   right: 0;
   top: 158px;
-  z-index: 2;
+  
+  z-index: 3;
   @media screen and (max-width: 1199px) {
     top: 225px;
   }
@@ -1204,9 +1208,11 @@ ul.react-tabs__tab-list {
 }
 .tokyo_tm_modalbox_news .box_inner,
 .tokyo_tm_modalbox_about .box-inner {
-  height: 95vh;
-  width: 110vh;
+  height: 90vh;
+  width: 45vw;
   overflow-y: auto;
+  margin:auto;
+
   @media only screen and (min-width: 992px) and (max-width: 1024px) {
     width: 850px;
   }
@@ -1218,8 +1224,9 @@ ul.react-tabs__tab-list {
     height: 500px;
   }
   @media only screen and (min-width: 350px) and (max-width: 575px) {
-    width: 44vh;
-    height: 70vh;
+    width: 95vw;
+    // width:auto;
+    height: 85vh;
   }
   @media only screen and (min-width: 0px) and (max-width: 349px) {
     width: 300px;
@@ -1270,7 +1277,7 @@ ul.react-tabs__tab-list {
 }
 .tokyo_tm_modalbox_news .description_wrap .image {
   position: relative;
-  width:90%;
+  width:50vh;
   height: 90vh;
   z-index: -1;
   margin-top: 40px;
@@ -1298,9 +1305,6 @@ ul.react-tabs__tab-list {
   justify-content: space-between;
   margin-bottom: 20px;
   position: relative;
-
-
-  
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding-bottom: 8px;
 }
@@ -1651,7 +1655,7 @@ body.modal {
 }
 @media (max-width: 1040px) {
   .mouse-cursor {
-    display: none;
+    display: pointer;
   }
   .tokyo_tm_services .list ul li {
     width: 50%;
@@ -1783,7 +1787,7 @@ body.modal {
     padding-left: 0px;
   }
   .tokyo_tm_modalbox_about .counter ul {
-    margin: 0px;
+    margin: px;
   }
   .tokyo_tm_modalbox_about .counter ul li {
     width: 100%;
@@ -1959,21 +1963,18 @@ body.modal {
 .portfolio_tm_modalbox .portfolio_main_title {
   width: 100%;
   float: left;
-  margin-bottom: 10px;
-  margin-top:-30px;
+  margin-bottom: 2%;
+  margin-top: -3%;
   text-align: center;
 }
 .portfolio_tm_modalbox .portfolio_main_title h3 {
   font-weight: 700;
   font-size: 30px;
-  margin-bottom: 5px;
 }
 .portfolio_tm_modalbox .portfolio_main_title span {
   font-style: italic;
 }
 .portfolio_tm_modalbox .main_details {
-  width: 100%;
-  height: auto;
   clear: both;
   display: flex;
   margin-bottom: 50px;
@@ -1983,8 +1984,8 @@ body.modal {
   
 }
 .portfolio_tm_modalbox .main_details .textbox {
-  width: 70%;
-  padding-right: 40px;
+  width: 110%;
+  // padding-right: 40px;
   @media screen and (max-width: 767px) {
     width: 100%;
     padding-right: 0;
@@ -2040,22 +2041,25 @@ body.modal {
 }
 
 .portfolio_tm_modalbox {
+  
   .additional_images {
     clear: both;
   }
   .additional_images ul {
     margin: 0;
+    
     padding: 0;
     list-style-type: none;
   }
   .additional_images ul li {
-    float: left;
-    width: 100%;
-    margin: 5px;  
+    width: 88%;  /* One image per row on mobile */
+    height:auto;
+    margin: 30px 6%;  /* 5px vertical margin, no horizontal margin on mobile */
 
     @media screen and (max-width: 767px) {
-      width: 150%;  /* One image per row on mobile */
-      margin: 5px -25%;  /* 5px vertical margin, no horizontal margin on mobile */
+      width: 95%;  /* One image per row on mobile */
+      height:auto;
+      margin: 30px 3%;  /* 5px vertical margin, no horizontal margin on mobile */
     }
 
     .list_inner {
@@ -2063,26 +2067,15 @@ body.modal {
     }
 
     .my_image {
-      position: relative;
-      height:100%;
-      padding-bottom: 100%;  /* For aspect ratio */
-      background: transparent;
-      // overflow: hidden;
-
-      img {
-        position: absolute;
-        opacity: 1;
-        height: 100%;
-        object-fit: center;
-        object-position: center;
-      }
+   
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
       .main {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
+        width: 100%;
+        height:fit-content;
+        padding-bottom: 150%;  /* (Height/Width)*100% */
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;

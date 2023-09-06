@@ -18,6 +18,7 @@ const ModalTwo = () => {
                   <div
                     className="main"
                     style={{
+                      backgroundPosition: 'center',
                       backgroundImage: "url(/img/portfolio/HL/3.jpg)",
                     }}
                   ></div>
