@@ -7,26 +7,15 @@ import KnowledgeInterest from "./KnowledgeInterest";
 import PersonalInfo from "./PersonalInfo";
 import Resume from "./Resume";
 import Skills from "./Skills";
-import PasswordProtection from '../PasswordProtection';
 
 Modal.setAppElement("#__next");
 
 const AboutMain = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [isPasswordCorrect, setIsPasswordCorrect] = useState(false);
 
   const handleDownloadResume = () => {
-    if (isPasswordCorrect) {
       window.open('/img/cv.pdf', '_blank');
-    } else {
-      setIsModalOpen(true);
-    }
   };
 
-  const handlePasswordCorrect = () => {
-    setIsPasswordCorrect(true);
-    setIsModalOpen(false);
-  };
   return (
     <>
       <div className="container">
@@ -100,16 +89,7 @@ const AboutMain = () => {
       End tokyo_tm_testimonials */}
 
       {/* /ABOUT */}
-      <Modal
-        isOpen={isModalOpen}
-        onRequestClose={() => setIsModalOpen(false)}
-        contentLabel="Password Modal"
-        className="mymodal"
-        overlayClassName="myoverlay"
-        closeTimeoutMS={500}
-      >
-        <PasswordProtection onPasswordCorrect={handlePasswordCorrect} />
-      </Modal>
+
     </>
   );
 };
