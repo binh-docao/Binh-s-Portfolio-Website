@@ -1,3 +1,4 @@
+import ModaltestAdd from "./modal/testAdd";
 import React, { useState} from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import { Gallery, Item } from "react-photoswipe-gallery";
@@ -96,6 +97,18 @@ const Portfolio = () => {
   function toggleModalKH() {
     setIsOpenModalKH(!isOpenModalKH);
   }
+
+    
+  
+        
+
+
+    const [isOpenModaltestAdd, setIsOpenModaltestAdd] = useState(false);
+    function toggleModaltestAdd() {
+      setIsOpenModaltestAdd(!isOpenModaltestAdd);
+    }
+        
+// PORTFOLIO_MODAL_STATE_INSERT
 
   
 
@@ -478,14 +491,43 @@ const Portfolio = () => {
                   </div>
                 </li>
                 {/* END DETAILS */}
+          
+ 
+        <li>
+        <div className="inner">
+          <div className="entry tokyo_tm_portfolio_animation_wrap">
+            <Image
+              width={400}
+              height={600}
+              src="/img/portfolio/testadd/1.jpg"
+              alt="testAdd"
+              data-tip
+              data-for="testAdd"
+              onClick={toggleModaltestAdd}
+            />
+            <ReactTooltip
+              id="testAdd"
+              place="bottom"
+              type="light"
+              effect="float"
+              className="tooltip-wrapper"
+            >
+              <div>
+                <h5 style={{ background: 'rgba(200,100,80,0.8)' }}> Trevor & Zoe</h5>
+                <span>Couple</span>
+              </div>
+            </ReactTooltip>
+          </div>
+        </div>
+      </li>
+          
+ {/* // PORTFOLIO_MODAL_TRIGGER_INSERT */}
+
 
 
               </ul>
             </TabPanel>
             {/* END ALL PORTFOLIO */}
-
-
-          
 
           {/* LandScape */}
           <TabPanel>
@@ -986,6 +1028,9 @@ const Portfolio = () => {
       </Modal>
       {/* END MODAL FOR PORTFOLIO DETAILS */}
 
+
+
+
       {/* START MODAL FOR PORTFOLIO DETAILS */}
       <Modal
         isOpen={isOpenModalME}
@@ -1029,10 +1074,26 @@ const Portfolio = () => {
         {/* END MODALBOX NEWS */}
       </Modal>
       {/* END MODAL FOR PORTFOLIO DETAILS */}
-
-
-
       
+ 
+    <Modal
+    isOpen={isOpenModaltestAdd}
+    onRequestClose={toggleModaltestAdd}
+    contentLabel="My dialog"
+    className="mymodal"
+    overlayClassName="myoverlay"
+    closeTimeoutMS={500}
+  >
+    <div className="tokyo_tm_modalbox_news portfolio_tm_modalbox">
+      <button className="close-modal" onClick={toggleModaltestAdd}>
+        <img src="/img/svg/cancel.svg" alt="close icon" />
+      </button>
+      <ModaltestAdd/>
+    </div>
+  </Modal>
+      
+ {/* // PORTFOLIO_MODAL_COMPONENT_INSERT */}
+
     </>
   );
 };
