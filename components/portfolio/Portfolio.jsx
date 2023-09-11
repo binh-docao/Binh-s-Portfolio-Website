@@ -379,7 +379,7 @@ const Portfolio = () => {
             <Image
               width={400}
               height={600}
-              src="/img/portfolio/Songfest/1.jpg"
+              src="/img/portfolio/songfest/1.jpg"
               alt="Songfest"
               data-tip
               data-for="Songfest"
@@ -408,7 +408,7 @@ const Portfolio = () => {
                       <Image
                         width={400}
                         height={600}
-                        src="/img/portfolio/Glow/1.jpg"
+                        src="/img/portfolio/glow/1.jpg"
                         alt="Glow"
                         data-tip
                         data-for="Glow"
@@ -465,7 +465,7 @@ const Portfolio = () => {
             <Image
               width={400}
               height={600}
-              src="/img/portfolio/EmilyRiley/1.jpg"
+              src="/img/portfolio/emilyriley/1.jpg"
               alt="EmilyRiley"
               data-tip
               data-for="EmilyRiley"
@@ -494,7 +494,7 @@ const Portfolio = () => {
                       <Image
                         width={400}
                         height={600}
-                        src="/img/portfolio/TrevorZoe/1.jpg"
+                        src="/img/portfolio/trevorzoe/1.jpg"
                         alt="TrevorZoe"
                         data-tip
                         data-for="TrevorZoe"
@@ -615,7 +615,7 @@ const Portfolio = () => {
             <Image
               width={400}
               height={600}
-              src="/img/portfolio/AspenAvery/1.jpg"
+              src="/img/portfolio/aspenavery/1.jpg"
               alt="AspenAvery"
               data-tip
               data-for="AspenAvery"
@@ -644,7 +644,7 @@ const Portfolio = () => {
             <Image
               width={400}
               height={600}
-              src="/img/portfolio/D/1.jpg"
+              src="/img/portfolio/d/1.jpg"
               alt="DFC"
               data-tip
               data-for="DFC"

@@ -16,7 +16,7 @@
             <div
               className="main"
               style={{
-                backgroundImage: "url(/img/portfolio/Songfest/1.jpg)",
+                backgroundImage: "url(/img/portfolio/songfest/1.jpg)",
               }}
             ></div>
           </div>

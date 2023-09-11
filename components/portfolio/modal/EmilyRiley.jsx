@@ -14,7 +14,7 @@
             <div
               className="main"
               style={{
-                backgroundImage: "url(/img/portfolio/EmilyRiley/1.jpg)",
+                backgroundImage: "url(/img/portfolio/emilyriley/1.jpg)",
               }}
             ></div>
           </div>
@@ -27,7 +27,7 @@
             <div
               className="main"
               style={{
-                backgroundImage: "url(/img/portfolio/EmilyRiley/2.jpg)",
+                backgroundImage: "url(/img/portfolio/emilyriley/2.jpg)",
               }}
             ></div>
           </div>
@@ -40,7 +40,7 @@
             <div
               className="main"
               style={{
-                backgroundImage: "url(/img/portfolio/EmilyRiley/3.jpg)",
+                backgroundImage: "url(/img/portfolio/emilyriley/3.jpg)",
               }}
             ></div>
           </div>
