@@ -1,4 +1,4 @@
-import ModaltestAdd from "./modal/testAdd";
+import ModalEmilyRiley from "./modal/EmilyRiley";
 import React, { useState} from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import { Gallery, Item } from "react-photoswipe-gallery";
@@ -98,14 +98,9 @@ const Portfolio = () => {
     setIsOpenModalKH(!isOpenModalKH);
   }
 
-    
-  
-        
-
-
-    const [isOpenModaltestAdd, setIsOpenModaltestAdd] = useState(false);
-    function toggleModaltestAdd() {
-      setIsOpenModaltestAdd(!isOpenModaltestAdd);
+    const [isOpenModalEmilyRiley, setIsOpenModalEmilyRiley] = useState(false);
+    function toggleModalEmilyRiley() {
+      setIsOpenModalEmilyRiley(!isOpenModalEmilyRiley);
     }
         
 // PORTFOLIO_MODAL_STATE_INSERT
@@ -490,31 +485,29 @@ const Portfolio = () => {
                     </div>
                   </div>
                 </li>
-                {/* END DETAILS */}
-          
- 
+                {/* END DETAILS */} 
         <li>
         <div className="inner">
           <div className="entry tokyo_tm_portfolio_animation_wrap">
             <Image
               width={400}
               height={600}
-              src="/img/portfolio/testadd/1.jpg"
-              alt="testAdd"
+              src="/img/portfolio/emilyriley/1.jpg"
+              alt="EmilyRiley"
               data-tip
-              data-for="testAdd"
-              onClick={toggleModaltestAdd}
+              data-for="EmilyRiley"
+              onClick={toggleModalEmilyRiley}
             />
             <ReactTooltip
-              id="testAdd"
+              id="EmilyRiley"
               place="bottom"
               type="light"
               effect="float"
               className="tooltip-wrapper"
             >
               <div>
-                <h5 style={{ background: 'rgba(200,100,80,0.8)' }}> Trevor & Zoe</h5>
-                <span>Couple</span>
+                <h5 style={{ background: 'rgba(157,146,196,0.8)' }}> Emily & Riley</h5>
+                <span>Ice Cream</span>
               </div>
             </ReactTooltip>
           </div>
@@ -1077,18 +1070,18 @@ const Portfolio = () => {
       
  
     <Modal
-    isOpen={isOpenModaltestAdd}
-    onRequestClose={toggleModaltestAdd}
+    isOpen={isOpenModalEmilyRiley}
+    onRequestClose={toggleModalEmilyRiley}
     contentLabel="My dialog"
     className="mymodal"
     overlayClassName="myoverlay"
     closeTimeoutMS={500}
   >
     <div className="tokyo_tm_modalbox_news portfolio_tm_modalbox">
-      <button className="close-modal" onClick={toggleModaltestAdd}>
+      <button className="close-modal" onClick={toggleModalEmilyRiley}>
         <img src="/img/svg/cancel.svg" alt="close icon" />
       </button>
-      <ModaltestAdd/>
+      <ModalEmilyRiley/>
     </div>
   </Modal>
       

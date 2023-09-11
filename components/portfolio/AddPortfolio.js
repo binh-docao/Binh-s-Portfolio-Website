@@ -132,6 +132,7 @@ const rl = readline.createInterface({
     output: process.stdout
 });
 
+
 rl.question("Enter the name of the new portfolio folder: ", function(name) {
     
     rl.question("Enter the number of images for this item: ", function(num) {
