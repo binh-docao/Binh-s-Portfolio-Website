@@ -1,3 +1,4 @@
+import ModalAspenAvery from "./modal/AspenAvery";
 import ModalGlow from "./modal/Glow";
 import ModalSongfest from "./modal/Songfest";
 import ModalTrevorZoe from "./modal/TrevorZoe";
@@ -123,6 +124,13 @@ const Portfolio = () => {
     const [isOpenModalGlow, setIsOpenModalGlow] = useState(false);
     function toggleModalGlow() {
       setIsOpenModalGlow(!isOpenModalGlow);
+    }
+        
+
+
+    const [isOpenModalAspenAvery, setIsOpenModalAspenAvery] = useState(false);
+    function toggleModalAspenAvery() {
+      setIsOpenModalAspenAvery(!isOpenModalAspenAvery);
     }
         
 // PORTFOLIO_MODAL_STATE_INSERT
@@ -593,6 +601,35 @@ const Portfolio = () => {
                 {/* END DETAILS */} 
 
         
+          
+ 
+        <li>
+        <div className="inner">
+          <div className="entry tokyo_tm_portfolio_animation_wrap">
+            <Image
+              width={400}
+              height={600}
+              src="/img/portfolio/aspenavery/1.jpg"
+              alt="AspenAvery"
+              data-tip
+              data-for="AspenAvery"
+              onClick={toggleModalAspenAvery}
+            />
+            <ReactTooltip
+              id="AspenAvery"
+              place="bottom"
+              type="light"
+              effect="float"
+              className="tooltip-wrapper"
+            >
+              <div>
+                <h5 style={{ background: 'rgba(82,8,24,0.8)' }}> Aspen & Avery</h5>
+                <span>Vic Din</span>
+              </div>
+            </ReactTooltip>
+          </div>
+        </div>
+      </li>
           
  {/* // PORTFOLIO_MODAL_TRIGGER_INSERT */}
 
@@ -1215,6 +1252,23 @@ const Portfolio = () => {
         <img src="/img/svg/cancel.svg" alt="close icon" />
       </button>
       <ModalGlow/>
+    </div>
+  </Modal>
+      
+ 
+    <Modal
+    isOpen={isOpenModalAspenAvery}
+    onRequestClose={toggleModalAspenAvery}
+    contentLabel="My dialog"
+    className="mymodal"
+    overlayClassName="myoverlay"
+    closeTimeoutMS={500}
+  >
+    <div className="tokyo_tm_modalbox_news portfolio_tm_modalbox">
+      <button className="close-modal" onClick={toggleModalAspenAvery}>
+        <img src="/img/svg/cancel.svg" alt="close icon" />
+      </button>
+      <ModalAspenAvery/>
     </div>
   </Modal>
       
