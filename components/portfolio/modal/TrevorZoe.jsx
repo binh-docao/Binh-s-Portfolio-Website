@@ -17,7 +17,7 @@
             <div
               className="main"
               style={{
-                backgroundImage: "url(/img/portfolio/trevorzoe/1.jpg)",
+                backgroundImage: "url(/img/portfolio/TrevorZoe/1.jpg)",
               }}
             ></div>
           </div>
@@ -30,7 +30,7 @@
             <div
               className="main"
               style={{
-                backgroundImage: "url(/img/portfolio/trevorzoe/2.jpg)",
+                backgroundImage: "url(/img/portfolio/TrevorZoe/2.jpg)",
               }}
             ></div>
           </div>
@@ -43,7 +43,7 @@
             <div
               className="main"
               style={{
-                backgroundImage: "url(/img/portfolio/trevorzoe/3.jpg)",
+                backgroundImage: "url(/img/portfolio/TrevorZoe/3.jpg)",
               }}
             ></div>
           </div>
@@ -56,7 +56,7 @@
             <div
               className="main"
               style={{
-                backgroundImage: "url(/img/portfolio/trevorzoe/4.jpg)",
+                backgroundImage: "url(/img/portfolio/TrevorZoe/4.jpg)",
               }}
             ></div>
           </div>
@@ -69,7 +69,7 @@
             <div
               className="main"
               style={{
-                backgroundImage: "url(/img/portfolio/trevorzoe/5.jpg)",
+                backgroundImage: "url(/img/portfolio/TrevorZoe/5.jpg)",
               }}
             ></div>
           </div>
@@ -82,7 +82,7 @@
             <div
               className="main"
               style={{
-                backgroundImage: "url(/img/portfolio/trevorzoe/6.jpg)",
+                backgroundImage: "url(/img/portfolio/TrevorZoe/6.jpg)",
               }}
             ></div>
           </div>

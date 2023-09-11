@@ -371,7 +371,7 @@ const Portfolio = () => {
             <Image
               width={400}
               height={600}
-              src="/img/portfolio/songfest/1.jpg"
+              src="/img/portfolio/Songfest/1.jpg"
               alt="Songfest"
               data-tip
               data-for="Songfest"
@@ -394,33 +394,33 @@ const Portfolio = () => {
       </li>
           
  
-        <li>
-        <div className="inner">
-          <div className="entry tokyo_tm_portfolio_animation_wrap">
-            <Image
-              width={400}
-              height={600}
-              src="/img/portfolio/glow/1.jpg"
-              alt="Glow"
-              data-tip
-              data-for="Glow"
-              onClick={toggleModalGlow}
-            />
-            <ReactTooltip
-              id="Glow"
-              place="bottom"
-              type="light"
-              effect="float"
-              className="tooltip-wrapper"
-            >
-              <div>
-                <h5 style={{ background: 'rgba(250,149,35,0.8)' }}> Glow - Work Week</h5>
-                <span>ZTA</span>
-              </div>
-            </ReactTooltip>
-          </div>
-        </div>
-      </li>
+                  <li>
+                  <div className="inner">
+                    <div className="entry tokyo_tm_portfolio_animation_wrap">
+                      <Image
+                        width={400}
+                        height={600}
+                        src="/img/portfolio/Glow/1.jpg"
+                        alt="Glow"
+                        data-tip
+                        data-for="Glow"
+                        onClick={toggleModalGlow}
+                      />
+                      <ReactTooltip
+                        id="Glow"
+                        place="bottom"
+                        type="light"
+                        effect="float"
+                        className="tooltip-wrapper"
+                      >
+                        <div>
+                          <h5 style={{ background: 'rgba(250,149,35,0.8)' }}> Glow - Work Week</h5>
+                          <span>ZTA</span>
+                        </div>
+                      </ReactTooltip>
+                    </div>
+                  </div>
+                </li>
 
                 <li>
                   <div className="inner">
@@ -457,7 +457,7 @@ const Portfolio = () => {
             <Image
               width={400}
               height={600}
-              src="/img/portfolio/emilyriley/1.jpg"
+              src="/img/portfolio/EmilyRiley/1.jpg"
               alt="EmilyRiley"
               data-tip
               data-for="EmilyRiley"
@@ -480,35 +480,33 @@ const Portfolio = () => {
       </li>
           
  
-        <li>
-        <div className="inner">
-          <div className="entry tokyo_tm_portfolio_animation_wrap">
-            <Image
-              width={400}
-              height={600}
-              src="/img/portfolio/trevorzoe/1.jpg"
-              alt="TrevorZoe"
-              data-tip
-              data-for="TrevorZoe"
-              onClick={toggleModalTrevorZoe}
-            />
-            <ReactTooltip
-              id="TrevorZoe"
-              place="bottom"
-              type="light"
-              effect="float"
-              className="tooltip-wrapper"
-            >
-              <div>
-                <h5 style={{ background: 'rgba(184,178,188,0.88)' }}> Trevor & Zoe</h5>
-                <span>Couple</span>
-              </div>
-            </ReactTooltip>
-          </div>
-        </div>
-      </li>
-
-                
+                  <li>
+                  <div className="inner">
+                    <div className="entry tokyo_tm_portfolio_animation_wrap">
+                      <Image
+                        width={400}
+                        height={600}
+                        src="/img/portfolio/TrevorZoe/1.jpg"
+                        alt="TrevorZoe"
+                        data-tip
+                        data-for="TrevorZoe"
+                        onClick={toggleModalTrevorZoe}
+                      />
+                      <ReactTooltip
+                        id="TrevorZoe"
+                        place="bottom"
+                        type="light"
+                        effect="float"
+                        className="tooltip-wrapper"
+                      >
+                        <div>
+                          <h5 style={{ background: 'rgba(184,178,188,0.88)' }}> Trevor & Zoe</h5>
+                          <span>Couple</span>
+                        </div>
+                      </ReactTooltip>
+                    </div>
+                  </div>
+                </li>
 
                 <li>
                   <div className="inner">
