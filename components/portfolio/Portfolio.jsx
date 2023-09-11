@@ -1,3 +1,6 @@
+import ModalGlow from "./modal/Glow";
+import ModalSongfest from "./modal/Songfest";
+import ModalTrevorZoe from "./modal/TrevorZoe";
 import ModalEmilyRiley from "./modal/EmilyRiley";
 import React, { useState} from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
@@ -103,6 +106,25 @@ const Portfolio = () => {
       setIsOpenModalEmilyRiley(!isOpenModalEmilyRiley);
     }
         
+
+
+    const [isOpenModalTrevorZoe, setIsOpenModalTrevorZoe] = useState(false);
+    function toggleModalTrevorZoe() {
+      setIsOpenModalTrevorZoe(!isOpenModalTrevorZoe);
+    }
+        
+    const [isOpenModalSongfest, setIsOpenModalSongfest] = useState(false);
+    function toggleModalSongfest() {
+      setIsOpenModalSongfest(!isOpenModalSongfest);
+    }
+        
+
+
+    const [isOpenModalGlow, setIsOpenModalGlow] = useState(false);
+    function toggleModalGlow() {
+      setIsOpenModalGlow(!isOpenModalGlow);
+    }
+        
 // PORTFOLIO_MODAL_STATE_INSERT
 
   
@@ -150,7 +172,7 @@ const Portfolio = () => {
                         className="tooltip-wrapper"
                       >
                         <div>
-                          <h5 style={{ background: 'rgba(170,77,109,0.9)' }}>Hannah Lebow</h5>
+                          <h5 style={{ background: 'rgba(161,190,247,0.9)' }}>Hannah Lebow</h5>
                           <span >Portraits</span>
                         </div>
                       </ReactTooltip>
@@ -158,36 +180,36 @@ const Portfolio = () => {
                   </div>
                 </li>
                 {/* END SHOT */}
+
                 <li>
                   <div className="inner">
                     <div className="entry tokyo_tm_portfolio_animation_wrap">
                       <Image
                         width={400}
                         height={600}
-                        src="/img/portfolio/HG/1.JPG"
-                        alt="HG"
+                        src="/img/portfolio/ng/NG-2.jpg"
+                        alt="NathanRing"
                         data-tip
-                        data-for="HG"
-                        onClick={toggleModalHG}
+                        data-for="NG"
+                        onClick={toggleModalOne}
                       />
 
                       <ReactTooltip
-                        id="HG"
+                        id="NG"
                         place="bottom"
                         type="light"
                         effect="float"
                         className="tooltip-wrapper"
                       >
                         <div>
-                          <h5 style={{ background: 'rgba(117,161,201,0.9)' }}>Hope Griffin</h5>
-                          <span >Fish Camp</span>
+                          <h5 style={{ background: 'rgba(105,163,223,0.9)' }}>Nathan Guindon</h5>
+                          <span >Ring Order</span>
                         </div>
                       </ReactTooltip>
                     </div>
                   </div>
                 </li>
                 {/* END DETAILS */}
-
                 <li>
                   <div className="inner">
                     <div className="entry tokyo_tm_portfolio_animation_wrap">
@@ -268,7 +290,7 @@ const Portfolio = () => {
                         className="tooltip-wrapper"
                       >
                         <div>
-                          <h5 style={{ background: 'rgba(112,21,62,0.8)' }}>Kaylee & Claire</h5>
+                          <h5 style={{ background: 'rgba(112,21,62,0.65)' }}>Kaylee & Claire</h5>
                           <span >Game Day</span>
                         </div>
                       </ReactTooltip>
@@ -335,6 +357,62 @@ const Portfolio = () => {
                   </div>
                 </li>
                 {/* END DETAILS */}
+                <li>
+        <div className="inner">
+          <div className="entry tokyo_tm_portfolio_animation_wrap">
+            <Image
+              width={400}
+              height={600}
+              src="/img/portfolio/songfest/1.jpg"
+              alt="Songfest"
+              data-tip
+              data-for="Songfest"
+              onClick={toggleModalSongfest}
+            />
+            <ReactTooltip
+              id="Songfest"
+              place="bottom"
+              type="light"
+              effect="float"
+              className="tooltip-wrapper"
+            >
+              <div>
+                <h5 style={{ background: 'rgba(25,78,204,0.65)' }}>Songfest</h5>
+                <span>ZTA x BYX</span>
+              </div>
+            </ReactTooltip>
+          </div>
+        </div>
+      </li>
+          
+ 
+        <li>
+        <div className="inner">
+          <div className="entry tokyo_tm_portfolio_animation_wrap">
+            <Image
+              width={400}
+              height={600}
+              src="/img/portfolio/glow/1.jpg"
+              alt="Glow"
+              data-tip
+              data-for="Glow"
+              onClick={toggleModalGlow}
+            />
+            <ReactTooltip
+              id="Glow"
+              place="bottom"
+              type="light"
+              effect="float"
+              className="tooltip-wrapper"
+            >
+              <div>
+                <h5 style={{ background: 'rgba(250,149,35,0.8)' }}> Glow - Work Week</h5>
+                <span>ZTA</span>
+              </div>
+            </ReactTooltip>
+          </div>
+        </div>
+      </li>
 
                 <li>
                   <div className="inner">
@@ -342,59 +420,86 @@ const Portfolio = () => {
                       <Image
                         width={400}
                         height={600}
-                        src="/img/portfolio/ng/NG-2.jpg"
-                        alt="NathanRing"
+                        src="/img/portfolio/HG/1.JPG"
+                        alt="HG"
                         data-tip
-                        data-for="NG"
-                        onClick={toggleModalOne}
+                        data-for="HG"
+                        onClick={toggleModalHG}
                       />
 
                       <ReactTooltip
-                        id="NG"
+                        id="HG"
                         place="bottom"
                         type="light"
                         effect="float"
                         className="tooltip-wrapper"
                       >
                         <div>
-                          <h5 style={{ background: 'rgba(105,163,223,0.9)' }}>Nathan Guindon</h5>
-                          <span >Ring Order</span>
+                          <h5 style={{ background: 'rgba(117,161,201,0.9)' }}>Hope Griffin</h5>
+                          <span >Fish Camp</span>
                         </div>
                       </ReactTooltip>
                     </div>
                   </div>
                 </li>
                 {/* END DETAILS */}
-
                 <li>
-                  <div className="inner">
-                    <div className="entry tokyo_tm_portfolio_animation_wrap">
-                      <Image
-                        width={400}
-                        height={600}
-                        src="/img/portfolio/dan.jpg"
-                        alt="DC2"
-                        data-tip
-                        data-for="DC2"
-                        onClick={toggleModalDC2}
-                      />
+        <div className="inner">
+          <div className="entry tokyo_tm_portfolio_animation_wrap">
+            <Image
+              width={400}
+              height={600}
+              src="/img/portfolio/emilyriley/1.jpg"
+              alt="EmilyRiley"
+              data-tip
+              data-for="EmilyRiley"
+              onClick={toggleModalEmilyRiley}
+            />
+            <ReactTooltip
+              id="EmilyRiley"
+              place="bottom"
+              type="light"
+              effect="float"
+              className="tooltip-wrapper"
+            >
+              <div>
+                <h5 style={{ background: 'rgba(245,190,246,0.8)' }}> Emily & Riley</h5>
+                <span>Ice Cream</span>
+              </div>
+            </ReactTooltip>
+          </div>
+        </div>
+      </li>
+          
+ 
+        <li>
+        <div className="inner">
+          <div className="entry tokyo_tm_portfolio_animation_wrap">
+            <Image
+              width={400}
+              height={600}
+              src="/img/portfolio/trevorzoe/1.jpg"
+              alt="TrevorZoe"
+              data-tip
+              data-for="TrevorZoe"
+              onClick={toggleModalTrevorZoe}
+            />
+            <ReactTooltip
+              id="TrevorZoe"
+              place="bottom"
+              type="light"
+              effect="float"
+              className="tooltip-wrapper"
+            >
+              <div>
+                <h5 style={{ background: 'rgba(184,178,188,0.88)' }}> Trevor & Zoe</h5>
+                <span>Couple</span>
+              </div>
+            </ReactTooltip>
+          </div>
+        </div>
+      </li>
 
-                      <ReactTooltip
-                        id="DC2"
-                        place="bottom"
-                        type="light"
-                        effect="float"
-                        className="tooltip-wrapper"
-                      >
-                        <div>
-                          <h5 style={{ background: 'rgba(69,92,94,0.9)' }}>Daniel Cahak</h5>
-                          <span >Motorcycle</span>
-                        </div>
-                      </ReactTooltip>
-                    </div>
-                  </div>
-                </li>
-                {/* END DETAILS */}
                 
 
                 <li>
@@ -486,33 +591,8 @@ const Portfolio = () => {
                   </div>
                 </li>
                 {/* END DETAILS */} 
-        <li>
-        <div className="inner">
-          <div className="entry tokyo_tm_portfolio_animation_wrap">
-            <Image
-              width={400}
-              height={600}
-              src="/img/portfolio/emilyriley/1.jpg"
-              alt="EmilyRiley"
-              data-tip
-              data-for="EmilyRiley"
-              onClick={toggleModalEmilyRiley}
-            />
-            <ReactTooltip
-              id="EmilyRiley"
-              place="bottom"
-              type="light"
-              effect="float"
-              className="tooltip-wrapper"
-            >
-              <div>
-                <h5 style={{ background: 'rgba(245,190,246,0.8)' }}> Emily & Riley</h5>
-                <span>Ice Cream</span>
-              </div>
-            </ReactTooltip>
-          </div>
-        </div>
-      </li>
+
+        
           
  {/* // PORTFOLIO_MODAL_TRIGGER_INSERT */}
 
@@ -1082,6 +1162,59 @@ const Portfolio = () => {
         <img src="/img/svg/cancel.svg" alt="close icon" />
       </button>
       <ModalEmilyRiley/>
+    </div>
+  </Modal>
+      
+ 
+    <Modal
+    isOpen={isOpenModalTrevorZoe}
+    onRequestClose={toggleModalTrevorZoe}
+    contentLabel="My dialog"
+    className="mymodal"
+    overlayClassName="myoverlay"
+    closeTimeoutMS={500}
+  >
+    <div className="tokyo_tm_modalbox_news portfolio_tm_modalbox">
+      <button className="close-modal" onClick={toggleModalTrevorZoe}>
+        <img src="/img/svg/cancel.svg" alt="close icon" />
+      </button>
+      <ModalTrevorZoe/>
+    </div>
+  </Modal>
+      
+
+      
+ 
+    <Modal
+    isOpen={isOpenModalSongfest}
+    onRequestClose={toggleModalSongfest}
+    contentLabel="My dialog"
+    className="mymodal"
+    overlayClassName="myoverlay"
+    closeTimeoutMS={500}
+  >
+    <div className="tokyo_tm_modalbox_news portfolio_tm_modalbox">
+      <button className="close-modal" onClick={toggleModalSongfest}>
+        <img src="/img/svg/cancel.svg" alt="close icon" />
+      </button>
+      <ModalSongfest/>
+    </div>
+  </Modal>
+      
+ 
+    <Modal
+    isOpen={isOpenModalGlow}
+    onRequestClose={toggleModalGlow}
+    contentLabel="My dialog"
+    className="mymodal"
+    overlayClassName="myoverlay"
+    closeTimeoutMS={500}
+  >
+    <div className="tokyo_tm_modalbox_news portfolio_tm_modalbox">
+      <button className="close-modal" onClick={toggleModalGlow}>
+        <img src="/img/svg/cancel.svg" alt="close icon" />
+      </button>
+      <ModalGlow/>
     </div>
   </Modal>
       

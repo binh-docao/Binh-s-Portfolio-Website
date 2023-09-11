@@ -7,7 +7,7 @@ const portfolioDir = path.join(__dirname, "/"); // Adjust the path
 const modalDir = path.join(__dirname, "/modal"); // Adjust the path
 const portfolioJsxPath = path.join(portfolioDir, "Portfolio.jsx");
 
-function generateSampleGroup(name, numImages) {
+function generateSampleGroup(name, numImages,label) {
     let images = "";
     for (let i = 1; i <= numImages; i++) {
         images += `
@@ -27,14 +27,13 @@ function generateSampleGroup(name, numImages) {
     }
 
     return `
-    import Social from "../../Social";
-
+    
     const Modal${name} = () => {
       return (
         <div className="box_inner">
           <div className="description_wrap scrollable">
             <div className="portfolio_main_title">
-              <h3>${name}</h3>
+              <h3>${label}</h3>
             </div>
             <div className="additional_images">
               <ul className="gallery_zoom">
@@ -121,7 +120,7 @@ function updatePortfolio(name, numImages,rgbaValue, label, description) {
 }
 
 function addPortfolio(name, numImages, rgbaValue,label, description) {
-    const content = generateSampleGroup(name, numImages);
+    const content = generateSampleGroup(name, numImages,label);
     fs.writeFileSync(path.join(modalDir, `${name}.jsx`), content);
     updatePortfolio(name, numImages, rgbaValue,label, description);
 }
@@ -146,8 +145,7 @@ rl.question("Enter the name of the new portfolio folder: ", function(name) {
         rl.question("Enter the Red value (0-255) for the RGBA: ", function(red) {
             rl.question("Enter the Green value (0-255) for the RGBA: ", function(green) {
                 rl.question("Enter the Blue value (0-255) for the RGBA: ", function(blue) {
-                    rl.question("Enter the Alpha value (0-1, e.g., 0.9) for the RGBA: ", function(alpha) {
-                        const rgbaValue = `rgba(${red},${green},${blue},${alpha})`;
+                        const rgbaValue = `rgba(${red},${green},${blue},${0.8})`;
                         rl.question("Enter the tool-tip name", function(label){   // <-- Fixed the typo here
                             rl.question("Enter the description (e.g., Work Week): ", function(description) {
                                 addPortfolio(name, numImages, rgbaValue,label, description);
@@ -155,7 +153,6 @@ rl.question("Enter the name of the new portfolio folder: ", function(name) {
                                 rl.close();
                             });
                         });
-                    });
                 });
             });
         });

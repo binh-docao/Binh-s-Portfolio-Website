@@ -1,12 +1,9 @@
-
-    import Social from "../../Social";
-
     const ModalEmilyRiley = () => {
       return (
         <div className="box_inner">
           <div className="description_wrap scrollable">
             <div className="portfolio_main_title">
-              <h3>EmilyRiley</h3>
+              <h3>Emily & Riley</h3>
             </div>
             <div className="additional_images">
               <ul className="gallery_zoom">
