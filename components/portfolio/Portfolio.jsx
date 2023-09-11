@@ -506,7 +506,7 @@ const Portfolio = () => {
               className="tooltip-wrapper"
             >
               <div>
-                <h5 style={{ background: 'rgba(157,146,196,0.8)' }}> Emily & Riley</h5>
+                <h5 style={{ background: 'rgba(245,190,246,0.8)' }}> Emily & Riley</h5>
                 <span>Ice Cream</span>
               </div>
             </ReactTooltip>
