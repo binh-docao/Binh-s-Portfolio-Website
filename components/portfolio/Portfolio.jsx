@@ -615,7 +615,7 @@ const Portfolio = () => {
             <Image
               width={400}
               height={600}
-              src="/img/portfolio/aspenavery/1.jpg"
+              src="/img/portfolio/AspenAvery/1.jpg"
               alt="AspenAvery"
               data-tip
               data-for="AspenAvery"
@@ -644,7 +644,7 @@ const Portfolio = () => {
             <Image
               width={400}
               height={600}
-              src="/img/portfolio/d/1.jpg"
+              src="/img/portfolio/D/1.jpg"
               alt="DFC"
               data-tip
               data-for="DFC"
