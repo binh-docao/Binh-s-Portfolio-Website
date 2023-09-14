@@ -7,12 +7,12 @@ const Resume = () => {
       colClass: "left",
       title: "Education",
       resume: [
-        {
-          id: 1,
-          year: "2023 - 2023",
-          institute: "Texas A&M University",
-          degree: "Masters Degree",
-        },
+        // {
+        //   id: 1,
+        //   year: "2023 - 2023",
+        //   institute: "Texas A&M University",
+        //   degree: "Masters Degree",
+        // },
         {
           id: 2,
           year: "2019 - 2023",
