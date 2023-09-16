@@ -7,6 +7,7 @@ import KnowledgeInterest from "./KnowledgeInterest";
 import PersonalInfo from "./PersonalInfo";
 import Resume from "./Resume";
 import Skills from "./Skills";
+import Link from "next/link";
 
 Modal.setAppElement("#__next");
 
@@ -38,9 +39,12 @@ const AboutMain = () => {
 
           <div className="tokyo_tm_button" data-position="left">
             {/* Updated button style */}
-            <a onClick = {handleDownloadResume}>
+            {/* <a onClick = {handleDownloadResume}>
               <span>Download Resume</span>
-            </a>
+            </a> */}
+            <Link href="/protected" style={{ textDecoration: 'none' }}>
+              <span>Download Resume</span>
+            </Link>
             {/* End updated button style */}
           </div>
           </div>
