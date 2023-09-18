@@ -11,7 +11,12 @@ const PasswordPage = () => {
     const formData = new FormData(form.current);
     const enteredPassword = formData.get("password");
     
-    const correctPassword = "lebow";  // Replace with your correct password
+    // Inside components/passwordredirect.jsx
+    const correctPassword = process.env.NEXT_PUBLIC_REACT_APP_PASSWORD; // Access client-side environment variable with prefix
+
+
+    console.log(correctPassword)
+    console.log('binh')
 
     if (enteredPassword === correctPassword) {
         toast.success("Redirecting...", {
@@ -24,7 +29,7 @@ const PasswordPage = () => {
             progress: undefined,
           });
           setTimeout(() => {
-            window.location.href = "https://www.instagram.com/vicsjpeg/"; // Replace with your website
+            window.location.href = "https://www.instagram.com/photo.binh/"; // Replace with your website
         }, 2200); // 2000 milliseconds (or 2 seconds)
     } else {
       toast.error("Incorrect Password", {
