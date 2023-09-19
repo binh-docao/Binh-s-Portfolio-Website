@@ -1,3 +1,4 @@
+import Modalbiglil from "./modal/biglil";
 import ModalD from "./modal/D";
 import ModalAspenAvery from "./modal/AspenAvery";
 import ModalGlow from "./modal/Glow";
@@ -139,6 +140,13 @@ const Portfolio = () => {
     const [isOpenModalD, setIsOpenModalD] = useState(false);
     function toggleModalD() {
       setIsOpenModalD(!isOpenModalD);
+    }
+        
+
+
+    const [isOpenModalbiglil, setIsOpenModalbiglil] = useState(false);
+    function toggleModalbiglil() {
+      setIsOpenModalbiglil(!isOpenModalbiglil);
     }
         
 // PORTFOLIO_MODAL_STATE_INSERT
@@ -660,6 +668,35 @@ const Portfolio = () => {
               <div>
                 <h5 style={{ background: 'rgba(179,30,50,0.8)' }}> Session D</h5>
                 <span>Fish Camp</span>
+              </div>
+            </ReactTooltip>
+          </div>
+        </div>
+      </li>
+          
+ 
+        <li>
+        <div className="inner">
+          <div className="entry tokyo_tm_portfolio_animation_wrap">
+            <Image
+              width={400}
+              height={600}
+              src="/img/portfolio/biglil/1.jpg"
+              alt="biglil"
+              data-tip
+              data-for="biglil"
+              onClick={toggleModalbiglil}
+            />
+            <ReactTooltip
+              id="biglil"
+              place="bottom"
+              type="light"
+              effect="float"
+              className="tooltip-wrapper"
+            >
+              <div>
+                <h5 style={{ background: 'rgba(95,165,170,0.8)' }}> Big Little Reveal</h5>
+                <span>ZTA</span>
               </div>
             </ReactTooltip>
           </div>
@@ -1321,6 +1358,23 @@ const Portfolio = () => {
         <img src="/img/svg/cancel.svg" alt="close icon" />
       </button>
       <ModalD/>
+    </div>
+  </Modal>
+      
+ 
+    <Modal
+    isOpen={isOpenModalbiglil}
+    onRequestClose={toggleModalbiglil}
+    contentLabel="My dialog"
+    className="mymodal"
+    overlayClassName="myoverlay"
+    closeTimeoutMS={500}
+  >
+    <div className="tokyo_tm_modalbox_news portfolio_tm_modalbox">
+      <button className="close-modal" onClick={toggleModalbiglil}>
+        <img src="/img/svg/cancel.svg" alt="close icon" />
+      </button>
+      <Modalbiglil/>
     </div>
   </Modal>
       
