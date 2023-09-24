@@ -1,1 +1,1 @@
-self.__REACT_LOADABLE_MANIFEST="{\"../components/portfolio/Portfolio.jsx -> react-tooltip\":{\"id\":\"../components/portfolio/Portfolio.jsx -> react-tooltip\",\"files\":[\"static/chunks/node_modules_react-tooltip_dist_index_es_js.js\"]}}"
+self.__REACT_LOADABLE_MANIFEST='{"../components/portfolio/Portfolio.jsx -> react-tooltip":{"id":4762,"files":["static/chunks/762.6c433e34e5cb7cbe.js"]}}';

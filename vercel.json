@@ -1,0 +1,11 @@
+{
+    "redirects": [
+      {
+        "source": "/test",
+        "destination": "https://www.instagram.com/daviscleveland/",
+        "permanent": true
+      }
+
+    ]
+  }
+  

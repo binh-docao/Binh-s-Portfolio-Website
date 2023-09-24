@@ -24,7 +24,7 @@ module.exports = [
       id: 4,
       icon: "/img/svg/camera.svg",
       menuName: "Pictures",
-      routePath: "/ZTAportfolio",
+      routePath: "/portfolio",
       isLocked: false,
     },
     {
