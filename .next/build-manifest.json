@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/WGS34_HzVndQXGd83nIZz/_buildManifest.js",
-    "static/WGS34_HzVndQXGd83nIZz/_ssgManifest.js"
+    "static/F43Q7IC2fL3yjzXm_jdx-/_buildManifest.js",
+    "static/F43Q7IC2fL3yjzXm_jdx-/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
@@ -45,7 +45,7 @@
       "static/chunks/247-e690e497702fa037.js",
       "static/chunks/913-5d430552e5cb6af5.js",
       "static/chunks/33-aeea1fc441c7b424.js",
-      "static/chunks/66-1faea3ab2be4acfc.js",
+      "static/chunks/66-6c0841d7feb72a5a.js",
       "static/chunks/pages/about-2e80c137508bc055.js"
     ],
     "/bid-day": [
@@ -80,18 +80,6 @@
       "static/chunks/661-5820c8986b5b3a2c.js",
       "static/chunks/pages/home-e73fa0a03a520920.js"
     ],
-    "/iconic-trio": [
-      "static/chunks/webpack-69cc8c82b0c313e9.js",
-      "static/chunks/framework-63157d71ad419e09.js",
-      "static/chunks/main-5b7e528b095f4140.js",
-      "static/chunks/pages/iconic-trio-19da0a9acdbefdf7.js"
-    ],
-    "/nico": [
-      "static/chunks/webpack-69cc8c82b0c313e9.js",
-      "static/chunks/framework-63157d71ad419e09.js",
-      "static/chunks/main-5b7e528b095f4140.js",
-      "static/chunks/pages/nico-2714cda242f8d79d.js"
-    ],
     "/pictures": [
       "static/chunks/webpack-69cc8c82b0c313e9.js",
       "static/chunks/framework-63157d71ad419e09.js",
@@ -123,20 +111,14 @@
       "static/chunks/main-5b7e528b095f4140.js",
       "static/chunks/pages/south-hamptons-8034f92e954bb4be.js"
     ],
-    "/trevor-zoe": [
-      "static/chunks/webpack-69cc8c82b0c313e9.js",
-      "static/chunks/framework-63157d71ad419e09.js",
-      "static/chunks/main-5b7e528b095f4140.js",
-      "static/chunks/pages/trevor-zoe-89d758872ba50a45.js"
-    ],
     "/zta": [
       "static/chunks/webpack-69cc8c82b0c313e9.js",
       "static/chunks/framework-63157d71ad419e09.js",
       "static/chunks/main-5b7e528b095f4140.js",
       "static/chunks/247-e690e497702fa037.js",
       "static/chunks/661-5820c8986b5b3a2c.js",
-      "static/chunks/225-3220c6a6f4a64552.js",
-      "static/chunks/pages/zta-c5567b2cb7c34daa.js"
+      "static/chunks/452-72ad2ca1398cdca2.js",
+      "static/chunks/pages/zta-0e18005df7f151aa.js"
     ],
     "/zta-biglittle": [
       "static/chunks/webpack-69cc8c82b0c313e9.js",
