@@ -5,7 +5,13 @@ import Social from "../components/portfolio/portfolio-social";
 const index = () => {
   return (
     <>
-      <Seo pageTitle="Portfolio" />
+      <Seo pageTitle="Portfolio"
+            description="A showcase of my photography work in College Station."
+            url="https://www.b1nh.com/portfolio"
+            keywords="College Station photography, professional portfolio, photographer, zta, zeta tau alpha"  // Again, assuming Seo can handle it
+      
+      
+      />
       {/* End page title for seo */}
 
       <Sidebar />

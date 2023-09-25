@@ -15,7 +15,7 @@ export default function Document() {
         <meta name="description" content="Binh Do-Cao's Portfolio" />
         {/* <meta name="viewport" content="width=device-width, initial-scale=1" /> */}
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
-        <meta name="robots" content="noindex, follow" />
+        <meta name="robots" content="follow" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <body>
