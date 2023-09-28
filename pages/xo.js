@@ -1,12 +1,12 @@
 import Seo from "../components/Seo";
-import PasswordPage from "../components/PasswordRedirect";
+import PasswordPage from "../components/XOpass";
 import Sidebar from "../components/sidebar/Sidebar";
 
 const index = () => {
 
   return (
     <>
-      <Seo pageTitle="Protected" />
+      <Seo pageTitle="XO Big/Little Reveal" />
       {/* End page title for seo */}
 
       <Sidebar />

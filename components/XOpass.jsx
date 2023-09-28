@@ -1,6 +1,7 @@
 import React, { useRef,useState } from "react";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Link from 'next/link'; // Import Link from next/link
 
 const PasswordPage = () => {
   const form = useRef();
@@ -12,8 +13,7 @@ const PasswordPage = () => {
     const enteredPassword = formData.get("password");
     
     // Inside components/passwordredirect.jsx
-    const correctPassword = process.env.NEXT_PUBLIC_REACT_APP_PASSWORD; // Access client-side environment variable with prefix
-
+    const correctPassword = "carrigan"; // Access client-side environment variable with prefix
 
 
     if (enteredPassword === correctPassword) {
@@ -27,7 +27,7 @@ const PasswordPage = () => {
             progress: undefined,
           });
           setTimeout(() => {
-            window.location.href = "https://www.instagram.com/photo.binh/"; // Replace with your website
+            window.location.href = "https://drive.google.com/drive/folders/1_O7cLdhGOb9il6JXPOWkqa_re8D0CkQr?usp=sharing"; // Replace with your website
         }, 2200); // 2000 milliseconds (or 2 seconds)
     } else {
       toast.error("Incorrect Password", {
@@ -54,8 +54,12 @@ const PasswordPage = () => {
           <div className="tokyo_tm_title" style={{}}>
             <div className="title_flex">
               <div className="left">
-                <span>Protected</span>
-                <h3>Enter password</h3>
+              <Link href="/portfolio">
+    <div className="back-to-portfolio">
+        ← Back to Portfolio
+    </div>
+</Link>
+                <h3>XO Big/Little Reveal</h3>
               </div>
             </div>
           </div>
