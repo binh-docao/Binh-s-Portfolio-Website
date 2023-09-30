@@ -14,7 +14,8 @@ const RING_DAY = () => {
 };
 
 const SeoWithCustomTitle = () => (
-  <Seo pageTitle="Alex's Ring Day" /> // Set the desired page title here
+  <Seo pageTitle="Alex's Ring Day"
+  imageUrl="/img/portfolio/previews/alexh.jpg"></Seo>
 );
 
 const RING_DAY_PAGE = () => (
