@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 const RING_DAY = () => {
   const router = useRouter();
   const redirectLink =
-    "https://drive.google.com/drive/folders/1HcHLaE6LzGpQ8plAPzNGIG6sY84PE1j1?usp=sharing";
+    "https://drive.google.com/drive/folders/1Mu17L9iMBhI01lSfQGIhT8iTZqPHghdH?usp=sharing";
   useEffect(() => {
     router.push(redirectLink);
   }, [router, redirectLink]);
