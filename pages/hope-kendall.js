@@ -1,5 +1,5 @@
 import Seo from "../components/Seo";
-import PasswordPage from "../components/XOpass";
+import PasswordPage from "../components/DGpass";
 import Sidebar from "../components/sidebar/Sidebar";
 
 const index = () => {
