@@ -209,7 +209,7 @@ const Portfolio = () => {
 
                       </Link>
                       <ReactTooltip
-                        id="DC"
+                        id="AF"
                         place="bottom"
                         type="light"
                         effect="float"
