@@ -252,13 +252,12 @@ const Portfolio = () => {
                 </li>
                 {/* END GRACE MAY */}
 
-                
-    {/* Elle Mallory */}
+    {/* Carrigan Berry */}
     <li>
       <div className="inner">
         <div className="entry tokyo_tm_portfolio_animation_wrap">
-          <Link href="/ellemallory"
-            data-tooltip-id="ELLEMALLORY"
+          <Link href="/carriganberry"
+            data-tooltip-id="CARRIGANBERRY"
             data-tooltip-float="true"
             data-tooltip-variant="light"
             data-tooltip-place="bottom"
@@ -267,55 +266,21 @@ const Portfolio = () => {
           <Image
             width={400}
             height={600}
-            src="/img/portfolio/ellemallory/1.jpg"
-            alt="Elle Mallory"
+            src="/img/portfolio/carriganberry/1.jpg"
+            alt="Carrigan Berry"
           />
           </Link>
           <ReactTooltip
-            id="ELLEMALLORY"
+            id="CARRIGANBERRY"
             place="bottom"
             type="light"
             effect="float"
             className="tooltip-wrapper"
           >
-          <div>
-            <h5 style={{ background: 'rgba(3,170,153,0.9)' }}>Elle & Mallory</h5>
-            <span >Sunset</span>
-          </div>
-          </ReactTooltip>
-        </div>
-      </div>
-    </li>
-  
-       {/* Claire Kaylee */}
-       <li>
-      <div className="inner">
-        <div className="entry tokyo_tm_portfolio_animation_wrap">
-          <Link href="/clairekaylee"
-            data-tooltip-id="CLAIREKAYLEE"
-            data-tooltip-float="true"
-            data-tooltip-variant="light"
-            data-tooltip-place="bottom"
-            data-tooltip-position-strategy="fixed"
-          >
-          <Image
-            width={400}
-            height={600}
-            src="/img/portfolio/clairekaylee/1.jpg"
-            alt="Claire Kaylee"
-          />
-          </Link>
-          <ReactTooltip
-            id="CLAIREKAYLEE"
-            place="bottom"
-            type="light"
-            effect="float"
-            className="tooltip-wrapper"
-          >
-          <div>
-            <h5 style={{ background: 'rgba(112,21,62,0.65)' }}>Kaylee & Claire</h5>
-            <span >Game Day</span>
-          </div>
+            <div>
+              <h5 style={{ background: 'rgba(239,0,152,0.75)' }}>Carrigan Berry</h5>
+              <span>21st Birthday</span>
+            </div>
           </ReactTooltip>
         </div>
       </div>
@@ -354,6 +319,76 @@ const Portfolio = () => {
         </div>
       </div>
     </li>
+
+         {/* Claire Kaylee */}
+         <li>
+      <div className="inner">
+        <div className="entry tokyo_tm_portfolio_animation_wrap">
+          <Link href="/clairekaylee"
+            data-tooltip-id="CLAIREKAYLEE"
+            data-tooltip-float="true"
+            data-tooltip-variant="light"
+            data-tooltip-place="bottom"
+            data-tooltip-position-strategy="fixed"
+          >
+          <Image
+            width={400}
+            height={600}
+            src="/img/portfolio/clairekaylee/1.jpg"
+            alt="Claire Kaylee"
+          />
+          </Link>
+          <ReactTooltip
+            id="CLAIREKAYLEE"
+            place="bottom"
+            type="light"
+            effect="float"
+            className="tooltip-wrapper"
+          >
+          <div>
+            <h5 style={{ background: 'rgba(112,21,62,0.65)' }}>Kaylee & Claire</h5>
+            <span >Game Day</span>
+          </div>
+          </ReactTooltip>
+        </div>
+      </div>
+    </li>
+
+    {/* Elle Mallory */}
+    <li>
+      <div className="inner">
+        <div className="entry tokyo_tm_portfolio_animation_wrap">
+          <Link href="/ellemallory"
+            data-tooltip-id="ELLEMALLORY"
+            data-tooltip-float="true"
+            data-tooltip-variant="light"
+            data-tooltip-place="bottom"
+            data-tooltip-position-strategy="fixed"
+          >
+          <Image
+            width={400}
+            height={600}
+            src="/img/portfolio/ellemallory/1.jpg"
+            alt="Elle Mallory"
+          />
+          </Link>
+          <ReactTooltip
+            id="ELLEMALLORY"
+            place="bottom"
+            type="light"
+            effect="float"
+            className="tooltip-wrapper"
+          >
+          <div>
+            <h5 style={{ background: 'rgba(3,170,153,0.9)' }}>Elle & Mallory</h5>
+            <span >Sunset</span>
+          </div>
+          </ReactTooltip>
+        </div>
+      </div>
+    </li>
+  
+
     
     {/* Caroline Keathley */}
     <li>
@@ -525,39 +560,6 @@ const Portfolio = () => {
       </div>
     </li>
    
-    {/* Carrigan Berry */}
-    <li>
-      <div className="inner">
-        <div className="entry tokyo_tm_portfolio_animation_wrap">
-          <Link href="/carriganberry"
-            data-tooltip-id="CARRIGANBERRY"
-            data-tooltip-float="true"
-            data-tooltip-variant="light"
-            data-tooltip-place="bottom"
-            data-tooltip-position-strategy="fixed"
-          >
-          <Image
-            width={400}
-            height={600}
-            src="/img/portfolio/carriganberry/1.jpg"
-            alt="Carrigan Berry"
-          />
-          </Link>
-          <ReactTooltip
-            id="CARRIGANBERRY"
-            place="bottom"
-            type="light"
-            effect="float"
-            className="tooltip-wrapper"
-          >
-            <div>
-              <h5 style={{ background: 'rgba(239,0,152,0.75)' }}>Carrigan Berry</h5>
-              <span>21st Birthday</span>
-            </div>
-          </ReactTooltip>
-        </div>
-      </div>
-    </li>
     {/* // PORTFOLIO_MODAL_TRIGGER_INSERT */}
     
     
