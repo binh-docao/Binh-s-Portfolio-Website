@@ -41,7 +41,7 @@ const Portfolio = () => {
                 <Gallery>
                     <Tabs>
                         <TabList>
-                            <Tab>Friends</Tab>
+                            <Tab>Events</Tab>
                         </TabList>
                         <div className="list_wrapper">
                             <TabPanel>
