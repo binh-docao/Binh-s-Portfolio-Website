@@ -141,7 +141,7 @@ const Portfolio = () => {
         }
     }}
 >
-    <button className="close-button" onClick={() => setShowPasswordModal(false)} >X</button>
+    <button className="pass-close-button" onClick={() => setShowPasswordModal(false)} >X</button>
 
     <h3 style={{ textAlign: 'center', marginBottom: '20px',marginTop:"20px" }}>Enter Password to Access</h3>
     <form

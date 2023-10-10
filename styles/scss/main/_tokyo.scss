@@ -2368,3 +2368,21 @@ align-self: center;  // this centers the button horizontally
 .close-button:hover {
   color: #ff1493;
 }
+
+.pass-close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-weight: 625;
+  color:#000;
+  font-size: 20px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;    /* Adjust size as per your requirement */
+  cursor: pointer;
+}
+
+/* Add hover effect if you want */
+.pass-close-button:hover {
+  color: #ff1493;
+}
