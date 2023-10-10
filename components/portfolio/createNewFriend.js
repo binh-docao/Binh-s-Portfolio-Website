@@ -16,29 +16,43 @@ rl.question('Please enter the name: ', (name) => {
 function createFiles(name) {
     const formattedName = name.toLowerCase().replace(' ', '');
     const jsxFileName = path.join(__dirname, `${formattedName}.jsx`);
-    const jsFileName = path.join('/Users/binhdocao/Documents/Binh\'s Portfolio/pages', `${formattedName}.js`);
+    const jsFileName = path.join('/Users/binhdocao/Documents/Binh-s-Portfolio-Website/pages', `${formattedName}.js`);
     const jsxContent = `
-import React, { useState, useEffect } from "react";
-import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import { Gallery, Item } from "react-photoswipe-gallery";
-import "photoswipe/dist/photoswipe.css";
-import Image from "next/image";
+    import React, { useState, useEffect } from "react";
+    import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+    import { Gallery, Item } from "react-photoswipe-gallery";
+    import "photoswipe/dist/photoswipe.css";
+    import Image from "next/image";
+    
+    const Portfolio = () => {
+        const [isMounted, setIsMounted] = useState(false);
+        useEffect(() => {
+            setIsMounted(true);
+        }, []);
+        function importAll(r) {
+            return r.keys().map(r);
+          }
+          
+          // Dynamically include all .jpg files from the folder
+          const images = importAll(require.context('../../public/img/portfolio/${formattedName}/', false, /\.jpg$/));
+          
+          const portfolioImages = images.map(module => {
+            const src = module.default.src;  // Extract the src property from the default export
+            return {
+                original: src,
+                thumbnail: src,
+                width: 600,  // You can use module.default.width if you want the actual width
+                height: 900,  // You can use module.default.height if you want the actual height
+                dataFor: 'shot',
+                filename: src.split('/').pop()  // Extract the filename (e.g., 10.6ee3dcc7.jpg)
+            };
+        }).sort((a, b) => {
+            // Extract the number from the filename and compare
+            const numA = parseInt(a.filename.split('.')[0], 10);
+            const numB = parseInt(b.filename.split('.')[0], 10);
+            return numA - numB;
+        });
 
-const Portfolio = () => {
-    const [isMounted, setIsMounted] = useState(false);
-    useEffect(() => {
-        setIsMounted(true);
-    }, []);
-    const portfolioImages = [
-        {
-            original: "/img/portfolio/${formattedName}/1.jpg",
-            thumbnail: "/img/portfolio/${formattedName}/1.jpg",
-            width: 600,
-            height: 900,
-            dataFor: "shot",
-        },
-        //... Add more images as needed
-    ];
     return (
         <>
             {isMounted && (

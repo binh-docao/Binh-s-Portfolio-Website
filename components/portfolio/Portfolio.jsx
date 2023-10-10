@@ -423,7 +423,39 @@ const Portfolio = () => {
         </div>
       </div>
     </li>
-
+    {/* Whit Smith */}
+    <li>
+      <div className="inner">
+        <div className="entry tokyo_tm_portfolio_animation_wrap">
+          <Link href="/whitsmith"
+            data-tooltip-id="WHITSMITH"
+            data-tooltip-float="true"
+            data-tooltip-variant="light"
+            data-tooltip-place="bottom"
+            data-tooltip-position-strategy="fixed"
+          >
+          <Image
+            width={400}
+            height={600}
+            src="/img/portfolio/whitsmith/1.jpg"
+            alt="Whit Smith"
+          />
+          </Link>
+          <ReactTooltip
+            id="WHITSMITH"
+            place="bottom"
+            type="light"
+            effect="float"
+            className="tooltip-wrapper"
+          >
+          <div>
+            <h5 style={{ background: 'rgba(150,49,110,0.9)' }}>Whit Smith</h5>
+            <span >Graduation</span>
+          </div>
+          </ReactTooltip>
+        </div>
+      </div>
+    </li>
                   {/* Nico Lopez */}
                   <li>
                   <div className="inner">
@@ -457,7 +489,9 @@ const Portfolio = () => {
                     </div>
                   </div>
                 </li>
+   
     {/* // PORTFOLIO_MODAL_TRIGGER_INSERT */}
+    
     
               </ul>
             </TabPanel>
