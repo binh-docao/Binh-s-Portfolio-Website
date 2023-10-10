@@ -10,51 +10,31 @@ const Portfolio = () => {
     useEffect(() => {
         setIsMounted(true);
     }, []);
-    const portfolioImages = [
-        {
-            original: "/img/portfolio/trevorzoe/1.jpg",
-            thumbnail: "/img/portfolio/trevorzoe/1.jpg",
-            width: 600,
-            height: 900,
-            dataFor: "shot",
-        },
-        {
-            original: "/img/portfolio/trevorzoe/2.jpg",
-            thumbnail: "/img/portfolio/trevorzoe/2.jpg",
-            width: 600,
-            height: 900,
-            dataFor: "shot",
-        },
-        {
-            original: "/img/portfolio/trevorzoe/3.jpg",
-            thumbnail: "/img/portfolio/trevorzoe/3.jpg",
-            width: 600,
-            height: 900,
-            dataFor: "shot",
-        },
-        {
-            original: "/img/portfolio/trevorzoe/4.jpg",
-            thumbnail: "/img/portfolio/trevorzoe/4.jpg",
-            width: 600,
-            height: 900,
-            dataFor: "shot",
-        },
-        {
-            original: "/img/portfolio/trevorzoe/5.jpg",
-            thumbnail: "/img/portfolio/trevorzoe/5.jpg",
-            width: 600,
-            height: 900,
-            dataFor: "shot",
-        },
-        {
-            original: "/img/portfolio/trevorzoe/6.jpg",
-            thumbnail: "/img/portfolio/trevorzoe/6.jpg",
-            width: 600,
-            height: 900,
-            dataFor: "shot",
-        },
-        //... Add more images as needed
-    ];
+    function importAll(r) {
+        return r.keys().map(r);
+      }
+      
+      // Dynamically include all .jpg files from the folder
+      const images = importAll(require.context('../../public/img/portfolio/ztabid-day/', false, /\.jpg$/));
+      
+      const portfolioImages = images.map(module => {
+        const src = module.default.src;  // Extract the src property from the default export
+        return {
+            original: src,
+            thumbnail: src,
+            width: 600,  // You can use module.default.width if you want the actual width
+            height: 900,  // You can use module.default.height if you want the actual height
+            dataFor: 'shot',
+            filename: src.split('/').pop()  // Extract the filename (e.g., 10.6ee3dcc7.jpg)
+        };
+    }).sort((a, b) => {
+        // Extract the number from the filename and compare
+        const numA = parseInt(a.filename.split('.')[0], 10);
+        const numB = parseInt(b.filename.split('.')[0], 10);
+        return numA - numB;
+    });
+    
+      
     return (
         <>
             {isMounted && (

@@ -1,8 +1,6 @@
 import React, {useEffect} from "react";
 import {Tab, Tabs, TabList, TabPanel} from "react-tabs";
 import {Gallery,Item} from "react-photoswipe-gallery";
-// import { Tooltip as ReactTooltip } from 'react-tooltip'
-// import Modal from "react-modal";
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import Link from 'next/link';
@@ -461,26 +459,58 @@ const Portfolio = () => {
                 </li>
     {/* // PORTFOLIO_MODAL_TRIGGER_INSERT */}
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-
-
               </ul>
             </TabPanel>
             {/* END ALL PORTFOLIO */}
 
-          {/* LandScape */}
+  {/* --------------------START OF EVENTS--------------- */}
+  <TabPanel>
+          <ul
+                className="portfolio_list"
+                data-aos="fade-right"
+                data-aos-duration="1200"
+              >
+    
+    {/* ZTA Bid-Day */}
+    <li>
+      <div className="inner">
+        <div className="entry tokyo_tm_portfolio_animation_wrap">
+          <Link href="/ztabid-day"
+            data-tooltip-id="ZTABID-DAY"
+            data-tooltip-float="true"
+            data-tooltip-variant="light"
+            data-tooltip-place="bottom"
+            data-tooltip-position-strategy="fixed"
+          >
+          <Image
+            width={400}
+            height={600}
+            src="/img/portfolio/ztabid-day/1.jpg"
+            alt="ZTA Bid-Day"
+          />
+          </Link>
+          <ReactTooltip
+            id="ZTABID-DAY"
+            place="bottom"
+            type="light"
+            effect="float"
+            className="tooltip-wrapper"
+          >
+            <div>
+            <h5 style={{ background: 'rgba(228,118,167,0.8)' }}>Bid Day</h5>
+            <span >ZTA</span>
+            </div>
+          </ReactTooltip>
+        </div>
+      </div>
+    </li>
+        {/* // PORTFOLIO_EVENT_INSERT */}
+    
+
+
+            </ul>
+          </TabPanel>
+          {/* --------------------START OF PLACES--------------- */}
           <TabPanel>
           <ul
                 className="portfolio_list"
