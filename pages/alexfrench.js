@@ -1,28 +1,41 @@
-import React, { useEffect } from "react";
+
 import Seo from "../components/Seo";
-import { useRouter } from "next/router";
+import Portfolio from "../components/portfolio/alexfrench";
+import Sidebar from "../components/sidebar/Sidebar";
+import Link from 'next/link';
 
-const RING_DAY = () => {
-  const router = useRouter();
-  const redirectLink =
-    "https://drive.google.com/drive/folders/1hWzdf_YLU4ET2HYgsfoMjXBQ2cTAiSQP?usp=sharing";
-  useEffect(() => {
-    router.push(redirectLink);
-  }, [router, redirectLink]);
-
-  return null; // Render nothing in the component since it will immediately redirect
+const index = () => {
+    return (
+        <>
+            <Seo pageTitle="Alex French" imageUrl="/img/portfolio/alexfrench/2.jpg"></Seo>
+            <Sidebar />
+            <div className="rightpart">
+                <div className="rightpart_in">
+                    <div className="tokyo_tm_section">
+                        <div className="container">
+                            <div className="tokyo_tm_portfolio">
+                                <div className="tokyo_tm_title">
+                                    <div className="title_flex">
+                                        <div className="left">
+                                            <Link href="/portfolio">
+                                                <div className="back-to-portfolio">
+                                                    ← Back to Portfolio
+                                                </div>
+                                            </Link>
+                                            <h3>Alex French</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="portfolio_filter">
+                                    <Portfolio />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </>
+    );
 };
 
-const SeoWithCustomTitle = () => (
-  <Seo pageTitle="Alex's Ring Day"
-  imageUrl="/img/portfolio/previews/alexf.jpg"></Seo>
-);
-
-const RING_DAY_PAGE = () => (
-  <>
-    <SeoWithCustomTitle />
-    <RING_DAY />
-  </>
-);
-
-export default RING_DAY_PAGE;
+export default index;

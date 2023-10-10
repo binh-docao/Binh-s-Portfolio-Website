@@ -1,13 +1,13 @@
 
 import Seo from "../components/Seo";
-import Portfolio from "../components/portfolio/alexfrench";
+import Portfolio from "../components/portfolio/hannahlebow";
 import Sidebar from "../components/sidebar/Sidebar";
 import Link from 'next/link';
 
 const index = () => {
     return (
         <>
-            <Seo pageTitle="Alex French" imageUrl="/img/portfolio/alexfrench/2.jpg"></Seo>
+            <Seo pageTitle="Hannah Lebow" imageUrl="/img/portfolio/hannahlebow/3.jpg"></Seo>
             <Sidebar />
             <div className="rightpart">
                 <div className="rightpart_in">
@@ -22,7 +22,7 @@ const index = () => {
                                                     ← Back to Portfolio
                                                 </div>
                                             </Link>
-                                            <h3>Alex French</h3>
+                                            <h3>Hannah Lebow</h3>
                                         </div>
                                     </div>
                                 </div>

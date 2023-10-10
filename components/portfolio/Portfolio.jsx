@@ -10,18 +10,8 @@ import "photoswipe/dist/photoswipe.css";
 import 'react-tooltip/dist/react-tooltip.css'
 import { Tooltip as ReactTooltip } from 'react-tooltip'
 
-// Portfolio.jsx
-// Modal.setAppElement("#__next");
-
-// const ReactTooltip = dynamic(() => import('react-tooltip').then(mod => mod.Tooltip), {
-//   ssr: false,
-// });
-
-// Modal.setAppElement("#__next");
 
 const Portfolio = () => {
-  // for popup video for youtube
-  
 
   return (
     <>
@@ -30,8 +20,8 @@ const Portfolio = () => {
           {/* START FILTER TABLIST */}
           <TabList>
             <Tab>Friends</Tab>
+            <Tab>Events</Tab>
             <Tab>Places</Tab>
-            {/* <Tab>Instagram</Tab> */}
             {/* <Tab><Social/></Tab> */}
           </TabList>
           {/* END FILTER TABLIST */}
@@ -154,7 +144,7 @@ const Portfolio = () => {
                   <div className="inner">
                     <div className="entry tokyo_tm_portfolio_animation_wrap">
                       
-                      <Link href={`/alexh`}
+                      <Link href={`/alexharris`}
                         data-tooltip-id="AH"
                         data-tooltip-float="true"
                         data-tooltip-variant="light"
@@ -192,7 +182,7 @@ const Portfolio = () => {
                   <div className="inner">
                     <div className="entry tokyo_tm_portfolio_animation_wrap">
                       
-                      <Link href={`/alexf`}
+                      <Link href={`/alexfrench`}
                         data-tooltip-id="AF"
                         data-tooltip-float="true"
                         data-tooltip-variant="light"
@@ -230,7 +220,7 @@ const Portfolio = () => {
                   <div className="inner">
                     <div className="entry tokyo_tm_portfolio_animation_wrap">
                       
-                      <Link href={`/gracem`}
+                      <Link href={`/gracemay`}
                         data-tooltip-id="GM"
                         data-tooltip-float="true"
                         data-tooltip-variant="light"
