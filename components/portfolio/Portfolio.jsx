@@ -517,14 +517,49 @@ const Portfolio = () => {
             className="tooltip-wrapper"
           >
             <div>
-              <h5 style={{ background: 'rgba(229,0,150,0.75)' }}>Amelia Cagle</h5>
+              <h5 style={{ background: 'rgba(248,117,1,0.75)' }}>Amelia Cagle</h5>
               <span>Ring Day</span>
             </div>
           </ReactTooltip>
         </div>
       </div>
     </li>
+   
+    {/* Carrigan Berry */}
+    <li>
+      <div className="inner">
+        <div className="entry tokyo_tm_portfolio_animation_wrap">
+          <Link href="/carriganberry"
+            data-tooltip-id="CARRIGANBERRY"
+            data-tooltip-float="true"
+            data-tooltip-variant="light"
+            data-tooltip-place="bottom"
+            data-tooltip-position-strategy="fixed"
+          >
+          <Image
+            width={400}
+            height={600}
+            src="/img/portfolio/carriganberry/1.jpg"
+            alt="Carrigan Berry"
+          />
+          </Link>
+          <ReactTooltip
+            id="CARRIGANBERRY"
+            place="bottom"
+            type="light"
+            effect="float"
+            className="tooltip-wrapper"
+          >
+            <div>
+              <h5 style={{ background: 'rgba(239,0,152,0.75)' }}>Carrigan Berry</h5>
+              <span>21st Birthday</span>
+            </div>
+          </ReactTooltip>
+        </div>
+      </div>
+    </li>
     {/* // PORTFOLIO_MODAL_TRIGGER_INSERT */}
+    
     
     
     
