@@ -490,7 +490,42 @@ const Portfolio = () => {
                   </div>
                 </li>
    
+   
+    {/* Amelia Cagle */}
+    <li>
+      <div className="inner">
+        <div className="entry tokyo_tm_portfolio_animation_wrap">
+          <Link href="/ameliacagle"
+            data-tooltip-id="AMELIACAGLE"
+            data-tooltip-float="true"
+            data-tooltip-variant="light"
+            data-tooltip-place="bottom"
+            data-tooltip-position-strategy="fixed"
+          >
+          <Image
+            width={400}
+            height={600}
+            src="/img/portfolio/ameliacagle/1.jpg"
+            alt="Amelia Cagle"
+          />
+          </Link>
+          <ReactTooltip
+            id="AMELIACAGLE"
+            place="bottom"
+            type="light"
+            effect="float"
+            className="tooltip-wrapper"
+          >
+            <div>
+              <h5 style={{ background: 'rgba(229,0,150,0.75)' }}>Amelia Cagle</h5>
+              <span>Ring Day</span>
+            </div>
+          </ReactTooltip>
+        </div>
+      </div>
+    </li>
     {/* // PORTFOLIO_MODAL_TRIGGER_INSERT */}
+    
     
     
               </ul>
@@ -538,7 +573,42 @@ const Portfolio = () => {
         </div>
       </div>
     </li>
+        
+    {/* Session D */}
+    <li>
+      <div className="inner">
+        <div className="entry tokyo_tm_portfolio_animation_wrap">
+          <Link href="/sessiond"
+            data-tooltip-id="SESSIOND"
+            data-tooltip-float="true"
+            data-tooltip-variant="light"
+            data-tooltip-place="bottom"
+            data-tooltip-position-strategy="fixed"
+          >
+          <Image
+            width={400}
+            height={600}
+            src="/img/portfolio/sessiond/1.jpg"
+            alt="Session D"
+          />
+          </Link>
+          <ReactTooltip
+            id="SESSIOND"
+            place="bottom"
+            type="light"
+            effect="float"
+            className="tooltip-wrapper"
+          >
+          <div>
+            <h5 style={{ background: 'rgba(179,30,50,0.8)' }}> Session D</h5>
+            <span>Fish Camp</span>
+          </div>
+          </ReactTooltip>
+        </div>
+      </div>
+    </li>
         {/* // PORTFOLIO_EVENT_INSERT */}
+    
     
 
 
