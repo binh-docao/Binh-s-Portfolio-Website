@@ -713,7 +713,42 @@ const Portfolio = () => {
         </div>
       </div>
     </li>
+        
+    {/* Big Little */}
+    <li>
+      <div className="inner">
+        <div className="entry tokyo_tm_portfolio_animation_wrap">
+          <Link href="/biglittle"
+            data-tooltip-id="BIGLITTLE"
+            data-tooltip-float="true"
+            data-tooltip-variant="light"
+            data-tooltip-place="bottom"
+            data-tooltip-position-strategy="fixed"
+          >
+          <Image
+            width={400}
+            height={600}
+            src="/img/portfolio/biglittle/1.jpg"
+            alt="Big Little"
+          />
+          </Link>
+          <ReactTooltip
+            id="BIGLITTLE"
+            place="bottom"
+            type="light"
+            effect="float"
+            className="tooltip-wrapper"
+          >
+            <div>
+              <h5 style={{ background: 'rgba(1,103,231,0.75)' }}>Big/Little Reveal</h5>
+              <span>ZTA</span>
+            </div>
+          </ReactTooltip>
+        </div>
+      </div>
+    </li>
         {/* // PORTFOLIO_EVENT_INSERT */}
+    
     
     
     
