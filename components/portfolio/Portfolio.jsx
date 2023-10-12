@@ -642,7 +642,42 @@ const handleSelect = index => {
         </div>
       </div>
     </li>
+   
+    {/* Hope Griffin */}
+    <li>
+      <div className="inner">
+        <div className="entry tokyo_tm_portfolio_animation_wrap">
+          <Link href="/hopegriffin"
+            data-tooltip-id="HOPEGRIFFIN"
+            data-tooltip-float="true"
+            data-tooltip-variant="light"
+            data-tooltip-place="bottom"
+            data-tooltip-position-strategy="fixed"
+          >
+          <Image
+            width={400}
+            height={600}
+            src="/img/portfolio/hopegriffin/1.jpg"
+            alt="Hope Griffin"
+          />
+          </Link>
+          <ReactTooltip
+            id="HOPEGRIFFIN"
+            place="bottom"
+            type="light"
+            effect="float"
+            className="tooltip-wrapper"
+          >
+            <div>
+              <h5 style={{ background: 'rgba(216,181,66,0.75)' }}>Hope Griffin</h5>
+              <span>Ring Day</span>
+            </div>
+          </ReactTooltip>
+        </div>
+      </div>
+    </li>
     {/* // PORTFOLIO_MODAL_TRIGGER_INSERT */}
+    
     
     
     
@@ -903,7 +938,42 @@ const handleSelect = index => {
         </div>
       </div>
     </li>
+        
+    {/* DG Reveal */}
+    <li>
+      <div className="inner">
+        <div className="entry tokyo_tm_portfolio_animation_wrap">
+          <Link href="/dgreveal"
+            data-tooltip-id="DGREVEAL"
+            data-tooltip-float="true"
+            data-tooltip-variant="light"
+            data-tooltip-place="bottom"
+            data-tooltip-position-strategy="fixed"
+          >
+          <Image
+            width={400}
+            height={600}
+            src="/img/portfolio/dgreveal/1.jpg"
+            alt="DG Reveal"
+          />
+          </Link>
+          <ReactTooltip
+            id="DGREVEAL"
+            place="bottom"
+            type="light"
+            effect="float"
+            className="tooltip-wrapper"
+          >
+            <div>
+              <h5 style={{ background: 'rgba(7,135,71,0.75)' }}>Big/Little Reveal</h5>
+              <span>DG</span>
+            </div>
+          </ReactTooltip>
+        </div>
+      </div>
+    </li>
         {/* // PORTFOLIO_EVENT_INSERT */}
+    
     
     
     
