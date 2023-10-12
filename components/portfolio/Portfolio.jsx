@@ -747,7 +747,42 @@ const Portfolio = () => {
         </div>
       </div>
     </li>
+        
+    {/* South Hamptons */}
+    <li>
+      <div className="inner">
+        <div className="entry tokyo_tm_portfolio_animation_wrap">
+          <Link href="/southhamptons"
+            data-tooltip-id="SOUTHHAMPTONS"
+            data-tooltip-float="true"
+            data-tooltip-variant="light"
+            data-tooltip-place="bottom"
+            data-tooltip-position-strategy="fixed"
+          >
+          <Image
+            width={400}
+            height={600}
+            src="/img/portfolio/southhamptons/1.jpg"
+            alt="South Hamptons"
+          />
+          </Link>
+          <ReactTooltip
+            id="SOUTHHAMPTONS"
+            place="bottom"
+            type="light"
+            effect="float"
+            className="tooltip-wrapper"
+          >
+            <div>
+              <h5 style={{ background: 'rgba(0,156,201,0.75)' }}>South Hamptons Date Party</h5>
+              <span>ZTA</span>
+            </div>
+          </ReactTooltip>
+        </div>
+      </div>
+    </li>
         {/* // PORTFOLIO_EVENT_INSERT */}
+    
     
     
     
