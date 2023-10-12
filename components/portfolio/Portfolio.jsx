@@ -90,6 +90,7 @@ const handleSelect = index => {
                 height={600}
                 src="/img/portfolio/hannahlebow/3.jpg"
                 alt="Hannah Lebow"
+                priority="true"
                 
               />
 
@@ -128,6 +129,7 @@ const handleSelect = index => {
     height={600}
     src="/img/portfolio/nathanguindon/1.jpg"
     alt="Nathan Guindon"
+    priority="true"
   />
   </Link>
   <ReactTooltip
@@ -161,6 +163,7 @@ const handleSelect = index => {
     height={600}
     src="/img/portfolio/daviscleveland/1.jpg"
     alt="Davis Cleveland"
+    priority="true"
   />
   </Link>
   <ReactTooltip
@@ -196,6 +199,7 @@ const handleSelect = index => {
                         height={600}
                         src="/img/portfolio/alexharris/1.jpg"
                         alt="Alex Harris"
+                        priority="true"
                         
                       />
 
@@ -234,6 +238,7 @@ const handleSelect = index => {
                         height={600}
                         src="/img/portfolio/alexfrench/2.jpg"
                         alt="Alex French"
+                        priority="true"
                         
                       />
 
@@ -266,6 +271,7 @@ const handleSelect = index => {
                         data-tooltip-variant="light"
                         data-tooltip-place="bottom"
                         data-tooltip-position-strategy="fixed"
+                        priority="true"
                       >
                       <Image
                         width={400}
@@ -670,6 +676,7 @@ const handleSelect = index => {
             height={600}
             src="/img/portfolio/ztabid-day/1.jpg"
             alt="ZTA Bid-Day"
+            priority="true"
           />
           </Link>
           <ReactTooltip
@@ -704,6 +711,7 @@ const handleSelect = index => {
             height={600}
             src="/img/portfolio/sessiond/1.jpg"
             alt="Session D"
+            priority="true"
           />
           </Link>
           <ReactTooltip
@@ -738,6 +746,7 @@ const handleSelect = index => {
             height={600}
             src="/img/portfolio/glowout/1.jpg"
             alt="Glow Out"
+            priority="true"
           />
           </Link>
           <ReactTooltip
@@ -772,6 +781,7 @@ const handleSelect = index => {
             height={600}
             src="/img/portfolio/biglittle/1.jpg"
             alt="Big Little"
+            priority="true"
           />
           </Link>
           <ReactTooltip
@@ -806,6 +816,7 @@ const handleSelect = index => {
             height={600}
             src="/img/portfolio/southhamptons/1.jpg"
             alt="South Hamptons"
+            priority="true"
           />
           </Link>
           <ReactTooltip
@@ -840,6 +851,7 @@ const handleSelect = index => {
             height={600}
             src="/img/portfolio/camphanover/1.jpg"
             alt="Camp Hanover"
+            priority="true"
           />
           </Link>
           <ReactTooltip
