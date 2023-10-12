@@ -815,7 +815,42 @@ const Portfolio = () => {
         </div>
       </div>
     </li>
+        
+    {/* XO Reveal */}
+    <li>
+      <div className="inner">
+        <div className="entry tokyo_tm_portfolio_animation_wrap">
+          <Link href="/xoreveal"
+            data-tooltip-id="XOREVEAL"
+            data-tooltip-float="true"
+            data-tooltip-variant="light"
+            data-tooltip-place="bottom"
+            data-tooltip-position-strategy="fixed"
+          >
+          <Image
+            width={400}
+            height={600}
+            src="/img/portfolio/xoreveal/1.jpg"
+            alt="XO Reveal"
+          />
+          </Link>
+          <ReactTooltip
+            id="XOREVEAL"
+            place="bottom"
+            type="light"
+            effect="float"
+            className="tooltip-wrapper"
+          >
+            <div>
+              <h5 style={{ background: 'rgba(166,218,173,0.75)' }}>Big/Little Reveal</h5>
+              <span>XO</span>
+            </div>
+          </ReactTooltip>
+        </div>
+      </div>
+    </li>
         {/* // PORTFOLIO_EVENT_INSERT */}
+    
     
     
     
