@@ -1,7 +1,7 @@
-import React, {useEffect} from "react";
+import React, {useEffect,useState} from "react";
 import {Tab, Tabs, TabList, TabPanel} from "react-tabs";
 import {Gallery,Item} from "react-photoswipe-gallery";
-import dynamic from "next/dynamic";
+import { useRouter } from 'next/router';
 import Image from "next/image";
 import Link from 'next/link';
 import "photoswipe/dist/photoswipe.css";
@@ -10,11 +10,53 @@ import { Tooltip as ReactTooltip } from 'react-tooltip'
 
 
 const Portfolio = () => {
+  const [tabIndex, setTabIndex] = useState(0); // 0 is the default index
+  const router = useRouter();
+  useEffect(() => {
+    // On component mount, retrieve the tabIndex from the URL
+    const selectedTab = router.query.tab;
+    if (selectedTab) {
+        switch (selectedTab) {
+            case 'friends':
+                setTabIndex(0);
+                break;
+            case 'events':
+                setTabIndex(1);
+                break;
+            case 'places':
+                setTabIndex(2);
+                break;
+            default:
+                break;
+        }
+    }
+}, [router.query]);
+
+const handleSelect = index => {
+    setTabIndex(index);
+    // Update the URL with the selected tab without page reload
+    let tabName;
+    switch (index) {
+        case 0:
+            tabName = 'friends';
+            break;
+        case 1:
+            tabName = 'events';
+            break;
+        case 2:
+            tabName = 'places';
+            break;
+        default:
+            tabName = 'friends'; // default tab
+            break;
+    }
+    router.push(`/portfolio?tab=${tabName}`, undefined, { shallow: true });
+};
 
   return (
     <>
       <Gallery>
-        <Tabs>
+        <Tabs selectedIndex={tabIndex} onSelect={handleSelect}>
           {/* START FILTER TABLIST */}
           <TabList>
             <Tab>Friends</Tab>
