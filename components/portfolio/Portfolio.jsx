@@ -640,6 +640,39 @@ const handleSelect = index => {
         </div>
       </div>
     </li>
+        {/* Caroline Munzy */}
+        <li>
+      <div className="inner">
+        <div className="entry tokyo_tm_portfolio_animation_wrap">
+          <Link href="/carolinemunzy"
+            data-tooltip-id="CAROLINEMUNZY"
+            data-tooltip-float="true"
+            data-tooltip-variant="light"
+            data-tooltip-place="bottom"
+            data-tooltip-position-strategy="fixed"
+          >
+          <Image
+            width={400}
+            height={600}
+            src="/img/portfolio/carolinemunzy/1.jpg"
+            alt="Caroline Munzy"
+          />
+          </Link>
+          <ReactTooltip
+            id="CAROLINEMUNZY"
+            place="bottom"
+            type="light"
+            effect="float"
+            className="tooltip-wrapper"
+          >
+            <div>
+              <h5 style={{ background: 'rgba(196,115,62,0.75)' }}>Caroline & Munzy</h5>
+              <span>Pumpkin Patch</span>
+            </div>
+          </ReactTooltip>
+        </div>
+      </div>
+    </li>
                       {/* Nico Lopez */}
                       <li>
                   <div className="inner">
@@ -673,7 +706,10 @@ const handleSelect = index => {
                     </div>
                   </div>
                 </li>
+   
+
     {/* // PORTFOLIO_MODAL_TRIGGER_INSERT */}
+    
     
     
     
