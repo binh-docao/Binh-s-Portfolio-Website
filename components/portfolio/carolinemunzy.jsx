@@ -40,7 +40,7 @@ const Portfolio = () => {
         const formData = new FormData(form.current);
         const enteredPassword = formData.get("password");
     
-        const correctPassword = "pregnancy";  // Ensure you have the right password
+        const correctPassword = "samsung";  // Ensure you have the right password
     
         if (enteredPassword === correctPassword) {
             toast.success("Redirecting...", {
@@ -53,7 +53,7 @@ const Portfolio = () => {
                 progress: undefined,
             });
             setTimeout(() => {
-                window.location.href = "https://drive.google.com/drive/folders/1-Gpa4AvF1hKspB3O-GUxU6VYqfHNAOj5?usp=sharing"; // Your Google Drive link
+                window.location.href = "https://drive.google.com/drive/folders/1O2YItpFmi392UTrSdyK6e7CS8AARRKz4?usp=sharing"; // Your Google Drive link
             }, 2200); // 2000 milliseconds (or 2 seconds)
         } else {
             toast.error("Incorrect Password", {
