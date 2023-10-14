@@ -55,7 +55,7 @@ const AboutMain = () => {
         <div className="container">
           <div className="in">
             <Skills />
-          </div>r
+          </div>
           {/* End in */}
         </div>
         {/* End .container */}
