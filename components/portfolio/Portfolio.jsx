@@ -1005,7 +1005,42 @@ const handleSelect = index => {
         </div>
       </div>
     </li>
+        
+    {/* SongFest */}
+    <li>
+      <div className="inner">
+        <div className="entry tokyo_tm_portfolio_animation_wrap">
+          <Link href="/songfest"
+            data-tooltip-id="SONGFEST"
+            data-tooltip-float="true"
+            data-tooltip-variant="light"
+            data-tooltip-place="bottom"
+            data-tooltip-position-strategy="fixed"
+          >
+          <Image
+            width={400}
+            height={600}
+            src="/img/portfolio/songfest/centuries/1.jpg"
+            alt="SongFest"
+          />
+          </Link>
+          <ReactTooltip
+            id="SONGFEST"
+            place="bottom"
+            type="light"
+            effect="float"
+            className="tooltip-wrapper"
+          >
+            <div>
+              <h5 style={{ background: 'rgba(173,1,254,0.75)' }}>SongFest</h5>
+              <span>Centuries & Tri-Delt</span>
+            </div>
+          </ReactTooltip>
+        </div>
+      </div>
+    </li>
         {/* // PORTFOLIO_EVENT_INSERT */}
+    
     
     
     
