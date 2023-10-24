@@ -1,7 +1,7 @@
 // import React from "react";
 import React, { useState } from 'react';
 import Modal from "react-modal";
-import Testimonial from "./Testimonial";
+// import Testimonial from "./Testimonial";
 import Intro from "./Intro";
 import KnowledgeInterest from "./KnowledgeInterest";
 import PersonalInfo from "./PersonalInfo";
