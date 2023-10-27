@@ -14,7 +14,7 @@ const RING_DAY = () => {
 };
 
 const SeoWithCustomTitle = () => (
-  <Seo pageTitle="Binh - Songfest - ZTA/BYX"
+  <Seo pageTitle="Songfest - ZTA/BYX"
   imageUrl="/img/portfolio/previews/zux.jpg"></Seo>
 );
 
