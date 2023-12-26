@@ -1,28 +1,23 @@
 import React, { useEffect } from "react";
-import Seo from "../components/Seo";
+import Head from "next/head"; 
 import { useRouter } from "next/router";
 
-const RING_DAY = () => {
-  const router = useRouter();
-  const redirectLink =
-    "https://drive.google.com/drive/folders/1G77Ok3RVshaKG5GPVGXnREbu_gGtax1j?usp=sharing";
+const MyPage = () => {
   useEffect(() => {
-    router.push(redirectLink);
-  }, [router, redirectLink]);
+    window.location.href = "https://drive.google.com/drive/folders/1G77Ok3RVshaKG5GPVGXnREbu_gGtax1j?usp=sharing";
+  }, []);
 
-  return null; // Render nothing in the component since it will immediately redirect
+  return (
+    <>
+      <Head>
+        <title>Sophia Gagliardi - Graduation</title>
+        <meta name="description" content="Sophia Gagliardi - Graduation Pictures" />
+        <meta property="og:image" content="sg-grad.jpg" />
+        {/* Other SEO tags */}
+      </Head>
+      {/* Your page content */}
+    </>
+  );
 };
 
-const SeoWithCustomTitle = () => (
-  <Seo pageTitle="Sophia Gagliardi - Graduation"
-  imageUrl="/img/portfolio/previews/sg-grad.jpg"></Seo>
-);
-
-const RING_DAY_PAGE = () => (
-  <>
-    <SeoWithCustomTitle />
-    <RING_DAY />
-  </>
-);
-
-export default RING_DAY_PAGE;
+export default MyPage;
