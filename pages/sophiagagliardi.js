@@ -12,7 +12,7 @@ const MyPage = () => {
       <Head>
         <title>Sophia Gagliardi - Graduation</title>
         <meta name="description" content="Sophia Gagliardi - Graduation Pictures" />
-        <meta property="og:image" content="sg-grad.jpg" />
+        <meta property="og:image" content="/img/portfolio/previews/sg-grad.jpg" />
         {/* Other SEO tags */}
       </Head>
       {/* Your page content */}
